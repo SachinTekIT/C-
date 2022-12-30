@@ -1,4104 +1,2994 @@
-# CSHARP C# Interview Questions & Answers
+# SQL Interview Questions & Answers
 
-> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@kansiris87](https://twitter.com/kansiris87) for technical updates.
+> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [contact@sachintekriwal.com for technical updates.
 
 ### Table of Contents
 
 | No. | Questions |
-|---- | ---------|
-|1    | [What is Computer programming?	](# )|
-|2    | [How programming work?	](# )|
-|3    | [What is debugging?	](# )|
-|4    | [Name different types errors which can occur during the execution of a program?	](# )|
-|5  | [When a syntax error occurs?	](# )|
-|6    | [When a runtime error occurs?	](# )|
-|7    | [When a logical error occurs? ](# )|
-|8    | [What is flowchart?	](# )|
-|9    | [What is an algorithm?	](# )|
-|10    | [What do you understand by the term 'Maintain and update the Program'? ](# )|
-|11    | [What are variables?	](# )|
-|12    | [What are reserved words?	](# )|
-|13    | [What are Loop?	](# )|
-|14    | [What is the use of FOR…NEXT Loop? ](# )|
-|15    | [What is the use of WHILE…WEND Loop?	](# )|
-|16    | [What is the use of Nested Loop?	](# )|
-|17    | [What is Documentation?	](# )|
-|18    | [What is the working of a compiler?	](# )|
-|19    | [What do we call the binary form of a target language?	](# )|
-|10    | [What are constants?	](# )|
-|21    | [Define Numeric constants.	](# )|
-|22    | [Define String constants.	](# )|
-|23    | [Define Operators.	](# )|
-|24    | [What is an Array?	](# )|
-|25    | [What is subroutine?	](# )|
-|26    | [What is the purpose of arithmetic operators?	](# )|
-|27    | [What is the purpose of relational operators?	](# )|
-|28   | [Define Low-level programming language.	](# )|
-|29    | [Define High-Level programming language.	](# )|
-|30    | [What is Machine code?	](# )|
-|31    | [List some programming languages.	](# )|
-|32    | [What is reliability?	](# )|
-|3503    | [What is modeling language?	](# )|
-|34    | [Name some modeling languages? ](# )|
-|35    | [What is software testing?	](# )|
-|36   | [What is Beta version?	](# )|
-|37    | [What is the working of logical operators?	 ](# )|
-|38    | [What is the purpose of assignment operator? ](# )|
-|39   | [What is analyzing a program?	](# )|
-|40   | [What is the working on an algorithm?	](# )|
-|41    | [How is the division by zero defined?	](# )|
-|42    | [What is the meaning of implementation of a program?	](# )|
-|43    | [What are numeric variables?	](# )|
-|44    | [What are string variables?	](# )|
-|45   | [What are commands?	](# )|
-|46   | [What are statements?	](# )|
-|47    | [What is the execution of a program?	](# )|
-|48    | [Define variable and constant.	](# )|
-|49   | [What is a data type? How many types of data types are there in .NET ?	](# )|
-|50   | [Mention the two major categories that distinctly classify the variables of C# programs.	](# )|
-|51    | [Which statement is used to replace multiple if-else statements in code.	](# )|
-|52    | [What is the syntax to declare a namespace in .NET?	](# )|
-|53    | [Differentiate between the while and for loop in C#.	](# )|
-|54    | [What is an identifier?	](# )|
-|55    | [What does a break statement do in the switch statement?	](# )|
-|56    | [Explain keywords with example.	](# )|
-|57    | [Briefly explain the characteristics of value-type variables that are supported in the C# programming language.	](# )|
-|58    | [What is a parameter? Explain the new types of parameters introduced in C# 4.0.	](# )|
-|59    | [Briefly explain the characteristics of reference-type variables that are supported in the C# programming language.	](# )|
-|60   | [What are the different types of literals?	](# )|
-|61    | [What is the main difference between sub-procedure and function?	](# )|
-|62   | [Differentiate between Boxing and Unboxing. ](# )|
-|63   | [What is C#?	](# )|
-|64    | [What is an Object?	](# )|
-|65   | [What is the difference between a struct and a class in C#?	](# )|
-|66   | [What is the difference between Interface and Abstract Class?	](# )|
-|67   | [What is enum in C#?	](# )|
-|68   | [What is the difference between “continue” and “break” statements in C#?	](# )|
-|69   | [What is the difference between constant and readonly in c#?	](# )|
-|70   | [What is the difference between ref and out keywords?	](# )|
-|71    | [Can “this” be used within a static method?	](# )|	
-|72    | [Define Property in C# .net?	](# )|
-|73   | [What is extension method in c# and how to use them?	](# )|
-|74   | [What is the difference between string and StringBuilder in c#?	](# )|
-|75   | [What are delegates in C# and uses of delegates?	](# )|
-|76   | [What is sealed class in c#?	](# )|
-|77   | [ What are partial classes?	](# )|
-|78   | [ What is IEnumerable<> in c#?	](# )|
-|79   | [ What is difference between late binding and early binding in c#?	](# )|
-|80   | [What are the differences between IEnumerable and IQueryable?	](# )|
-|81    | [What happens if the inherited interfaces have conflicting method names?	](# )|
-|82    | [What are the Arrays in C#.Net?	](# )|
-|83   | [What is the Constructor Chaining in C#?	](# )|
-|84   | [What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?	](# )|
-|85   | [Can Multiple Catch Blocks executed in c#?	](# )|
-|86   | [Difference between Throw Exception and Throw Clause.	](# )|
-|87   | [What is Indexer in C# .Net?	](# )|
-|88   | [What is multicast delegate in c#?	](# )|
-|89   | [Difference between Equality Operator (==) and Equals() Method in C#.	](# )|
-|90   | [Difference between “is” and “as” operator in C#.	](# )|
-|91   | [How to use Nullable<> Types in .Net?	](# )|
-|92   | [Different Ways of Method can be overloaded.	](# )|
-|93   | [What is an Object Pool in .Net?	](# )|
-|94   | [What are generics in c#.net?	](# )|
-|95   | [Describe the accessibility modifiers in c#.Net	](# )|
-|96   | [What is Virtual Method in C#?	](# )|
-|97   | [What is the Difference between Array and ArrayList in C#.Net?	](# )|
-|98   | [What you understand by Value types and Reference types in C#.Net?	](# )|
-|99   | [What is Serialization?	](# )|
-|100   | [What is the use of using statement in C#?	](# )|
-|101  | [What is jagged array in C#.Net?	](# )|
-|102    | [What is Multithreading with .NET?	](# )|
-|103    | [Explain Anonymous type in C#?	](# )|
-|104    | [Explain Hashtable in C#?	](# )|
-|105    | [What is LINQ in C#?	](# )|
-|106    | [What is File Handling in C#.Net?	](# )|
-|107    | [What is Reflection in C#.Net?	](# )|
-|108    | [What is Expression Trees In C#?	](# )|
-|109  | [Differences between Object, Var and Dynamic type?	](# )|
-|110  | [What are OOPS Concepts?	](# )|
-|111    | [How can you implement multiple inheritance in C#?	](# )|
-|112    | [Are private class members inherited to the derived class?	](# )|
-|113    | [When and why to use method overloading	](# )|
-|114    | [Does C# support multiple-inheritance?	](# )|
-|115    | [Where is a protected class-level variable available?	](# )|
-|116    | [Are private class-level variables inherited?	](# )|
-|117    | [Describe the accessibility modifier “protected internal”.	](# )|
-|118    | [Which class is at the top of .NET class hierarchy?	](# )|
-|119    | [What does the term immutable mean?	](# )|
-|120    | [Can you store multiple data types in System.Array?	](# )|
-|121    | [What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?	](# )|
-|122    | [How can you sort the elements of the array in descending order?	](# )|
-|123    | [What’s the .NET collection class that allows an element to be accessed using a unique key? ](# )|
-|124    | [What class is underneath the Sorted List class?	](# )|
-|125    | [Will the finally block get executed if an exception has not occurred?	](# )|
-|126    | [What’s the C# syntax to catch any possible exception?	](# )|
-|127    | [Can multiple catch blocks be executed for a single try statement?	](# )|
-|128    | [Explain the three services model commonly know as a three-tier application?	](# )|
-|129    | [What is the syntax to inherit from a class in C#?	](# )|
-|130    | [Can you prevent your class from being inherited by another class?	](# )|
-|131    | [Can you allow a class to be inherited, but prevent the method from being over-ridden?	](# )|
-|132    | [When do you absolutely have to declare a class as abstract?	](# )|
-|133    | [Why can’t you specify the accessibility modifier for methods inside the interface?	 ](# )|
-|134    | [Can you inherit multiple interfaces?	](# )|
-|135    | [ What happens if you inherit multiple interfaces and they have conflicting method names? ](# )|
-|136    | [What’s the implicit name of the parameter that gets passed into the set method/property of a class?	](# )|
-|137    | [Can you declare an override method to be static if the original method is not static?	](# )|
-|138    | [What are the different ways a method can be overloaded?	](# )|
-|139    | [If a base class has a number of overloaded constructors, and an inheriting class has a number of overloaded constructors; can you enforce a call from an inherited constructor to a specific base constructor?	](# )|
-|140    | [ What’s the implicit name of the parameter that gets passed into the class’ set method?	](# )|
-|141    | [How do you inherit from a class in C#?	](# )|
-|142    | [Does C# support multiple inheritance?	](# )|
-|143    | [ When you inherit a protected class-level variable, who is it available to?	](# )|
-|144    | [ Are private class-level variables inherited?	](# )|
-|145    | [ Describe the accessibility modifier protected internal.?	](# )|
-|146    | [C# provides a default constructor for me. I write a constructor that takes a string as a parameter, but want to keep the no parameter one. How many constructors should I write?	](# )|
-|147    | [What’s the top .NET class that everything is derived from?	](# )|
-|148    | [What does the keyword virtual mean in the method definition?	](# )|
-|149    | [Can you declare the override method static while the original method is non-static?	](# )|
-|150    | [Can you override private virtual methods?	](# )|
-|151    | [When do you absolutely have to declare a class as abstract (as opposed to free-willed educated choice or decision based on UML diagram)?	](# )|
-|152    | [Why can’t you specify the accessibility modifier for methods inside the interface?	](# )|
-|153    | [And if they have conflicting method names?	](# )|
-|154    | [If a base class has a bunch of overloaded constructors, and an inherited class has another bunch of overloaded constructors, can you enforce a call from an inherited constructor to an arbitrary base constructor?	](# )|
-|155    | [Is it namespace class or class namespace?	](# )|
-|156    | [What is the difference between ToString() and Convert.ToString()?	](# )|
-|157    | [What is the Difference between int.Parse() and Convert.ToInt32()?	](# )|
-|158    | [What is checked block and unchecked block?	](# )|
-|159    | [Write a program to get the range of Byte Datatype?	](# )|
-|160    | [What is the difference between typeOf() and sizeOf()?	](# )|
-|161    | [What is widening and Narrowing?	](# )|
-|162    | [How to view an Assembly?	](# )|
-|163    | [How to implement Reflection in .Net?	](# )|
-|164    | [What are MultiLingual Applications?	](# )|
-|165    | [What is the difference between = and ==	](# )|
-|166    | [What is the use of Codesnippets?	](# )|
-|167    | [What is the difference between Array and Collections?	](# )|
-|168    | [What is the default Accessmodifier for the members of the class?	](# )|
-|169    | [What is the use of constructor?	](# )|
-|170    | [When the static constructor will be called?	](# )|
-|171    | [ Can we declare Public accessmodifier for static constructor?	](# )|
-|172    | [if we declare Main() and static constructor in the same class  which one will be called first?](# )|
-|173    | [How to Call the Default constructor of one class with the parameterised constructor of same class?	](# )|
-|174    | [How to access the constructors of one class to another class?	](# )|
-|175    | [Does C#.net Supports Multiple inheritance?	](# )|
-|176    | [How to acheive Multiple inheritance in C#.NET?	](# )|
-|177    | [what is OverLoading?	](# )|
-|178    | [what is Overriding?	](# )|
-|179    | [what is use of Properties?	](# )|
-|180    | [what is the Difference between Event and Method?	](# )|
-|181    | [what are Generics?	](# )|
-|182    | [Does generics supports Arthimetic Operators ?	](# )|
-|183    | [what is Dynamic Dispatch?	](# )|
-|184    | [Which of the following are Build in generic Types?	](# )|
-|185    | [In .net for Assemblies we are having StrongName lly in COM Components  what is the Strongname?	](# )|
-|186    | [Is Versioning applicable to Private assemblies?	](# )|
-|187    | [Does .net supports Cross Language Interoparability in CAS?	](# )|
-|188    | [What is the importance of “this”keyword? ](# )|
-|189    | [C# program to print prime numbers	](# )|
-|190    | [C# program to print even numbers	](# )|
-|191    | [C# program to print fibonacci series](# )|
-|192    | [Palindrome program in C#	](# )|
-|193    | [Armstrong Number in C#	 ](# )|
-|194    | [C# Program to reverse number	](# )|
-|195    | [C# Program to generate Fibonacci Triangle	](# )|
-|196    | [C# Program to Convert Number in Characters	](# )|
-|197    | [C# Program to print Number Triangle	](# )|
-|198    | [C# Program to swap two numbers without third variable	](# )|
-|199    | [Program 2: Using + and -	](# )|
-|200    | [Decimal to Binary Conversion Algorithm](# )|
-|201    | [C# Program to Convert Number in Characters	](# )|
-|202    | [C# program to print multiplication table	](# )|
-|203   | [C# program to print alphabets	](# )|
-|204  | [Power function in C#	](# )|
-|205   | [C# program to count emails by domain	](# )|
-|206  | [Reverse characters in a string	](# )|
-|207   | [C# program to sort names in ascending and descending order	](# )|
-|208  | [C# program to remove duplicates	](# )|
-|209  | [Insert space before every upper case letter in a string	](# )|
-|210  | [Write a c# program to add two numbers.	](# )|
-|211  | [Find smallest and largest number in an integer array	](# )|
-|212  | [C# Program to compute factorial of a number	](# )|
-|213  | [How to get the total number of decimal places using c#	](# )|
-|214  | [How to remove trailing zeros in a decimal - C# Program?	](# )|
-|215  | [Write a c program to print M pattern?] (# )|
-|216  | [Write the o/p for the below program?	](# )|
-
-
-
-# PROGRAMMING CONCEPT
-
-### What is Computer programming?
-
-Computer Programming is also known as programming or coding. Programming is a process which includes processes such as coding, maintaining, updating, debugging, writing, designing (algorithm), etc.
-
-### How programming work?
-
-Programming contains a set of instructions for the computer to perform different tasks. In fact, those instructions are executable commands, each having a different purpose.
-
-### What is debugging?
+|---- | ---------
+|1    | [What is a database?	]( )	|
+|1    | [What is DBMS?	]( )	|
+|1    | [ What is SQL?	]( )	|
+|1    | [ What is PL/SQL?	]( )	|
+|1    | [ What is the difference between SQL and PL/SQL?	]( )	|
+|1    | [What is RDBMS?	 ]( )	|
+|1    | [What is a database table?	]( )	|
+|1    | [ What is a query?	]( )	|
+|1    | [ What is subquery?	]( )	|
+|1    | [ What are the types of subquery?	]( )	|
+|1    | [ How to create a table in SQL?	]( )	|
+|1    | [What are tables and Fields?	]( )	|
+|1    | [ How to delete a table in SQL Server?	]( )	|
+|1    | [ How to update a database table using SQL?	]( )	|
+|1    | [ What is a database relationship?	 ]( )	|
+|1    | [ What is a primary key of a database?	]( )	|
+|1    | [What is a unique key?	]( )	|
+|1    | [What is a foreign key of a database?	]( )	|
+|1    | [What is database normalization?	]( )	|
+|1    | [What are database normalization forms?	 ]( )	|
+|1    | [ What is Denormalization.	]( )	|
+|1    | [What is a stored procedure?	]( )	|
+|1    | [Why we use Stored Procedure?	]( )	|
+|1    | [How to create a Stored Procedure?	]( )	|
+|1    | [What is a function in SQL Server?	]( )	|
+|1    | [What are the different types of functions in SQL Server?	]( )	|
+|1    | [What is a trigger in SQL Server?	]( )	|
+|1    | [Why do we need triggers?	]( )	|
+|1    | [What are the different types of triggers?	]( )	|
+|1    | [What is a view in the database?	]( )	|
+|1    | [Why do I need views in a database?	]( )	|
+|1    | [What is the difference between Primary key and unique key?	]( )	|
+|1    | [How can you increase SQL performance?	]( )	|
+|1    | [What is the use of OLAP?	 ]( )	|
+|1    | [What is a measure in OLAP?	]( )	|
+|1    | [What are dimensions in OLAP?	]( )	|
+|1    | [What are levels in dimensions?	]( )	|
+|1    | [What are fact tables and dimension tables in OLAP?	]( )	|
+|1    | [What is DTS?	]( )	|
+|1    | [What is fill factor? or When does page split occurs?	]( )	|
+|1    | [What is RAID and how does it work?	]( )	|
+|1    | [SQL Server Difference between @@IDENTITY, SCOPE_IDENTITY () and IDENT_CURRENT	]( )	|
+|1    | [Difference between char varchar and nvarchar in SQL Server	]( )	|
+|1    | [What is the difference between DELETE TABLE and TRUNCATE TABLE commands?	 ]( )	|
+|1    | [If locking is not implemented, what issues can occur?	]( )	|
+|1    | [What are different transaction levels in SQL SERVER?	]( )	|
+|1    | [What are the different locks in SQL SERVER?	]( )	|
+|1    | [Can we suggest locking hints to SQL SERVER?	]( )	|
+|1    | [What is LOCK escalation?	]( )	|
+|1    | [What are the different ways of moving data between databases in SQL Server?	]( )	|
+|1    | [What is the difference between a HAVING CLAUSE and a WHERE CLAUSE?	]( )	|
+|1    | [What is the difference between UNION and UNION ALL SQL syntax?	]( )	|
+|1    | [What are the different types of triggers in SQL SERVER?	]( )	|
+|1    | [if we have multiple AFTER Triggers on table how can we define the sequence od the triggers?	]( )	|
+|1    | [What is SQL injection?	]( )	|
+|1    | [What is the difference between Stored Procedure (SP) and User Defined Function (UDF)?	]( )	|
+|1    | [How can you raise custom errors from stored procedure?	 ]( )	|
+|1    | [What is DBCC?	]( )	|
+|1    | [What is the purpose of Replication?	]( )	|
+|1    | [What are the different types of replication supported by SQL SERVER?	]( )	|
+|1    | [What is BCP utility in SQL SERVER?	]( )	|
+|1    | [What is a Cursor?	]( )	|
+|1    | [What are local and global variables and their differences?	]( )	|
+|1    | [What is an index?	]( )	|
+|1    | [Why do I need an index in a database?	]( )	|
+|1    | [What is a query in a database?	]( )	|
+|1    | [What are query types in a database?	]( )	|
+|1    | [What is a join in SQL Server?	]( )	|
+|1    | [What are different types of joins in SQL Server?	]( )	|
+|1    | [What is Self-Join?	]( )	|
+|1    | [What is Cross-Join?	]( )	|
+|1    | [What is user defined functions?	]( )	|
+|1    | [What are all types of user defined functions?	]( )	|
+|1    | [What is collation? ]( )	|
+|1    | [What are all different types of collation sensitivity?	]( )	|
+|1    | [Advantages and Disadvantages of Stored Procedure?	]( )	|
+|1    | [What is Online Transaction Processing (OLTP)?	]( )	|
+|1    | [What is CLAUSE?	 ]( )	|
+|1    | [What is recursive stored procedure?	]( )	|
+|1    | [What is Union, minus and Interact commands?	]( )	|
+|1    | [What is an ALIAS command?	]( )	|
+|1    | [What is the difference between TRUNCATE and DROP statements?	]( )	|
+|1    | [What are aggregate and scalar functions?	]( )	|
+|1    | [What is an inner join in SQL?	]( )	|
+|1    | [What is an outer join in SQL?	]( )	|
+|1    | [What is full join in SQL?	]( )	|
+|1    | [What is left join in SQL Server?	]( )	|
+|1    | [What is a right join in SQL Server?	]( )	|
+|1    | [What is database engine in SQL Server?	]( )	|
+|1    | [What are the Analysis Services in SQL Server?	]( )	|
+|1    | [What are the integration services in SQL Server?	]( )	|
+|1    | [What are the data quality services in SQL Server?	]( )	|
+|1    | [What are the reporting services in SQL Server?	]( )	|
+|1    | [What are the master data services in SQL Server?	]( )	|
+|1    | [What is replication in SQL Server?	]( )	|
+|1    | [How to I select data from an SQL Server table?	]( )	|
+|1    | [What is a check in SQL?	]( )	|
+|1    | [What is a default in SQL?	 ]( )	|
+|1    | [How to create a database using SQL?	]( )	|
+|1    | [What is a constraint in SQL?	]( )	|
+|1    | [What is data Integrity?	]( )	|
+|1    | [What is Auto Increment? 	]( )	|
+|1    | [ What is the difference between Cluster and Non-Cluster Index?	]( )	|
+|1    | [ What is Datawarehouse?	]( )	|
+|1    | [How do I define constraints in SQL?	]( )	|
+|1    | [What is the meaning of Not Null in SQL?	]( )	|
+|1    | [How to alter a table schema in SQL Server?	]( )	|
+|1    | [How to create index in SQL Server? ]( )	|
+|1    | [How to get unique records in SQL?	]( )	|
+|1    | [How to create a date column in SQL Server?	]( )	|
+|1    | [What is ACID fundamental? What are transactions in SQL SERVER?	]( )	|
+|1    | [What is a candidate key?	 ]( )	|
+|1    | [How do GROUP and ORDER BY Differ?	]( )	|
+|1    | [Compare SQL & PL/SQL?	]( )	|
+|1    | [What is BCP? When is it used?	]( )	|
+|1    | [When is the UPDATE_STATISTICS command used?	]( )	|
+|1    | [Explain the steps needed to Create the scheduled job? ]( )	|
+|1    | [When are we going to use truncate and delete?	]( )	|
+|1    | [Explain correlated query work?	]( )	|
+|1    | [When is the Explicit Cursor Used? ]( )	|
+|1    | [Find What is Wrong in this Query? ]( )	|
+|1    | [Write the Syntax for STUFF function in an SQL server?	]( )	|
+|1    | [What are the three ways that Dynamic SQL can be executed? ]( )	|
+|1    | [In what version of SQL Server were synonyms released? How do synonyms work and explain its use cases? Synonyms were released with SQL Server 2005?	]( )	|
+|1    | [If you are a SQL Developer, how can you delete duplicate records in a table with no primary key?	]( )	|
+|1    | [Is it possible to import data directly from T-SQL commands without using SQL Server Integration Services? If so, what are the commands? ]( )	|
+|1    | [What is the native system stored procedure to execute a command against all databases? ]( )	|
+|1    | [How can a SQL Developer prevent T-SQL code from running on a production SQL Server?	]( )	|
+|1    | [How do you maintain database integrity where deletions from one table will automatically cause deletions in another table? ]( )	|
+|1    | [What port does SQL server run on? ]( )	|
+|1    | [What is the SQL CASE statement used for? Explain with an example? ]( )	|
+|1    | [What are the risks of storing a hibernate-managed object in cache? How do you overcome the problems? ]( )	|
+|1    | [When is the use of UPDATE_STATISTICS command?	]( )	|
+|1    | [What is SQL Profiler?	]( )	|
+|1    | [What command using Query Analyzer will give you the version of SQL server and operating system?	]( )	|
+|1    | [What does it mean to have QUOTED_IDENTIFIER ON? What are the implications of having it OFF?	]( )	|
+|1    | [What is the STUFF function and how does it differ from the REPLACE function in SQL?	]( )	|
+|1    | [How to get @@ERROR and @@ROWCOUNT at the same time? ]( )	|
+|1    | [What is de-normalization in SQL database administration? Give examples	? ]( )	|
+|1    | [Can you explain about buffer cash and log Cache in SQL Server? ]( )	|
+|1    | [Describe how to use Linked Server? ]( )	|
+|1    | [Explain how to send email from SQL database? ]( )	|
+|1    | [How to make remote connection in database? ]( )	|
+|1    | [What is the purpose of OPENXML clause SQL server stored procedure? ]( )	|
+|1    | [How to store pdf file in SQL Server? ]( )	|
+|1    | [Explain the use of keyword WITH ENCRYPTION. Create a Store Procedure with Encryption? ]( )	|
+|1    | [What is lock escalation?	]( )	|
+|1    | [What is Failover clustering overview? ]( )	|
+|1    | [What is Builtin/Administrator? ]( )	|
+|1    | [What XML support does the SQL server extend?	]( )	|
+|1    | [Difference between Primary Key and Foreign Key	? ]( )	|
+|1    | [SQL Query to find second highest salary of Employee?	]( )	|
+|1    | [SQL Query to find Max Salary from each department?	]( )	|
+|1    | [Write SQL Query to display the current date? ]( )	|
+|1    | [Write an SQL Query to check whether date passed to Query is the date of given format or not? ]( )	|
+|1    | [ Write an SQL Query to print the name of the distinct employee whose DOB is between 01/01/1960 to 31/12/1975? ]( )	|
+|1    | [Write an SQL Query find number of employees according to gender whose DOB is between 01/01/1960 to 31/12/1975? ]( )	|
+|1    | [Write an SQL Query to find an employee whose Salary is equal or greater than 10000? ]( )	|
+|1    | [ Write an SQL Query to find name of employee whose name Start with ‘M’? ]( )	|
+|1    | [find all Employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.? ]( )	|
+|1    | [ Write an SQL Query to find the year from date? ]( )	|
+|1    | [How can you create an empty table from an existing table? ]( )	|
+|1    | [How to fetch common records from two tables? ]( )	|
+|1    | [How to fetch alternate records from a table? ]( )	|
+|1    | [How to select unique records from a table? ]( )	|
+|1    | [What is the command used to fetch first 5 characters of the string? ]( )	|
+|1    | [Which operator is used in query for pattern matching? ]( )	|
+|1    | [Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them? ]( )	|
+|1    | [There is a table which contains two column Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above average students.	]( )	|
+|1    | [ How do you find all employees which are also manager? ]( )	|
+|1    | [You have a composite index of three columns, and you only provide the value of two columns in WHERE clause of a select query? Will Index be used for this operation?	]( )	|
+|1    | [What is the default join in SQL? Give an example query?	]( )	|
+|1    | [Describe all the joins with examples in SQL?	]( )	|
+|1    | [What is Union and Union All ? Explain the differences? ]( )	|
 
-Debugging is the process of finding and removing errors in a program. In this process, the program is thoroughly checked for errors. Then errors are pointed out and debugged.
 
-### Name different types errors which can occur during the execution of a program?
 
-There are three types of errors which can occur during the execution of a program.
 
-Syntax Errors
 
-Runtime Errors
 
-Logical errors
 
-### When a syntax error occurs?
 
-A syntax error occurs when the program violates one or more grammatical rules of the programming language. These errors are detected at compile time, i.e., when the translator (compiler or interpreter) attempts to translate the program.
 
-### When a runtime error occurs?
 
-A runtime error occurs when the computer is directed to perform an illegal operation by the program such as dividing a number by zero. Runtime errors are the only errors which are displayed immediately during the execution of a program. When these errors occur, the computer stops the execution of the programming and can display a diagnostic message that will help in locating the error.
 
-### When a logical error occurs?
 
-The logical error happens when a program implements a wrong logic. The translator (compiler or interpreter) does not report any error message for a logical error. These errors are the most difficult to locate.
 
-###  What is flowchart?
 
-The flowchart is a pictorial representation of a program which helps in understanding the flow of control and data in the algorithm.
 
-### Question: What is an algorithm?
 
-An algorithm is a finite set of steps which, if followed, accomplish a particular task. An algorithm must be clear, finite and effective.
 
-### Question: What do you understand by the term 'Maintain and update the Program'?
 
-Program maintenance is an ongoing process of upgrading the program to accommodate new hardware or software requirements and introducing minor or great improvements. Essentially, it is the expansion, updating and improvement of a program after its installation.
 
-### Question: What are variables?
 
-Variables are named memory locations (memory cells) which are used to store program’s input and its computational results during program execution. As the name suggests, the value of a variable may change during the program execution.
 
-### Question: What are reserved words?
 
-Reserved words or keywords are the words, which have predefined meanings. They have predefined uses and cannot be used or redefined for any other purpose in a programming language.
 
-Examples
 
-IF
+### SQL Server
+###  What is a database?
 
-ELSE
+A database is described as an organized way of collection of DATA. It is the collection of schemes, tables, queries, reports, views and other objects.
 
-THEN
+Syntax: CREATEDATABASEDatabaseName
 
-### Question: What are Loop?
+Example: CREATEDATABASE Student
 
-The loop is a structure which can repeat a set of statements up to a fixed number of times or until a certain criterion is satisfied.
-Name different types of loops
 
-Different types of loops are
 
-FOR…NEXT Loop
 
-WHILE…WEND Loop
 
-Nested Loop
-
-### Question: What is the use of FOR…NEXT Loop?
-
-When it is known in advance how many times the loop must be repeated the FOR…NEXT Loop is the most effective option. FOR…NEXT Loop is used to repeat a set of statements to a specific number of times.
-
-### Question: What is the use of WHILE…WEND Loop?
-
-The While loop keeps repeating an action until an associated condition becomes false. This is useful where the programmer does not know in advance how many times the loop will be executed.
-
-### Question: What is the use of Nested Loop?
-
-Loop within a loop is called nested loop.
-
-details%3Fid%3Din.togetu
-
-### Question: What is Documentation?
-
-Documentation is a detailed description of a program’s algorithm, design, coding method, testing, and proper usage. Documentation is valuable for the users who rely upon the program on a day-to-day basis, and for the programmer who may be called on to modify or update it.
-
-### Question: What is the working of a compiler?
-
-A compiler is a unique program that can process statements which are written in a particular programming language and can turn them into machine language or 'code'. This is the working of a complier.
-
-### Question: What do we call the binary form of a target language?
-
-The binary form of a target language is also called 'Binary Code'.
-
-### Question: What are constants?
-
-A constant is a quantity whose value cannot be changed. Unlike a variable, the value stored in a constant can’t be modified during program execution.
-
-Name two types of constants.
-
-Two types of constants are mentioned below:
-
-Numeric Constants
-
-String Constants
-
-### Question: Define Numeric constants.
-
-Numeric constants consist of integers, single precision, or double-precision numbers. Integer constants represent values that are counted and do not have a fractional part, e.g., +56, -678
-
-### Question: Define String constants.
-
-A string constant is a sequence of alphanumeric characters enclosed in double quotation marks. The maximum length of a string constant is 255 characters. For example, 'New York'
-
-### Question: Define Operators.
-
-Operators are symbols which are used to perform certain operations on a data. These include arithmetic, relational, logical, and assignment operators.
-
-### Question: What is an Array?
-
-An array is a collection of contiguous memory locations which can store data of the same type.
-
-
-### Question: What is subroutine?
-
-A subroutine is a self-contained set of statements that can be used from anywhere in a program. The subroutine performs its specific task and then returns control to the program that calls the subroutine.
-
-### Question: What is the purpose of arithmetic operators?
-
-Arithmetic operators are used to perform arithmetic operations on values (numbers).
-
-### Question: What is the purpose of relational operators?
-
-Relational operators are used to compare two values. These operators always evaluate to true or false. They always produce a non-zero  value (in most case 1).
-
-### Question: Define Low-level programming language.
-
-In computer programming, the programming language which provides no generalization from the computer’s 'instruction set architecture' is called a low-level programming language. It usually directs to machine code or assembly language.
-
-### Question: Define High-Level programming language.
-
-In computer programming, the programming language which provides high generalization from the computer’s 'instruction set architecture' is called a high-level programming language. To make the development of a program easier as compared to a low-level programming language, it may use the natural language elements.
-
-### Question: What is Machine code?
-
-Machine code is a language, which can be processed directly by a microprocessor without any need of the previous transformation. Programmers never write programs directly in machine code.
-
-Write a code in 32-bit x86 machine code to calculate the nth Fibonacci number.
-8B542408 83FA0077 06B80000 0000C383FA027706 B8010000 00C353BB 01000000B9010000 008D0419 83FA0376 078BD98BC84AEBF1 5BC3
-
-### Question: List some programming languages.
-
-Some programming languages are listed below:
-
-A+
-
-A++
-
-ACC
-
-ALF
-
-APL
-
-BASIC
-
-COBOL
-
-### Question: What is reliability?
-
-It is the proper working of software during a specific period of time. If a program doesn’t work properly during required period then it’s not reliable.
-
-### Question: What is modeling language?
-
-An artificial language that can be used to express information or knowledge or systems in an arrangement which is defined by a reliable number of rules. These rules are also used for interpretation of the meaning of components in the structure.
-
-### Question: Name some modeling languages.
-
-Names of some modeling languages are listed below:
-
-Business Process Modeling Notation
-
-EXPRESS
-
-Extended Enterprise Modeling Language
-
-Flowchart
-
-Fundamental Modeling Concepts
-
-Jackson Structured Programming
-
-Unified Modeling Language
-
-Alloy (specification language
-
-Systems Modeling Language
-
-### Question: What is software testing?
-
-Software testing a process in which software is tested under certain conditions to test the quality of a program. Testing a program is also required to check whether the software provides a good user experience or not.
-Tell a few reasons of software testing.
-
-A few reasons for software testing are mentioned below:
-
-Proper working
-
-Satisfying quality
-
-Fulfills the requirements of the user
-
-Can be implemented with the identical
-
-
-### Question: What is Beta version?
-
-The beta version of software is that version which is not ready for release and can be changed after the feedback from the users. Beta version comes after alpha version.
-
-### Question: What is the working of logical operators?
-
-Logical operators let us combine simple conditions to construct more complex ones (By conditions, we mean an expression evaluating to true or false).
-
-### Question: What is the purpose of assignment operator?
-
-The assignment operator is used to store a value, string or a computational result in a variable.
-
-### Question: What is analyzing a program?
-
-The process in which program is decomposed into sub-problems. Rather on concentrating the bigger problem as a whole, we try to solve each sub-problem separately. This leads to a simple solution. This technique is also known as top-down design.
-
-### Question: What is the working on an algorithm?
-
-Every algorithm performs at least following three steps:
-
-Get data
-
-Perform computation
-
-Display results
-
-### Question: How is the division by zero defined?
-
-Division by zero is undefined.
-
-### Question: What is the meaning of implementation of a program?
-
-Once the program has been tested thoroughly, it must be installed or put into operation at the site where it will be used. This is known as an implementation of the program.
-
-### Question: What are numeric variables?
-
-The variables which can store numeric values are called number variables. Numeric values include both floating point numbers and whole numbers.
-
-### Question: What are string variables?
-
-A string can be defined as a sequence of characters enclosed in double quotations. A string variable can, therefore, store a sequence of characters. The nature of character string is entirely different from the nature of numeric values.
-
-### Question: What are commands?
-
-Commands are executable instructions which are operated in the direct mode. They do not require a preceding line number
-
-### Question: What are statements?
-
-Statements are written as a program, and each statement is preceded by a line number
-
-### Question: What is the execution of a program?
-
-Execution of the program refers to carrying out the instruction of the program. The program must be loaded into memory (RAM) before execution.
-
-### Question: Define variable and constant.
-
-A variable can be defined as a meaningful name that is given to a data storage location in the computer memory that contains a value. Every variable associated with a data type determines what type of value can be stored in the variable, for example an integer, such as 100, a decimal, such as 30.05, or a character, such as 'A'. 
-
-You can declare variables by using the following syntax: 
-
-<Data_type> <variable_name> ; 
-
-A constant is similar to a variable except that the value, which you assign to a constant, cannot be changed, as in case of a variable. 
-
-Constants must be initialized at the same time they are declared. You can declare constants by using the following syntax: 
-
-const int interestRate = 10;
-
-### Question: What is a data type? How many types of data types are there in .NET ?
-
-A data type is a data storage format that can contain a specific type or range of values. Whenever you declare variables, each variable 
-must be assigned a specific data type. Some common data types include integers, floating point, characters, and strings. The following 
-are the two types of data types available in .NET: 
-
-Value type - Refers to the data type that contains the data. In other words, the exact value or the data is directly stored in this data type. It means that when you assign a value type variable to another variable, then it copies the value rather than copying the reference of that variable. When you create a value type variable, a single space in memory is allocated to store the value (stack memory). Primitive data types, such as int, float, and char are examples of value type variables. 
-
-Reference type - Refers to a data type that can access data by reference. Reference is a value or an address that accesses a particular data by address, which is stored elsewhere in memory (heap memory). You can say that reference is the physical address of data, where the data is stored in memory or in the storage device. Some built-in reference types variables in .Net are string, array, and object.
-
-### Question: Mention the two major categories that distinctly classify the variables of C# programs.
-
-Variables that are defined in a C# program belong to two major categories: value type and reference type. The variables that are based on value type contain a value that is either allocated on a stack or allocated in-line in a structure. The variables that are based on reference types store the memory address of a variable, which in turn stores the value and are allocated on the heap. The variables that are based on value types have their own copy of data and therefore operations done on one variable do not affect other variables. The reference-type variables reflect the changes made in the referring variables. 
-
-Predict the output of the following code segment: 
+or you can Create Database through Design/ Wizard form by right clicking on DATABASE option-New Database.
  
-int x = 42; 
-int y = 12;  
-int w;  
-object o;  
-o = x;  
-w = y * (int)o;  
-Console.WriteLine(w);  
- 
-/* The output of the code is 504. */
 
-### Question: Which statement is used to replace multiple if-else statements in code.
 
-In Visual Basic, the Select-Case statement is used to replace multiple If - Else statements and in C#, the switch-case statement is used to replace multiple if-else statements.
 
-### Question: What is the syntax to declare a namespace in .NET?
+###  What is DBMS?
 
-In .NET, the namespace keyword is used to declare a namespace in the code. 
-The syntax for declaring a namespace in C# is: 
+A Database Management System (DBMS) is a program that controls creation, maintenance and use of a database. DBMS can be termed as File Manager that manages data in a database rather than saving it in file systems.
 
-namespace UserNameSpace; 
+###  What is SQL?
 
-The syntax for declaring a namespace in VB is: 
+Structured Query Language, also known as SQL, is a programming language designed for managing Relational Database Management Systems (RDBMSs). SQL is an International Organization for Standardization (ISO) standard.
+In RDBMS all the data is stored in tables with each table consisting of rows and columns.
 
-Namespace UserNameSpace
+Example of Sql Server 2014 SQL format:
 
-### Question: Differentiate between the while and for loop in C#.
 
-The while and for loops are used to execute those units of code that need to be repeatedly executed, unless the result of the specified condition evaluates to false. The only difference between the two is in their syntax. The for loop is distinguished by setting an explicit loop variable.
 
-### Question: What is an identifier?
+Example of Oracle SQL format below:
 
-Identifiers are northing but names given to various entities uniquely identified in a program. The name of identifiers must differ in spelling or casing. For example, MyProg and myProg are two different identifiers. Programming languages, such as C# and Visual Basic, strictly restrict the programmers from using any keyword as identifiers. Programmers cannot develop a class whose name is public, because, public is a keyword used to specify the accessibility of data in programs.
+Create database:
 
-### Question: What does a break statement do in the switch statement?
+Output: Here we can see our database is created.
 
-The switch statement is a selection control statement that is used to handle multiple choices and transfer control to the case statements within its body. The following code snippet shows an example of the use of the switch statement in C#: 
+### What is PL/SQL?
 
-switch(choice) 
-{ 
- case 1: 
- console.WriteLine(First); 
- break; 
- case 2: 
- console.WriteLine(Second); 
- break; 
- default: 
- console.WriteLine(Wrong choice); 
- break; 
-} 
- 
-In switch statements, the break statement is used at the end of a case statement. The break statement is mandatory in C# and it avoids the fall through of one case statement to another.
+PL/SQL Control Statements in Oracle.
 
-### Question: Explain keywords with example.
+Control Statements,
 
-Keywords are those words that are reserved to be used for a specific task. These words cannot be used as identifiers. You cannot use a keyword to define the name of a variable or method. Keywords are used in programs to use the features of object-oriented programming. 
-For example, the abstract keyword is used to implement abstraction and the inherits keyword is used to implement inheritance by deriving subclasses in C# and Visual Basic, respectively. 
+•	Control statements are very important in PL/SQL.
 
-The new keyword is universally used in C# and Visual Basic to implement encapsulation by creating objects.
+•	Control Statements are elements in a program that control the flow of program execution.
 
-### Question: Briefly explain the characteristics of value-type variables that are supported in the C# programming language.
+•	The syntax of control statements are similar to regular English and are very similar to choices that we make every day.
 
-The variables that are based on value types directly contain values. The characteristics of value-type variables that are supported in C# programming language are as follows: 
+•	Branching statements are as follows:
 
-1.All value-type variables derive implicitly from the System.ValueTypeclass 
+o	If statement
 
-2.You cannot derive any new type from a value type 
 
-3.Value types have an implicit default constructor that initializes the default value of that type 
+o If - THEN - ELSE o Nested IF
 
-4.The value type consists of two main categories: 
+o	Branching with logical connectivity
 
-i.Structs - Summarizes small groups of related variables. 
+o	While
 
-ii.Enumerations - Consists of a set of named constants.
+o	For Loop
 
-Give the syntax of using the while loop in a C# program.
+### What is the difference between SQL and PL/SQL?
 
-The syntax of using the while loop in C# is: 
+SQL: It is referred as Structured Query Language.
 
-int i = 0; 
+•	Only simple IF / Else statements.
 
-while(i < 5) //condition 
+•	Through SQL you can interact with database through ADO.NET
 
-{ 
+•	In SQL you can execute a line of code
 
-Console.WriteLine({ 0 }, i); //statements 
+•	It can run only on windows
 
-i++; 
+PL/SQL: It is referred as Procedure Language / Structure Query Language:
 
-} 
+•	In PL/SQL you can execute a block of code not a single line of code.
 
+•	Deep control statements
 
-o/p: 0 1 2 3 4
+•	It can run in UNIX also.
 
-### Question: What is a parameter? Explain the new types of parameters introduced in C# 4.0.
+•	PL/SQL language includes object oriented programming techniques such as encapsulation, function overloading, and information hiding (all but inheritance).
 
-A parameter is a special kind of variable, which is used in a function to provide a piece of information or input to a caller function. These inputs are called arguments. In C#, the different types of parameters are as follows: 
+### What is RDBMS?
 
-1.Value type - Refers that you do not need to provide any keyword with a parameter. 
+RDBMS: It is referred as Relation Database Management Systems (RDBMS). RDBMS possesses a set of the below given characteristics:
 
-2.Reference type - Refers that you need to mention the ref keyword with a parameter. 
+• Write-intensive operations: The RDBMS is frequently written to and is often used in transaction-oriented applications.
 
-3.Output type - Refers that you need to mention the out keyword with a parameter. 
+• Data in flux or historical data: The RDBMS is designed to handle frequently changing data. Alternatively, RDBMS can also store vast 
+amounts of historical data, which can later be analyzed or "mined".
 
-4.Optional parameter - Refers to the new parameter introduced in C# 4.0. It allows you to neglect the parameters that have some 
+• Application-specific schema: The RDBMS is configured on a per-application basis and a unique schema exists to support each application.
 
-predefined default values. The example of optional parameter is as follows: 
- - public int Sum(int a, int b, int c = 0, int d = 0); /* c and d is optional */ 
- - Sum(10, 20); //10 + 20 + 0 + 0 
- - Sum(10, 20, 30); //10 + 20 + 30 + 0 
- - Sum(10, 20, 30, 40); //10 + 20 + 30 + 40 
- 
-5.    Named parameter - Refers to the new parameter introduced in C# 4.0. Now you can provide arguments by name rather than position. 
+• Complex data models. The relational nature of the RDBMS makes it suitable for handling sophisticated, complex data models that require many tables, foreign key values, complex join operations, and so on.
 
-The example of the named parameter is as follows: - public void CreateAccount(string name, string address = unknown, int age = 0); 
+• Data integrity: The RDBMS features many components designed to ensure data integrity. This includes rollback operations, referential integrity, and transaction-oriented operations.
 
-- CreateAccount(KANSIRIS, age: 30); 
+### What is a database table?
 
-- CreateAccount(address: India, name: KANSIRIS);
+Database table: Table contains records in the form of rows and columns. A permanent table is created in the database you specify and remains in the database permanently, until you delete it.
 
-### Question: Briefly explain the characteristics of reference-type variables that are supported in the C# programming language.
+Syntax:
 
-The variables that are based on reference types store references to the actual data. The keywords that are used to declare reference types are: 
+1.	Create table TableName (ID INT, NAME VARCHAR(30) )
 
-1.Class - Refers to the primary building block for the programs, which is used to encapsulate variables and methods into a single unit. 
+2.	Drop syntax: drop table TableName
 
-2.Interface - Contains only the signatures of methods, properties, events, or indexers. 
+3.	Select Syntax: Select * from TableName
 
-3.Delegate - Refers to a reference type that is used to encapsulate a named or anonymous method.
+### What is a query?
 
-### Question: What are the different types of literals?
+A DB query is a code written in order to get the information back from the database. Query can be designed in such a way that it matched with our expectation of the result set. Simply, a question to the Database.
 
-A literal is a textual representation of a particular value of a type. 
+### What is subquery?
 
-The different types of literals in Visual Basic are: 
+A subquery is a query within another query. The outer query is called as main query, and inner query is called subquery. SubQuery is always executed first, and the result of subquery is passed on to the main query.
 
-1.Boolean Literals - Refers to the True and False literals that map to the true and false state, respectively. 
+### What are the types of subquery?
 
-2.Integer Literals - Refers to literals that can be decimal (base 10), hexadecimal (base 16), or octal (base 8). 
+There are two types of subquery – Correlated and Non-Correlated.
 
-3.Floating-Point Literals - Refers to an integer literal followed by an optional decimal point By default, a floating-point literal is 
-of type Double. 
+A correlated subquery cannot be considered as independent query, but it can refer the column in a table listed in the FROM the list of the main query.
 
-4.String Literals - Refers to a sequence of zero or more Unicode characters beginning and ending with an ASCII double-quote character. 
+A Non-Correlated sub query can be considered as independent query and the output of subquery are substituted in the main query.
 
-5.Character Literals - Represents a single Unicode character of the Char type. 
+### How to create a table in SQL?
 
-6.Date Literals - Represents time expressed as a value of the Date type. 
+SQL provides an organized way for table creation.
 
-7.Nothing - Refers to a literal that does not have a type and is convertible to all types in the type system. 
+Syntax:  Create table TableName (columnName1 datatype, columnName2 datatype )
 
+The following is an example of creating a simple table-
 
-The different types of literals in C# are: 
+create table Info (Name varchar(20),  BirthDate date,Phone nvarchar(12),	City varchar(20))
 
-1.Boolean literals - Refers to the True and False literals that map to the true and false states, respectively. 
+### What are tables and Fields?
 
-2.Integer literals - Refers to literals that are used to write values of types int, uint, long, and ulong. 
+A table is a set of data that are organized in a model with Columns and Rows. Columns can be categorized as vertical, and Rows are horizontal. A table has specified number of column called fields but can have any number of rows which is called record.
 
-3.Real literals - Refers to literals that are used to write values of types float, double, and decimal. 
+### How to delete a table in SQL Server?
 
-4.Character literals - Represents a single character that usually consists of a character in quotes, such as 'a'. 
+Delete Data Record from Database Table and deleting an existing table by the following method:
 
-5.String literals - Refers to string literals, which can be of two types in C#: 
+Syntax: To delete all table records of a table:
 
-i. A regular string literal consists of zero or more characters enclosed in double quotes, such as hello. 
+Delete TableName
+	DELETE info
 
-ii. A verbatim string literal consists of the @ character followed by a double-quote character, such as @hello. 
 
-6.The Null literal - Represents the null-type.
+### How to update a database table using SQL?
 
-### Question: What is the main difference between sub-procedure and function?
+To update an existing Table we use SQL Command UPDATE: It will update the records as per user defined query/need.
 
-The sub-procedure is a block of multiple visual basic statements within Sub and End Sub statements. It is used to perform certain tasks, such as changing properties of objects, receiving or processing data, and displaying an output. You can define a sub-procedure anywhere in a program, such as in modules, structures, and classes. 
+Syntax:
 
-We can also provide arguments in a sub-procedure; however, it does not return a new value.The function is also a set of statements within the Function and End Function statements.It is similar to sub - procedure and performs the same task.The main difference between a function and a sub - procedure is that sub - procedures do not return a value while functions do.
+Update TableName SET ColumnName = NewData where Condition
 
-Determine the output of the code snippet.
+Update info Set City = 'Baroda' where id = 2
 
-int a = 29; 
 
-a--; 
+### What is a database relationship?
 
-a -= ++a; 
+Relationships are created by linking the column in one table with the column in another table. There are four different types of relationship that can be created.
 
-Console.WriteLine(The value of a is: { 0}, a); 
+The relationships are listed below:
 
-o/p: -1
+1.	One to One Relationship
 
-### Question: Differentiate between Boxing and Unboxing.
+2.	Many to One relationship
 
-When a value type is converted to an object type, the process is known as boxing; whereas, when an object type is converted to a value type, the process is known as unboxing. 
+3.	Many to Many relationship
 
+4.	One to One relationship
 
-Boxing and unboxing enable value types to be treated as objects. Boxing a value type packages it inside an instance of the Object reference type. This allows the value type to be stored on the garbage collected heap. Unboxing extracts the value type from the object. In this example, the integer variable iis  boxed and assigned to object obj. 
 
-Boxing Example:
+One to Many & Many to One Relationship:
 
-public void function1()
+For a One to many relationships, a single column value in one table has one or more dependent column values in another table. Look at 
+the following diagram:
 
-{int i =111; object o = i;//implicit unboxing
+Many to Many Relationship:
 
-console.writeline(o); }
+The third table acts as a bridge between the tables that want to establish a Many to Many relationship. The bridge table stores the common information between Many to Many relationship tables. Have a look at the following diagram:
 
-Unboxing Example:
+### What is a primary key of a database?
 
-public void function1()
+Primary key:-
 
-{object o =111;
+A table column with this constraint is called the key column for the table. This constraint helps the table to make sure that the value is not repeated and also that there are no null entries.
 
-int i = (int)o;//explicit unboxing
 
-console.writeline(i);   }
 
-# CSharp (C#) 
+Now this column does not allow null values and duplicate values. You can try inserting values to violate these conditions and see what happens. A table can have only one Primary key. Multiple columns can participate on the primary key.
 
-### Question: What is C#?
+Example:
 
-C# is the best language for writing Microsoft .NET applications. C# provides the rapid application development found in Visual Basic with the power of C++. Its syntax is similar to C++ syntax and meets 100% of the requirements of OOPs like the following:
+### What is a unique key?
 
-• Abstraction
+A Unique key constraint uniquely identified each record in the database. This provides uniqueness for the column or set of columns.  A Primary key constraint has automatic unique constraint defined on it. But not, in the case of Unique Key. There can be many unique constraint defined per table, but only one Primary key constraint defined per table.
 
-• Encapsulation
+### What is a foreign key of a database?
 
-• Polymorphism
+To define the relationship between two tables (one is called parent and the other one is the child table) connected by columns, a foreign key constraint is used. In this constraint the values of the child table must appear in the parent table, which means that for a foreign key, one table should point to a Primary Key in another table. A table can have multiple foreign keys and each foreign key can have a different referenced table.
 
-• Inheritance
+Example: To understand the foreign key clearly let's assume the following two tables:
 
-### Question: What is an Object?
+CUSTOMER {Cust_ID, Cust_Name, Age, ContactNo, Gender, Address}
+VENDOR {Vend_ID, Vend_Name, Cust_ID}
 
-According to MSDN, "a class or struct definition is like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. A program may create many objects of the same class. Objects are also called instances, and they can be stored in either a named variable or in an array or collection. Client code is the code that uses these variables to call the methods and access the public properties of the object. In an object-oriented language such as C#, a typical program consists of multiple objects interacting dynamically".
+Example: Foreign Key Constraint while using CREATE TABLE statement.
 
-### Question: What is the difference between a struct and a class in C#?
+Syntax:
+CREATE TABLE table_name(Col1 datatype NOT NULL,	Col2 datatype NOT NULL, Col3 datatype NOT NULL,	CONSTRAINT FK_Column FOREIGN KEY(Col1, Col2, Col3) REFERENCES parent _table(Col1, Col2, Col3)	);
 
-Class and Struct both are the user defined data type but have some major difference:
+AT SINGLE COLUMN LEVEL
 
-Struct
+### What is database normalization?
 
-• The struct is value type in C# and it inherits from System.Value Type.
+Database normalization is the process of organizing the fields and tables of a relational database to minimize redundancy and dependency. Normalization usually involves dividing large tables into smaller (and less redundant) tables and defining relationships among them. Normalization is a bottom-up technique for database design.
 
-• Struct is usually used for smaller amounts of data.
+The evolution of Normalization theories is illustrated below:
 
-• Struct can’t be inherited to other type.
+•	First Normal Form (1NF)
 
-• A structure can't be abstract.
+•	Second Normal Form (2NF)
 
-• No need to create object by new keyword.
+•	Third Normal Form (3NF)
 
-• Do not have permission to create any default constructor.
+•	Boyce-Codd Normal Form (BCNF)
 
-Class
+•	4th Normal Form
 
-• The class is reference type in C# and it inherits from the System.Object Type.
+•	5th Normal Form
 
-• Classes are usually used for large amounts of data.
+•	6th Normal Form
 
-• Classes can be inherited to other class.
+### What are database normalization forms?
 
-• A class can be abstract type.
+Normalization is the process of organizing data into a related table. it also eliminates redundancy and increases the integrity which improves performance of the query. To normalize a database, we divide the database into tables and establish relationships between the tables.
 
-• We can’t use an object of a class with using new keyword.
 
-• We can create a default constructor.
+•	First Normal Form (1st NF)
 
-### Question: What is the difference between Interface and Abstract Class?
-### What is an Abstract Class?
+•	Second Normal Form (2nd NF)
 
-An abstract class is a special kind of class that cannot be instantiated. So the question is why we need a class that cannot be instantiated? An abstract class is only to be sub-classed (inherited from). In other words, it only allows other classes to inherit from it but cannot be instantiated. The advantage is that it enforces certain hierarchies for all the subclasses. In simple words, it is a kind of contract that forces all the subclasses to carry on the same hierarchies or standards.
+•	Third Normal Form (3rd NF)
 
-### What is an Interface?
+•	Boyce-Codd Normal Form (BCNF)
 
-An interface contains only the signatures of methods, properties, events or indexers. A class or struct that implements the interface must implement the members of the interface that are specified in the interface definition. In the following example, class ImplementationClass must implement a method named SampleMethod that has no parameters and returns void.
+•	Fourth Normal Form (4th NF)
 
-An interface is not a class. It is an entity that is defined by the word Interface. An interface has no implementation; it only has the signature or in other words, just the definition of the methods without the body. As one of the similarities to Abstract class, it is a contract that is used to define hierarchies for all subclasses or it defines specific set of methods and their arguments. The main difference between them is that a class can implement more than one interface but can only inherit from one abstract class. Since C# doesn't support multiple inheritance, interfaces are used to implement multiple inheritance.
+•	Fifth Normal Form (5th NF)
 
-When we create an interface, we are basically creating a set of methods without any implementation that must be overridden by the implemented classes. The advantage is that it provides a way for a class to be a part of two classes: one from inheritance hierarchy and one from the interface.
+First Normal Form (1NF):
 
-When we create an abstract class, we are creating a base class that might have one or more completed methods but at least one or more methods are left uncompleted and declared abstract. If all the methods of an abstract class are uncompleted then it is same as an interface. The purpose of an abstract class is to provide a base class definition for how a set of derived classes will work and then allow the programmers to fill the implementation in the derived classes.
+This should remove all the duplicate columns from the table. Creation of tables for the related data and identification of unique columns.
 
-  interface ISampleInterface
-    {        void SampleMethod();     }
-    class ImplementationClass : ISampleInterface
-    {        // Explicit interface member implementation: 
-        void ISampleInterface.SampleMethod()
-        {            // Method implementation.
-        }
-        static void Main()
-        {            // Declare an interface instance.
-            ISampleInterface obj = new ImplementationClass();
-            // Call the member.
-            obj.SampleMethod();
-        }    }
+Second Normal Form (2NF):
 
+Meeting all requirements of the first normal form. Placing the subsets of data in separate tables and Creation of relationships between the tables using primary keys.
+Third Normal Form (3NF):
 
+This should meet all requirements of 2NF. Removing the columns which are not dependent on primary key constraints.
 
-Feature
-Interface
-Abstract class
-Multiple inheritance
-A class may inherit several interfaces.
-A class may inherit only one abstract class.
-Default implementation
-An interface cannot provide any code, just the signature.
-An abstract class can provide complete, default code and/or just the details that have to be overridden.
-Access Modifiers
-An interface cannot have access modifiers for the subs, functions, properties etc everything is assumed as public
-An abstract class can contain access modifiers for the subs, functions, properties
-Core VS Peripheral
-Interfaces are used to define the peripheral abilities of a class. In other words both Human and Vehicle can inherit from a IMovable interface.
-An abstract class defines the core identity of a class and there it is used for objects of the same type.
-Homogeneity
-If various implementations only share method signatures then it is better to use Interfaces.
-If various implementations are of the same kind and use common behaviour or status then abstract class is better to use.
-Speed
-Requires more time to find the actual method in the corresponding classes.
-Fast
-Adding functionality (Versioning)
-If we add a new method to an Interface then we have to track down all the implementations of the interface and define implementation for the new method.
-If we add a new method to an abstract class then we have the option of providing default implementation and therefore all the existing code might work properly.
-Fields and Constants
-No fields can be defined in interfaces
-An abstract class can have fields and constraints defined
+Fourth Normal Form (3NF):
 
+Meeting all the requirements of third normal form and it should not have multi- valued dependencies.
 
+### What is Denormalization.
 
-### Question: What is enum in C#?
-    
- An enum is a value type with a set of related named constants often referred to as an enumerator list. The enum keyword is used to declare an enumeration. It is a primitive data type, which is user defined.
-    
+DeNormalization is a technique used to access the data from higher to lower normal forms of database. It is also process of introducing redundancy into a table by incorporating data from the related tables. 
 
-An enum type can be an integer (float, int, byte, double etc.). But if you used beside int it has to be cast.
-    
+### What is a stored procedure?
 
-An enum is used to create numeric constants in .NET framework. All the members of enum are of enum type. There must be a numeric value for each enum type.
+A Stored Procedure is a collection or a group of T-SQL statements. Stored Procedures are a precompiled set of one or more statements that are stored together in the database. They reduce the network load because of the precompilation. We can create a Stored Procedure using the "Create proc" statement.
 
-The default underlying type of the enumeration element is int. By default, the first enumerator has the value 0, and the value of each successive enumerator is increased by 1.
+### Why we use Stored Procedure
 
-enum Dow {Sat, Sun, Mon, Tue, Wed, Thu, Fri};
+There are several reasons to use a Stored Procedure. They are a network load reducer and decrease execution time because they are precompiled. The most important use of a Stored Procedure is for security purposes. They can restrict SQL Injection. We can avoid SQL injection by use of a Stored Procedure.
 
-Some points about enum-
+### How to create a Stored Procedure
 
-• Enums are enumerated data type in c#.
+CREATE PROCEDURE spEmployee   AS
 
-• Enums are not for end-user, they are meant for developers.
+BEGIN
 
-• Enums are strongly typed constant. They are strongly typed, i.e. an enum of one type may not be implicitly assigned to an enum of 
-another type even though the underlying value of their members is the same.
+SELECT EmployeeId, Name, Gender, DepartmentName  FROM tblEmployees  INNER JOIN tblDepartments ON tblEmployees.EmployeeDepartmentId = tblDepartments.DepartmentId
 
-• Enumerations (enums) make your code much more readable and understandable.
+END
 
-• Enum values are fixed. Enum can be displayed as a string and processed as an integer.
+Advantages of using a Stored Procedure in SQL Server
 
-• The default type is int, and the approved types are byte, sbyte, short, ushort, uint, long, and ulong.
+•	It is very easy to maintain a Stored Procedure and they are re-usable.
 
-• Every enum type automatically derives from System.Enum and thus we can use System.Enum methods on enums.
+•	The Stored Procedure retains the state of the execution plans.
 
-• Enums are value types and are created on the stack and not on the heap.
+•	Stored Procedures can be encrypted and that also prevents SQL Injection Attacks
 
-### Question: What is the difference between “continue” and “break” statements in C#?
+###  What is a function in SQL Server?
 
-Using break statement, you can 'jump out of a loop' whereas by using continue statement, you can 'jump over one iteration' and then resume your loop execution.
+A function is a sequence of statements that accepts input, processes them to perform a specific task and provides the output. Functions must have a name but the function name can never start with a special character such as @, $, #, and so on.
 
-Break Statement Example-
+Types of function
 
-using System;
+•	Pre-Defined Function
 
-using System.Collections;
+•	User-Defined Function
 
-using System.Linq;
+User-defined Function:
 
-using System.Text;
+In a user-defined function we write our logic according to our needs. The main advantage of a user-defined function is that we are not just limited to pre-defined functions. We can write our own functions for our specific needs or to simplify complex SQL code. The return type of a SQL function is either a scalar value or a table.
 
-namespace break_example 
+Creation of a function
 
-{
-{
-Class brk_stmt 
-{
+Create function ss(@id int)
 
-public static void main(String[] args) {
+returns table  as return select * from item where itemId = @id
 
-for (int i = 0; i <= 5; i++) {
+Execution of a Function
 
-if (i == 4) {continue;  }
-
-Console.ReadLine(“The number is” + i); 
-
-}
-}
-}
-}
-
-Output:
-The number is 0;
-The number is 1;
-The number is 2;
-The number is 3;
-
-Continue Statement Example
-
-using System;
-
-using System.Collections;
-
-using System.Linq;
-
-using System.Text;
-
-namespace continue_example
-
-{
-Class cntnu_stmt
-
-{
-public static void main(String[]
-
-{
-for (int i = 0; i <= 5; i++)
-
-{
-
-if (i == 4)
-
-{
-
-continue; 
-
-}
-
-Console.ReadLine(“The number is” +i); 
-
-} 
-
-}
-} 
-}
-
-Output:
-
-The number is 1;
-The number is 2;
-The number is 3;
-The number is 5;
-
-### Question: What is the difference between constant and readonly in c#?
-
-Constants perform the same tasks as read-only variables with some differences. The differences between constants and read-only are 
-
-Constants: 
-
-1.Constants are dealt with at compile-time. 
-
-2.Constants supports value-type variables. 
-
-3.Constants should be used when it is very unlikely that the value will ever change. 
-
-Read-only: 
-
-1.Read-only variables are evaluated at runtime. 
-
-2.Read-only variables can hold reference type variables. 
-
-3.Read-only variables should be used when run-time calculation is required.
-
-See the example
-
-We have a Test Class in which we have two variables one is readonly and another is constant.
-
-
-class Test { 
-
-readonly int read = 10;const int cons = 10;
-
-
-public Test() { read = 100;  cons = 100; }
-
-
-public void Check() {  Console.WriteLine("Read only : {0}", read);
-
-
-Console.WriteLine("const : {0}", cons);
-
-
-}
-}
-
-Here I was trying to change the value of both the variables in constructor but when I am trying to change the constant it gives an error to change their value in that block which have to call at run time.
-
-
-
-
-
-So finally remove that line of code from class and call this Check() function like the following code snippet:
-
-class Program {
-
-static void Main(string[] args) {
-
-Test obj = new Test();   obj.Check();   Console.ReadLine();
-
-}
-}
-
-class Test {
-
-readonly int read = 10;
-
-const int cons = 10;
-
-public Test() { read = 100;}
-
-public void Check() {
-
-Console.WriteLine("Read only : {0}", read); 
-
-Console.WriteLine("const : {0}", cons);
-
-}
-}
+select * from ss(1)
 
 Output:
 
 
+### What are the different types of functions in SQL Server?
 
+A function must return a result. So that is also called a function that returns a result or a value. When we create it a function must specify a value type that will return a value.
 
-### Question: What is the difference between ref and out keywords?
+•	Functions only work with select statements.
 
-In C Sharp (C#) we can have three types of parameters in a function. The parameters can be in parameter (which is not returned back to the caller of the function), out parameter and ref parameter. We have lots of differences in both of them.
-Both ref and out are treated differently at run time and they are treated the same at compiler
-properties are not variables, therefore it cannot be passed as an out or ref parameter
+•	Functions can be used anywhere in SQL, such as AVG, COUNT, SUM, MIN, DATE and so on with select statements.
 
-Ref
+•	Functions compile every time.
 
-The parameter or argument must be initialization first before it is passed to ref
+•	Functions must return a value or result.
 
-A called method is required to assign or initialize a value of a parameter (which is passed to an out)before returning to the calling method
+•	Functions only work with input parameters.
 
-Passing a parameter value by ref is useful when the called method is also needed to modify the pass parameter
+•	Try and catch statements are not used in functions.
 
+Function Types:
 
-A parameter value must be initialized within calling method before its use
+The following is the function list in SQL Server databases.
 
-When we use ref data can be passed bidirectionally
+SQL Server contains the following aggregates functions:
+ 
+ ### What is a trigger in SQL Server?
 
+"A Trigger is a Database object just like a stored procedure or we can say it is a special kind of Stored Procedure which fires when an event occurs in a database.".
 
-Out
+It is a database object that is bound to a table and is executed automatically. We cannot explicitly call any trigger. Triggers provide data integrity and used to access and check data before and after modification using DDL or DML query.
 
-It is compulsory to initialize a parameter or argument before it is passed to an out
+There are two types of Triggers:
 
-It is not required to assign or initialize the value of a parameter(which is passed by ref ) before returning to the calling method 
+1.	DDL Trigger
 
-Declaring a parameter to an out method is when multiple values need to be returned for function or method
+2.	DML trigger
 
-It is not compulsory to initialize a parameter value before using it in a calling method
+DDL Triggers: They fire in response to DDL (Data Definition Language) command events that start with Create, Alter and Drop like Create_table, Create_view, drop_table, Drop_view and Alter_table.
 
-When we use out data is passed only in unidirectional way (from the called method caller )
+Code of DDL Triggers:
 
-### Question: Can “this” be used within a static method?
+create trigger saftey on database for
 
-We can't use this in static method because keyword 'this' returns a reference to the current instance of the class containing it. 
+create_table, alter_table, drop_table
+as	print 'you can not create ,drop and alter table in this database'    rollback;
 
-Static methods (or any static member) do not belong to a particular instance. They exist without creating an instance of the class and call with the name of a class not by instance so we can’t use this keyword in the body of static Methods, but in case of Extension Methods we can use it the functions parameters. Let’s have a look on “this” keyword.
+Output:
 
-The "this" keyword is a special type of reference variable that is implicitly defined within each constructor and non-static method as a first parameter of the type class in which it is defined. For example, consider the following class written in C#.
+DML Triggers: They fire in response to DML (Data Manipulation Language) command events that start with Insert, Update and Delete like insert_table, Update_view and Delete_table.
 
-Let me explain you with a simple practical demonstration.
+Code of DML Trigger:
 
-using System;
+create trigger deep on emp  for insert, update, delete 	as	print 'you can notinsert,update and delete this table I' 	rollback;
 
-using System.Collections.Generic;
+Output:
 
-using System.Linq;
+When we insert, update or delete in a table in a database then the following message appears:
+ 
+### Why do we need triggers?
 
-using System.Text;
+### Why and when to use a trigger:
 
-namespace this_example
-{
-    class Program
-    {
-        public class Demo
-        {
-            int age;
-            string name;
+We use a trigger when we want some event to happen automatically on certain desirable scenarios.
+You have a table that changes frequently, now you want to know how many times and when these changes take place. In that case you can create a trigger that will insert the desired data into another table whenever any change in the main table occurs.
 
-            public Demo(int age, string name)
-            {
-                age = age;
-                name = name;
-            }
+In SQL Server we can create the following 3 types of triggers:
 
-            public void Show()
-            {
-                Console.WriteLine("Your age is :" + age.ToString());
-                Console.WriteLine("Your name is : " + name);
-            }        }
-        static void Main(string[] args)
-        {
-            int _age;
-            string _name;
+•	Data Definition Language (DDL) triggers
 
-            Console.WriteLine("Enter your age : " );
-            _age=Int32.Parse(Console.ReadLine());
+•	Data Manipulation Language (DML) triggers
 
-            Console.WriteLine("Enter your name : ");
-            _name=Console.ReadLine();
+•	Logon triggers
 
-            Demo obj = new Demo(_age, _name);
+Example:
 
-            obj.Show();
-            Console.ReadLine();
-         }    }}
+CREATE TRIGGER trgAfterInsert ON[dbo].[Employee_Test]
 
-Output of the above program will be:
+FOR INSERT
 
+AS
 
+declare@ empid int; declare@ empname varchar(100);
 
-See your not getting any value. Because in the program the local data members age, name have precedence over instance members. 
+declare@ empsal decimal(10, 2);
 
-Note the program will give a warning not error (Assignment made to some variable; did you mean to assign something else?)
+declare@ audit_action varchar(100);
 
-We have to use this keyword to refer to the instance members.
+select@ empid = i.Emp_ID from inserted i;
 
-Now I do a slight change in the program using this keyword.
+select@ empname = i.Emp_Name from inserted i;
 
-using System;
+select@ empsal = i.Emp_Sal from inserted i; 
 
-using System.Collections.Generic;
+set@ audit_action = 'Inserted Record -- After Insert Trigger.'; 	
 
-using System.Linq;
+insert into Employee_Test_Audit	(Emp_ID, Emp_Name, Emp_Sal, Audit_Action, Audit_Timestamp)	values(@empid, @empname, @empsal, @audit_action, getdate()); 	
 
-using System.Text;
+PRINT 'AFTER INSERT trigger fired.' 	
 
-namespace this_example
-{
-    class Program
-    {
-        public class Demo
-        {
-            int age;
-            string name;
-
-            public Demo(int age, string name)
-            {                // Have made change here included this keyword
-                this.age = age;                this.name = name;             }
-            public void Show()
-            {                Console.WriteLine("Your age is :" + age.ToString());
-                Console.WriteLine("Your name is : " + name);   }        }
-
-        static void Main(string[] args)
-        {            int _age;   string _name;
-
-            Console.WriteLine("Enter your age : " );
-            _age=Int32.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter your name : ");
-            _name=Console.ReadLine();
-
-            Demo obj = new Demo(_age, _name);
-
-            obj.Show();
-            Console.ReadLine();
-        }    } }
-
-See the output. 
-
-
-
-I think now this keyword would be clear to you. 
-
-The program is not complete implementation of this keyword but it tries to make you explain how it works and when to use.
-
-### Question: Define Property in C# .net?
-
-Properties are members that provide a flexible mechanism to read, write or compute the values of private fields, in other words by the property we can access private fields. In other words we can say that a property is a return type function/method with one parameter or without a parameter. These are always public data members. It uses methods to access and assign values to private fields called accessors.
-
-### Question: Now question is what are accessors?
-
-The get and set portions or blocks of a property are called accessors. These are useful to restrict the accessibility of a property, the set accessor specifies that we can assign a value to a private field in a property and without the set accessor property it is like a read-only field. By the get accessor we can access the value of the private field, in other words it returns a single value. A Get accessor specifies that we can access the value of a field publicly.
-
-We have the three types of properties
-
-•	Read/Write.
-
-•	ReadOnly.
-
-•	WriteOnly
-
-### Question: What is extension method in c# and how to use them?
-
-Extension methods enable you to add methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. An extension method is a special kind of static method, but they are called as if they were instance methods on the extended type.
-
-### Question : How to use extension methods?
-
-An extension method is a static method of a static class, where the "this" modifier is applied to the first parameter. The type of the first parameter will be the type that is extended.
-
-Extension methods are only in scope when you explicitly import the namespace into your source code with a using directive.
-Like: suppose we have a class like below:
-
-public class Class1 {
-
-public string Display() {
-
-return ("I m in Display");}
-
-public string Print() {
-
-return ("I m in Print");}}
-
-Now we need to extend the definition of this class so m going to create a static class to create an extinction method like:
-
-public static class XX {
-
-public static void NewMethod(this Class1 ob) {
-
-Console.WriteLine("Hello I m extended method");}}
-
-Here I just create a method that name is NewMethod with a parameter using this to define which type of data I need to be extend, now 
-let’s see how to use this function.
-
-
-
-
-Code will look like that:
-
-class Program {
-
-static void Main(string[] args) {
-
-Class1 ob = new Class1();  ob.Display(); ob.Print(); ob.NewMethod();  Console.ReadKey();
-}
-}
-
-
-Output will be:
-
-
-
-### Question: What is the difference between string and StringBuilder in c#?
-
-StringBuilder and string both use to store string value but both have many differences on the bases of instance creation and also for 
-performance:
-
-String: 
-
-String is an immutable object. Immutable like when we create string object in code so we cannot modify or change that object in any 
-operations like insert new value, replace or append any value with existing value in string object, when we have to do some operations 
-to change string simply it will dispose the old value of string object and it will create new instance in memory for hold the new value 
-in string object like:
-
-class program{static void main(string[] args)
-
-{string val = “hello”;
-
-//create a new string instance instead of changing the old one
-
-val += “am”;
-
-val +=”nithin pandit”;
-
-console.writeline(val);
-
-}
-}
-
-Note:
-
-• It’s an immutable object that holds string value.
-
-• Performance wise string is slow because its’ create a new instance to override or change the previous value.
-
-• String belongs to System namespace.
-
-StringBuilder:
-
-System.Text.Stringbuilder is mutable object which also hold the string value, mutable means once we create a System.Text.Stringbuilder 
-object we can use this object for any operation like insert value in existing string with insert functions also replace or append 
-without creating new instance of System.Text.Stringbuilder for every time so it’s use the previous object so it’s work fast as compare 
-than System.String. Let’s have an example to understand System.Text.Stringbuilder like:
-
-class program
-
-{
-static void main(string[]args)
-{
-
-stringbuilder val =new stringbuilder(“”);
-
-val.append(“hello);
-
-val.append(“am nitin pandit:)”);
-
-console.writeline(val);}}
-
-Note:
-
-• StringBuilder is a mutable object.
-
-• Performance wise StringBuilder is very fast because it will use same instance of StringBuilder object to perform any operation like insert value in existing string.
-
-• StringBuilder belongs to System.Text.Stringbuilder namespace.
-
-String Example
-
-string colors;
-
-colors += "red";
-
-colors += "blue";
-
-colors += "green";
-
-In the above code string color will alter 3 times, each time the code perform a string operation (+=). That mean 3 new string created in the memory. When you perform repeated operation to a string, the overhead associated with creating a new String object can be costly.
-
-StringBuilder Example
-
-StringBuilder sb = new StringBuilder("");
-
-sb.Append("red");
-
-sb.Append("blue");
-
-sb.Append("green ");
-
-string colors = sb.ToString();
-
-In the above code the StringBuilder object will alter 3 times, each time the code attempt a StringBuilder operation without creating a new object. That means, using the StringBuilder class can boost performance when concatenating many strings together in a loop.
-
-### Question: What are delegates in C# and uses of delegates?
-
-A delegate object encapsulates a reference to a method. 
-
-C# delegates are same as pointers to functions, in C or C++. A delegate Object is a reference type variable that use to holds the 
-reference to a method. The reference can be changed at runtime which is hold by an object of delegate, a delegate object can hold many 
-functions reference which is also known as Invocation List that refers functions in a sequence FIFO, we can new functions ref in this 
-list at run time by += operator and can remove by -= operator.
-
-Delegates are especially used for implementing events and the call-back methods. All delegates are implicitly derived from the 
-System.Delegate class.
-
-Let’s see how to use Delegate with Example:
-
-
-
-
-
-
-
-
-
-
-
-### Question : What is sealed class in c#?
-
-Sealed classes are used to restrict the inheritance feature of object oriented programming. Once a class is defined as a sealed class, the class cannot be inherited.
-
-In C#, the sealed modifier is used to define a class as sealed. In Visual Basic .NET the Not Inheritable keyword serves the purpose of sealed. If a class is derived from a sealed class then the compiler throws an error.
-
-If you have ever noticed, structs are sealed. You cannot derive a class from a struct.
-
-The following class definition defines a sealed class in C#:
-
-// Sealed class
-sealed class SealedClass
-{	}
-
-### Question : What are partial classes?
-
-A partial class is only use to splits the definition of a class in two or more classes in a same source code file or more than one source files. You can create a class definition in multiple files but it will be compiled as one class at run time and also when you’ll create an instance of this class so you can access all the methods from all source file with a same object.
-
-Partial Classes can be create in the same namespace it’s doesn’t allowed to create a partial class in different namespace. So use “partial” keyword with the entire class name which you want to bind together with the same name of class in same namespace, let’s have an example:
-
-### Question : What is IEnumerable<> in c#?
-
-IEnumerable is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable<T> which a parent interface of all generic collections class in System.Collections.Generic namespace like List<> and more.
-In System.Collections.Generic.IEnumerable<T> have only a single method which is GetEnumerator() that returns an IEnumerator. IEnumerator provides the power to iterate through the collection by exposing a Current property and Move Next and Reset methods, if we doesn’t have this interface as a parent so we can’t use iteration by foreach loop or can’t use that class object in our LINQ query.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Question : What is difference between late binding and early binding in c#?
-
-Early Binding and Late Binding concepts belongs to polymorphism so let’s see first about polymorphism:
-Polymorphism is an ability to take more than one form of a function means with a same name we can write multiple functions code in a same class or any derived class.
-
-Polymorphism we have 2 different types to achieve that:
-    • Compile Time also known as Early Binding or Overloading.
-    • Run Time also known as Late Binding or Overriding.
-
-Compile Time Polymorphism or Early Binding: In Compile time polymorphism or Early  Binding we will use multiple methods with same name but different type of parameter or may be the number or parameter because of this we can perform different-different tasks with same method name in the same class which is also known as Method overloading.
-
-See how we can do that by the following example:
-
-
-
-
-
-
-
-RunTime Polymorphism or Late Binding: Runtime polymorphism also known as late binding, in Run Time polymorphism or Late Binding we can do use same method names with same signatures means same type or same number of parameters but not in same class because compiler doesn’t allowed that at compile time so we can use in derived class that bind at run time when a child class or derived class object will instantiated that’s way we says that Late Binding.
-
-For that we have to create my parent class functions as partial and in driver or child class as override functions with override keyword.
-
-Like as following example:
-
-
-
-
-
-
+GO
  
 
+### What are the different types of triggers?
 
+Triggers are a special type of stored procedure which is executed automatically based on the occurrence of a database event. These events can be categorized as:
 
+•	Data Manipulation Language (DML) and
 
+•	Data Definition Language (DDL) events.
 
+The benefit derived from triggers is based in their events driven nature. Once created, the trigger automatically fires without user intervention based on an event in the database.
 
+A.	Using DML Triggers: DML triggers are invoked when any DML command such as INSERT, DELETE, and UPDATE occurs on the data of a table and/or view.
 
-### Question : What are the differences between IEnumerable and IQueryable?
+• DML triggers are powerful objects for maintaining database integrity and consistency.
 
-Before the differences learn what is IEnumerable and IQueryable.
+• DML triggers evaluate data before it has been committed to the database. o During this evaluation the following actions are performed.
 
-IEnumerable:
+We cannot use the following commands in DML trigger:
 
-Is the parent interface for all non-generic collections in System.Collections namespace like ArrayList, HastTable etc. that can be enumerated. For the generic version of this interface as IEnumerable<T> which a parent interface of all generic collections class in 
-	System.Collections.Generic namespace like List< > and more.
+o	ALTER DATABASE
 
-IQueryable:
+o	CREATE DATABASE
 
-As per MSDN IQueryable interface is intended for implementation by query providers. It is only supposed to be implemented by providers that also implement IQueryable<T>. If the provider does not also implement IQueryable<T>, the standard query operators cannot be used on the provider's data source.
+o	DISK DATABASE
 
-The IQueryable interface inherits the IEnumerable interface so that if it represents a query, the results of that query can be enumerated. Enumeration causes the expression tree associated with an IQueryable object to be executed. The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to an appropriate query language for the underlying data source. Queries that do not return enumerable results are executed when the Execute method is called.
+o	LOAD DATABASE
 
-Ienumerable
+o	RESTORE DATABASE
 
-iqueryable
+B.	Using DDL Triggers:
 
-ienumerable belongs to system.collection namespace
+• These triggers focus on changes to the definition of database objects as opposed to changes to the actual data.
 
-inquerable belongs to system.linq.namespace
+• This type of trigger is useful for controlling development and production database environments.
 
-ienumerable is the best way to write query on collections data type like list,array etc
+Let us create DDL trigger now-
 
-iqueryable is the best way to write query data like remote database,service collections
+The following is the syntax.
 
-ienumerable is the return type for linq to object and linq to xml queries
+CREATE TRIGGER trigger_name	ON{ALL SERVER | DATABASE	}
 
-iqueryable is the return type of linq to sql queries
+[WITH < ddl_trigger_option > [, ...n]]{	FOR | AFTER	}	{
 
-ienumerable doesnt support lazy loading so it's not a recommended approach for paging kind of scenarios
+event_type | event_group	}[, ...n]	AS
 
-iquerable support lazy loading so we can also use in paging kind of scenarios
+{sql_statement[;][...n] | EXTERNAL NAME < method specifier > [;] 	}
 
-extension methods are supports by ienumerable takes funtional objects for linq querys
+CREATE TRIGGER tr_TableAudit	ON DATABASE FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE AS PRINT 'You must disable the TableAudit trigger 
+in order to change any table in this database ' 	ROLLBACK 	GO
+ 
+### What is a view in the database?
 
-iqueryable implements ienumerable so indirectly its also supports extensions methods
+A View is nothing but a select query with a name given to it or we can simply say a view is a Named Query. Ok! Why do we need a view? There can be many answers for this. Some of the important stuff I feel is:
 
-### Question : What happens if the inherited interfaces have conflicting method names?
+• A view can combine data from multiple tables using adequate joins and while bringing it may require complex filters and calculated data to form the required result set. From a user's point of view, all these complexities are hidden data queried from a single table.
 
-If we implement multiple interface in the same class with conflict method name so we don’t need to define all or in other words we can say if we have conflict methods in same class so we can’t implement their body independently in the same class coz of same name and same signature so we have to use interface name before method name to remove this method confiscation let’s see an 
+• Sometimes for security purposes, access to the table, table structures and table relationships are not given to the database user. All they have is access to a view not knowing what tables actually exist in the database.
 
-example:
+• Using the view, you can restrict the user update only portions of the records.
 
-interface testInterface1 {
 
-void Show(); }
+The following are the key points to be noted about views:
 
-interface testInterface2 {
+1.	Multiple views can be created on one table.
 
-void Show(); }
+2.	Views can be defined as read-only or updatable.
 
-class Abc: testInterface1,
+3.	Views can be indexed for better performance.
 
-testInterface2 {
+4.	Insert, update, delete can be done on an updatable view.
 
-void testInterface1.Show() {
+### Why do I need views in a database?
 
-Console.WriteLine("For testInterface1 !!");  }
+There are a number of scenarios where we have to look for a view as a solution.
 
-void testInterface2.Show() {
+• To hide the complexity of the underlying database schema, or customize the data and schema for a set of users.
 
-Console.WriteLine("For testInterface2 !!"); }}
+• To control access to rows and columns of data.
 
-Now see how to use those in a class:
+• To aggregate data for performance.
 
-class Program {
+Views are used for security purposes because they provide encapsulation of the name of the table. Data is in the virtual table, not stored permanently. Views display only selected data.
 
-static void Main(string[] args) {
+Syntax of a View:
 
-testInterface1 obj1 = new Abc();
+CREATE VIEW view_name AS
 
-testInterface1 obj2 = new Abc();
+SELECT column_name(s) FROM table_name WHERE condition 
 
-obj1.Show();
+There are two types of views.
 
-obj2.Show();
+•	Simple View
 
-Console.ReadLine();  } }
+•	Complex View
 
+### What is the difference between Primary key and unique key?
 
+Primary key does not allow the null values but unique key allows one null value.
 
+Primary key will create clustered index on column but unique key will create non-clustered index by default.
 
+### How can you increase SQL performance?
 
-### Question : What are the Arrays in C#.Net?
+Following are tips which will increase your SQl performance:-
 
-Arrays are powerful data structures for solving many programming problems. You saw during the creation of variables of many types that they have one thing in common; they hold information about a single item, for instance an integer, float and string type and so on. So what is the solution if you need to manipulate sets of items? One solution would be to create a variable for each item in the set but again this leads to a different problem. How many variables do you need?
+Every index increases the time takes to perform INSERTS, UPDATES, and DELETES, so the number of indexes should not be too much. Try to use maximum 4-5 indexes on one table, not more. If you have read-only table, then the number of indexes may be increased.
 
-So in this situation Arrays provide mechanisms that solves problem posed by these questions. An array is a collection of related items, either value or reference type. In C# arrays are immutable such that the number of dimensions and size of the array are fixed.
+Keep your indexes as narrow as possible. This reduces the size of the index and reduces the number of reads required to read the index. 
 
-Arrays Overview-
+Try to create indexes on columns that have integer values rather than character values.
 
-An array contains zero or more items called elements. An array is an unordered sequence of elements. All the elements in an array are of the same type (unlike fields in a class that can be of different types). The elements of an array accessed using an integer index that always starts from zero. C# supports single-dimensional (vectors), multidimensional and jagged arrays.
+If you create a composite (multi-column) index, the orders of the columns in the key are very important. Try to order the columns in the key as to enhance selectivity, with the most selective columns to the leftmost of the key.
 
-Elements are identified by indexes relative to the beginning of the arrays. Indexes are also commonly called indices or subscripts and are placed inside the indexing operator ([]). Access to array elements is by their index value that ranges from 0 to (length-1).
+If you want to join several tables, try to create surrogate integer keys for this purpose and create indexes on their columns. Create surrogate integer primary key (identity for example) if your table will not have many insert operations.
 
-Array Properties
+Clustered indexes are more preferable than nonclustered, if you need to select by a range of values or you need to sort results set with GROUP BY or ORDER BY. If your application will be performing the same query over and over on the same table, consider creating a covering index on the table.
 
-• The length cannot be changed once created.
+You can use the SQL Server Profiler Create Trace Wizard with "Identify Scans of Large Tables" trace to determine which tables in your database may need indexes. This trace will show which tables are being scanned by queries instead of using an index.
 
-• Elements are initialized to default values.
+### What is the use of OLAP?
 
-• Arrays are reference types and are instances of System.Array.
+OLAP is useful because it provides fast and interactive access to aggregated data and the ability to drill down to detail.
 
-• Their number of dimensions or ranks can be determined by the Rank property.
+### What is a measure in OLAP?
 
-• An array length can be determined by the GetLength() method or Length property.
+Measures are the key performance indicator that you want to evaluate. To determine which of the numbers in the data might be measures. A rule of thumb is if a number makes sense when it is aggregated, then it is a measure.
 
-### Question : What is the Constructor Chaining in C#?
+### What are dimensions in OLAP?
 
-Constructor Chaining is a way to connect two or more classes in a relationship as Inheritance, in Constructor Chaining every child class constructor is mapped to parent class Constructor implicitly by base keyword so when you create an instance of child class to it’ll call parent’s class Constructor without it inheritance is not possible.
+Dimensions are the categories of data analysis. For example, in a revenue report by month by sales region, the two dimensions needed are time and sales region. Typical dimensions include product, time, and region.
 
-### Question : What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+### What are levels in dimensions?
 
-Clone - Method creates a shallow copy of an array. A shallow copy of an Array copies only the elements of the Array, whether they are reference types or value types, but it does not copy the objects that the references refer to. The references in the new Array point to the same objects that the references in the original Array point to.
+Dimensions are arranged in hierarchical levels, with unique positions within each level. For example, a time dimension may have four levels, such as Year, Quarter, Month, and Day. Or the dimension might have only three levels, for example, Year, Week, and Day. The values within the levels are called members. For example, the years 2002 and 2003 are members of the level Year in the Time dimension.
 
-CopyTo - The Copy static method of the Array class copies a section of an array to another array. The CopyTo method copies all the elements of an array to another one-dimension array. The code listed in Listing 9 copies contents of an integer array to an array of object types.
+### What are fact tables and dimension tables in OLAP?
 
-### Question : Can Multiple Catch Blocks executed in c#?
+Twist: - Can you explain the star schema for OLAP?
 
-We can use multiple Catches block with every try but when any Exceptions is throw by debugger so every catches match this exception type with their signature and catch the exception by any single catch block so that means we can use multiple catches blocks but only one can executed at once like:
+The dimensions and measures are physically represented by a star schema. Dimension tables revolve around fact table. A fact table contains a column for each measure as well as a column for each dimension. Each dimension column has a foreign -key relationship to the related dimension table, and the dimension columns taken together are the key to the fact table.
 
-using System;
+### What is DTS?
 
-class MyClient {
+DTS is used to import data and while importing it helps us to transform and modify data. The name itself is self explanatory DTS ( Data transformation Services).
 
-public static void Main() {
+### What is fill factor ? or When does page split occurs?
 
-int x = 0;
+The 'fill factor' option specifies how full SQL Server will make each index page. When there is no free space to insert new row on the index page, SQL Server will create new index page and transfer some rows from the previous page to the new one. This operation is called page splits. You can reduce the number of page splits by setting the appropriate fill factor option to reserve free space on each index page. The fill factor is a value from 1 through 100 that specifies the percentage of the index page to be left empty. The default value for fill factor is 0. It is treated similarly to a fill factor value of 100, the difference in that SQL Server leaves some space within the upper level of the index tree for FILLFACTOR = 0. The fill factor percentage is used only at the time when the index is created. If the table contains read-only data (or data that very rarely changed), you can set the 'fill factor' option to 100. When the table's data is modified very often, you can decrease the fill factor to 70% or whatever you think is best.
 
-int div = 0;
+### What is RAID and how does it work?
 
-try {div = 100 / x;
+Redundant Array of Independent Disks (RAID) is a term used to describe the technique of improving data availability through the use of arrays of disks and various data-striping methodologies. Disk arrays are groups of disk drives that work together to achieve higher data-transfer and I/O rates than those provided by single large drives. An array is a set of multiple disk drives plus a specialized controller (an array controller) that keeps track of how data is distributed across the drives. Data for a particular file is written in segments to the different drives in the array rather than being written to a single drive.
 
-Console.WriteLine("Not executed line");
+For speed and reliability, it is better to have more disks. When these disks are arranged in certain patterns and are use a specific controller, they are called a Redundant Array of Inexpensive Disks (RAID) set. There are several numbers associated with RAID, but the most common are 1, 5 and 10.
 
-} catch (DivideByZeroException de) {
+RAID 1 works by duplicating the same writes on two hard drives. Let us assume you have two 20-Gigabyte drives. In RAID 1, data is written at the same time to both the drives. RAID1 is optimized for fast writes.
 
-Console.WriteLine("DivideByZeroException");
+RAID 5 works by writing parts of data across all drives in the set (it requires at least three drives). If a drive failed, the entire set would be worthless. To combat this problem, one of the drives stores a "parity" bit. Think of a math problem, such as 3 + 7 = 10. You can think of the drives as storing one of the numbers, and the 10 is the parity part. By removing any one of the numbers, you can get it back by referring to the other two, like this: 3 + X = 10. Of course, losing more than one could be evil. RAID 5 is optimized for reads.
 
-} catch (Exception ee) {
+RAID 10 is a bit of a combination of both types. It does not store a parity bit, so it is faster, but it duplicates the data on two drives to be safe. You need at least four drives for RAID 10. This type of RAID is probably the best compromise for a database server. 
 
-Console.WriteLine("Exception");
+Note :- It's difficult to cover complete aspect of RAID in this book. It's better to take some decent SQL SERVER book for in detail knowledge, but yes from interview aspect you can probably escape with this answer.
 
-} finally {
+### SQL Server Difference between @@IDENTITY, SCOPE_IDENTITY () and IDENT_CURRENT
 
-Console.WriteLine("Finally Block"); }
+@@IDENTITY
 
-Console.WriteLine("Result is {0}", div); } }
+It will return last or newly inserted record id of any table in current session but it’s not limited to current scope. In current session if any trigger or functions inserted record in any table that it will return that latest inserted record id regardless of 
+table. We need to use this property whenever we don’t have any other functions or triggers that run automatically.
 
-### Question : Difference between Throw Exception and Throw Clause.
+Syntax:   SELECT @@IDENTITY
 
-The basic difference is that the Throw exception overwrites the stack trace and this makes it hard to find the original code line number that has thrown the exception.
+SCOPE_IDENTITY()
 
-Throw basically retains the stack information and adds to the stack information in the exception that it is thrown.
-Let us see what it means rather speaking so many words to better understand the differences. I am using a console application to easily test and see how the usage of the two differs in their functionality.
+This property will return last or newly inserted record id of table in current session or connection and it’s limited to current scope that means it will return id of newly inserted record in current session / connection stored procedure or query executed by you in current scope even we have any other functions or triggers that run automatically. Its better we can go with property whenever we need to get last or newly inserted record id in table.
 
-using System;
+Syntax: SELECT SCOPE_IDENTITY()
 
-using System.Collections.Generic;
+IDENT_CURRENT
 
-using System.Linq;
+This property will return last or newly inserted record id of specified table. It’s not limited to any session or scope it’s limited to mentioned table so it will return last inserted record id of specified table.
 
-using System.Text;
+Syntax: SELECT IDENT_CURRENT(table_name)
 
-namespace TestingThrowExceptions {
+Finally we can say SCOPE_IDENTITY properties is best to get newly inserted record id from executed stored procedure or query when compared with other properties
 
-class Program {
+Example
 
-public void ExceptionMethod() {
+CREATE TABLE SAMPLE1 (Id INT IDENTITY)
 
-throw new Exception("Original Exception occurred in ExceptionMethod"); 
+CREATE TABLE SAMPLE2 (Id INT IDENTITY(100,1))
 
-}
+-- Trigger to execute while inserting data into SAMPLE1 table
 
-static void Main(string[] args) {
+GO
 
-Program p = new Program();
+CREATE TRIGGER TRGINSERT ON SAMPLE1 FOR INSERT
 
-try {p.ExceptionMethod();  }
+AS
 
-catch (Exception ex) { 
+BEGIN
 
-throw ex;  
+INSERT SAMPLE2 DEFAULT VALUES
 
-}
-}
-} 
-}
+END
 
-Now run the code by pressing the F5 key of the keyboard and see what happens. It returns an exception 
+GO
+SELECT * FROM SAMPLE1  -- It will return empty value
 
-### Question : What is Indexer in C# .Net?
+SELECT * FROM SAMPLE2  -- It will return empty value
 
-Indexer allows classes to be used in more intuitive manner. C# introduces a new concept known as Indexers which are used for treating an object as an array. The indexers are usually known as smart arrays in C#. They are not essential part of object-oriented programming.
+When we execute above statements we will get output like as shown below
 
-An indexer, also called an indexed property, is a class property that allows you to access a member variable of a class using the features of an array.
+Now we will insert default values in “SAMPLE1” table by executing following query and check values of @@identity, scope_identity() and 
+ident_current(‘tablenae’)
 
-Defining an indexer allows you to create classes that act like virtual arrays. Instances of that class can be accessed using the [] array access operator.
+INSERT SAMPLE1 DEFAULT VALUES
 
-Creating an Indexer:
+SELECT @@IDENTITY  -- It returns value 100 this was inserted by trigger
 
-< modifier >
+SELECT SCOPE_IDENTITY()  -- It returns value 1 this was inserted by insert query in SAMPLE1
 
-<return type >
-	
-this[argument list] {
+SELECT IDENT_CURRENT('SAMPLE2') -- It returns value inserted in SAMPLE2 table
 
-get {// your get block code}
+### Difference between char varchar and nvarchar in sql server
 
-set {// your set block code}}
-	
-In the above code:
-<modifier> - can be private, public, protected or internal.
+Char DataType
 
-<return type> - can be any valid C# types.
+Char datatype which is used to store fixed length of characters. Suppose if we declared char(50) it will allocates memory for 50 characters. Once we declare char(50) and insert only 10 characters of word then only 10 characters of memory will be used and other 40 characters of memory will be wasted.
 
-### Question : What is multicast delegate in c#?
+varchar DataType
 
-A delegate that has multiple handlers assigned to it. Each assigned handler (method) is called.
-Delegate can invoke only one method reference has been encapsulated into the delegate.it is possible for certain delegate to hold and invoke multiple methods such delegate called multicast delegates.multicast delegates also know as combinable delegates, must satisfy the following conditions:
+Varchar means variable characters and it is used to store non-unicode characters. It will allocate the memory based on number characters inserted. Suppose if we declared varchar(50) it will allocates memory of 0 characters at the time of declaration. Once we declare varchar(50) and insert only 10 characters of word it will allocate memory for only 10 characters.
 
-• The return type of the delegate must be void. None of the parameters of the delegate type can be delegate type can be declared as output parameters using out keywords.
+nvarchar DataType
 
-• Multicast delegate instance that created by combining two delegates, the invocation list is formed by concatenating the invocation list of two operand of the addition operation. Delegates are invoked in the order they are added.
+nvarchar datatype same as varchar datatype but only difference nvarchar is used to store Unicode characters and it allows you to store multiple languages in database. nvarchar datatype will take twice as much space to store extended set of characters as required by other languages.
 
-Implement Multicast Delegates Example:
+So if we are not using other languages then it’s better to use varchar datatype instead of nvarchar
 
-	using System;
-	
-	using System.Collections.Generic;
-	
-	using System.Linq;
-	
-	using System.Text;
-	
-	delegate void MDelegate();
-	
-	class DM {
-	
-	static public void Display() {
-	
-	Console.WriteLine("Meerut")   }
-	
-	static public void print() {
-	
-	Console.WriteLine("Roorkee"); } 	}
-	
-	class MTest {
-	
-	public static void Main() {
-	
-	MDelegate m1 = new MDelegate(DM.Display);
-	
-	MDelegate m2 = new MDelegate(DM.print);
-	
-	MDelegate m3 = m1 + m2;
-	
-	MDelegate m4 = m2 + m1;
-	
-	MDelegate m5 = m3 - m2;
-	
-	m3(); 	m4(); 	m5();
-	
-	} 
-	
-	}
+Difference between bit tinyint smallint int and bigint datatypes in SQL Server
 
-### Question : Difference between Equality Operator (==) and Equals() Method in C#.
+Bit DataType
 
-Both the == Operator and the Equals() method are used to compare two value type data items or reference type data items. The Equality Operator (==) is the comparison operator and the Equals() method compares the contents of a string. The == Operator compares the reference identity while the Equals() method compares only contents. Let’s see with some examples.
-In this example we assigned a string variable to another variable. A string is a reference type and in the following example, a string variable is assigned to another string variable so they are referring to the same identity in the heap and both have the same content so you get True output for both the == Operator and the Equals() method.
+This datatype represents a single bit that can be 0 or 1.
 
-	using System;
-	
-	namespace ComparisionExample {
-	
-	class Program {
-	
-	static void Main(string[] args) {
-	
-	string name = "Kansiris";
-	
-	string myName = name;
-	
-	Console.WriteLine("== operator result is {0}", name == myName);
-	
-	Console.WriteLine("Equals method result is {0}", name.Equals(myName));
-	
-	Console.ReadKey(); 
-	
-	} 
-	}	
-	}
+tinyint DataType
 
-### Question : Difference between “is” and “as” operator in C#.
+This datatype represents a single byte which is used to store values from 0 to 255 (MinVal: 0, MaxVal: 255). Its storage size is 1 byte.
 
-"is" operator-
-In the C# language, we use the "is" operator to check the object type. If the two objects are of the same type, it returns true and false if not.
-Let's understand the preceding from a small program. We defined the following two classes:
+smallint DataType
 
-	class Speaker {
-	public string Name { 	get; 	set; 	} 	}
-	class Author {
-	public string Name { 	get; 	set; 	} }
+This datatype represents a signed 16-bit integer which is used to store values from -2^15 (-32,768) through 2^15 - 1 (32,767) and its storage size is 2 bytes.
 
-Now, let's try to check the preceding types as:
+int DataType
 
-    • var speaker = new Speaker { Name="Gaurav Kumar Arora"};
-    • We declared an object of Speaker as in the following:
-    • var isTrue = speaker is Speaker;
-    • In the preceding, we are just checking the matching type. Yes, our speaker is an object of Speaker type.
-    • Console.WriteLine("speaker is of Speaker type:{0}", isTrue);
+This datatype represents a signed 32-bit integer which is used to store values from -2^31(-2,147,483,648) to 2 ^31-1(2,147,483,647). Its storage size is 4 bytes.
+
+Bigint DataType
+
+This datatype represents a signed 64-bit integer which is used to store values from -2^63 (-9223372036854775808) through 2^63-1 (9223372036854775807). Its storage size is 8 bytes.
+
+### What is the difference between DELETE TABLE and TRUNCATE TABLE commands?
+
+DELETE TABLE syntax logs the deletes thus make the delete operation slow. TRUNCATE table does not log any information but it logs information about deallocation of data page of the table so TRUNCATE table is faster as compared to delete table.
+
+DELETE table can have criteria while TRUNCATE cannot.
+
+TRUNCATE table does not invoke trigger.
+
+I had mentioned that TRUNCATE table can not be rolled back while delete can be.
+
+### If locking is not implemented, what issues can occur?
+
+Following are the problems that occur if you do not implement locking properly in SQLSERVER.
+
+Lost Updates
+
+Lost updates occur if you let two transactions modify the same data at the same time, and the transaction that completes first is lost. You need to watch out for lost updates with the READ UNCOMMITTED isolation level. This isolation level disregards any type of locks, so two simultaneous data modifications are not aware of each other. Suppose that a customer has due of 2000$ to be paid. He pays 1000$ and again buys a product of 500$ . Lets say that these two transactions are now been entered from two different counters of the company. 
+
+Now both the counter user starts making entry at the same time 10:00 AM. Actually speaking at 10:01 AM the customer should have 2000$-1000$+500 = 1500$ pending to be paid. But as said in lost updates the first transaction is not considered and the second transaction overrides it. So the final pending is 2000$+500$ = 2500$.....I hope the company does not loose the customer.
+
+Non-Repeatable Read
+
+Non-repeatable reads occur if a transaction is able to read the same row multiple times and gets a different value each time. Again, this problem is most likely to occur with the READ UNCOMMITTED isolation level. Because you let two transactions modify data at the same time, you can get some unexpected results. For instance, a customer wants to book flight, so the travel
+agent checks for the flights availability. Travel agent finds a seat and goes ahead to book the seat. While the travel agent is booking the seat, some other travel agent books the seat. When this travel agent goes to update the record, he gets error saying that “Seat is already booked”. In short, the travel agent gets different status at different times for the seat.
+
+Dirty Reads
+
+Dirty reads are a special case of non-repeatable read. This happens if you run a report while transactions are modifying the data that you are reporting on. For example, there is a customer invoice report, which runs on 1:00 AM in afternoon and after that all invoices are sent to the respective customer for payments. Let us say one of the customer has 1000$ to be paid. Customer pays 1000$ at 1:00 AM and at the same time report is run. Actually, customer has no money pending but is still issued an invoice.
+
+Phantom Reads
+
+Phantom reads occur due to a transaction being able to read a row on the first read, but not being able to modify the same row due to another transaction deleting rows from the same table. Lets say you edit a record in the mean time somebody comes and deletes the record, you then go for updating the record which does not exist...Panicked.
+
+Interestingly, the phantom reads can occur even with the default isolation level supported by SQL Server: READ COMMITTED. The only isolation level that does not allow phantoms is SERIALIZABLE, which ensures that each transaction is completely isolated from others. In other words, no one can acquire any type of locks on the affected row while it is being modified.
+
+### What are different transaction levels in SQL SERVER?
+
+Twist: - What are different types of locks in SQL SERVER?
+
+Transaction Isolation level decides how is one process isolated from other process. Using transaction levels, you can implement locking in SQL SERVER.
+
+There are four transaction levels in SQL SERVER:-
+
+READ COMMITTED
+
+The shared lock is held for the duration of the transaction, meaning that no other transactions can change the data at the same time. Other transactions can insert and modify data in the same table, however, as long as it is not locked by the first transaction.
+
+READ UNCOMMITTED
+
+No shared locks and no exclusive locks are honored. This is the least restrictive isolation level resulting in the best concurrency but the least data integrity.
+
+REPEATABLE READ
+
+This setting disallows dirty and non-repeatable reads. However, even though the locks are held on read data, new rows can still be inserted in the table, and will subsequently be interpreted by the transaction.
+
+SERIALIZABLE
+
+This is the most restrictive setting holding shared locks on the range of data. This setting does not allow the insertion of new rows in the range that is locked; therefore, no phantoms are allowed.
+
+Following is the syntax for setting transaction level in SQL SERVER.
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+
+###  What are the different locks in SQL SERVER?
+
+Depending on the transaction level, six types of lock can be acquired on data:-
+
+Intent
+
+The intent lock shows the future intention of SQL Server's lock manager to acquire locks on a specific unit of data for a particular transaction. SQL Server uses intent locks to queue exclusive locks, thereby ensuring that these locks will be placed on the data elements in the order the transactions were initiated. Intent locks come in three flavors: intent shared (IS), intent exclusive (IX), and shared with intent exclusive (SIX).
+
+IS locks indicate that the transaction will read some (but not all) resources in the table or page by placing shared locks.
+
+IX locks indicate that the transaction will modify some (but not all) resources in the table or page by placing exclusive locks.
+
+SIX locks indicates that the transaction will read all resources, and modify some (but not all) of them. This will be accomplished by placing the shared locks on the resources read and exclusive locks on the rows modified. Only one SIX lock is allowed per resource at one time; therefore, SIX locks prevent other connections from modifying any data in the resource (page or table), although they do allow reading the data in the same resource.
+
+Shared
+
+Shared locks (S) allow transactions to read data with SELECT statements. Other connections are allowed to read the data at the same time; however, no transactions are allowed to modify data until the shared locks are released.
+
+Update
+
+Update locks (U) are acquired just prior to modifying the data. If a transaction modifies a row, then the update lock is escalated to an exclusive lock; otherwise, it is converted to a shared lock. Only one transaction can acquire update locks to a resource at one time. Using update locks prevents multiple connections from having a shared lock that want to eventually modify a resource using an exclusive lock. Shared locks are compatible with other shared locks, but are not compatible with Update locks.
+
+Exclusive
+
+Exclusive locks (X) completely lock the resource from any type of access including reads. They are issued when data is being modified through INSERT, UPDATE and DELETE statements.
+
+Schema
+
+Schema modification locks (Sch -M) are acquired when data definition language statements, such as CREATE TABLE, CREATE INDEX, ALTER TABLE, and so on are being executed. Schema stability locks (Sch-S) are acquired when store procedures are being compiled.
+
+Bulk Update
+
+Bulk update locks (BU) are used when performing a bulk-copy of data into a table with TABLOCK hint. These locks improve performance while bulk copying data into a table; however, they reduce concurrency by effectively disabling any other connections to read or modify data in the table.
+
+### Can we suggest locking hints to SQL SERVER?
+
+We can give locking hints that helps you over ride default decision made by SQL Server. For instance, you can specify the ROWLOCK hint with your UPDATE statement to convince SQL Server to lock each row affected by that data modification. Whether it is prudent to do so is another story; what will happen if your UPDATE affects 95% of rows in the affected table? If the table contains 1000 rows, then SQL Server will have to acquire 950 individual locks, which is likely to cost a lot more in terms of memory than acquiring a single table lock. So think twice before you bombard your code with ROWLOCKS.
+
+### What is LOCK escalation?
+
+Lock escalation is the process of converting of low-level locks (like rowlocks, page locks) into higher -level locks (like table locks). Every lock is a memory structure too many locks would mean, more memory being occupied by locks. To prevent this from happening, SQL Server escalates the many fine-grain locks to fewer coarse-grain locks. Lock escalation threshold was definable in SQL Server 6.5, but from SQL Server 7.0 onwards SQL Server dynamically manages it.
+
+### What are the different ways of moving data between databases in SQL Server?
+
+There are lots of options available; you have to choose your option depending upon your requirements. Some of the options you have are BACKUP/RESTORE, detaching and attaching databases, replication, DTS, BCP, logshipping, INSERT...SELECT, SELECT...INTO, creating INSERT scripts to generate data.
+
+### What is the difference between a HAVING CLAUSE and a WHERE CLAUSE?
+
+You can use Having Clause with the GROUP BY function in a query and WHERE Clause is applied to each row before, they are part of the GROUP BY function in a query.
+
+### What is the difference between UNION and UNION ALL SQL syntax?
+
+UNION SQL syntax is used to select information from two tables. But it selects only distinct records from both the table, while UNION ALL selects all records from both the tables. 
+
+Note :- Selected records should have same datatype or else the syntax will not work.
+
+### What are the different types of triggers in SQl SERVER?
+
+There are two types of triggers:-
+
+INSTEAD OF triggers
+
+INSTEAD OF triggers fire in place of the triggering action. For example, if an INSTEAD OF UPDATE trigger exists on the Sales table and an UPDATE statement is executed against the Salestable, the UPDATE statement will not change a row in the sales table. Instead, the 
+UPDATE statement causes the INSTEAD OF UPDATE trigger to be executed.
+
+AFTER triggers
+
+AFTER triggers execute following the SQL action, such as an insert, update, or delete. This is the traditional trigger which existed in SQL SERVER.
+
+INSTEAD OF triggers are executed automatically before the Primary Key and the Foreign Key constraints are checked, whereas the traditional AFTER triggers is executed after these constraints are checked.  Unlike AFTER triggers, INSTEAD OF triggers can be created on views.
+
+### if we have multiple AFTER Triggers on table how can we define the sequence od the triggers?
+
+If a table has multiple AFTER triggers, then you can specify which trigger should be executed first and which trigger should be executed last using the stored procedure sp_settriggerorder.
+
+### What is SQL injection?
+
+It is a Form of attack on a database-driven Web site in which the attacker executes unauthorized SQL commands by taking advantage of insecure code on a system connected to the Internet, bypassing the firewall. SQL injection attacks are used to steal information from a database from which the data would normally not be available and/or to gain access to an organization’s host computers through the computer that is hosting the database.
+
+SQL injection attacks typically are easy to avoid by ensuring that a system has strong input validation.
+
+As name suggest we inject SQL which can be relatively dangerous for the database. Example this is a simple SQL 
+
+SELECT email, passwd, login_id, full_name FROM members WHERE email = 'x'
+
+Now somebody does not put “x” as the input but puts “x ; DROP TABLE members;”. So the actual SQL which will execute is:- 
+
+SELECT email, passwd, login_id, full_name FROM members WHERE email = ‘x’; DROP TABLE members;
+
+Think what will happen to your database.
+
+### What is the difference between Stored Procedure (SP) and User Defined Function (UDF)?
+
+Following are some major differences between a stored procedure and user defined functions:-
+
+You can not change any data using UDF while you can do everything with a stored procedure.
+
+UDF cannot be used in XML FOR clause but SP’s can be used.
+
+UDF does not return output parameters while SP’s return output parameters.
+
+If there is an error in UDF its stops executing. But in SP’s it just ignores the error and moves to the next statement.
+
+UDF cannot make permanent changes to server environments while SP’s can change some of the server environment.
+
+### How can you raise custom errors from stored procedure?
+
+The RAISERROR statement is used to produce an ad hoc error message or to retrieve a custom message that is stored in the sysmessages table. You can use this statement with the error handling code presented in the previous section to implement custom error messages in your applications. The syntax of the statement is shown here. 
+
+RAISERROR ({msg_id |msg_str }{,severity ,state }
+
+[ ,argument [ ,,...n ] ] ))
+
+[ WITH option [ ,,...n ] ]
+
+A description of the components of the statement follows.
+
+msg_id: The ID for an error message, which is stored in the error column in sysmessages.
+
+msg_str: A custom message that is not contained in sysmessages.
+
+Severity:  The severity level associated with the error. The valid values are 0–25. Severity levels 0–18 can be used by any user, but 19–25 are only available to members of the fixed-server role sysadmin. When levels 19–25 are used, the WITH LOG option is required.
+
+State A value that indicates the invocation state of the error. The valid values are 0–127. This value is not used by SQL Server.
+
+Argument . . .
+
+One or more variables that are used to customize the message. For example, you could pass the current process ID (@@SPID) so it could 
+be displayed in the message.
+
+WITH option, . . .
+
+The three values that can be used with this optional argument are described here.
+
+LOG:  Forces the error to log in the SQL Server error log and the NT application log.
+
+NOWAIT: Sends the message immediately to the client.
+
+SETERROR: Sets @@ERROR to the unique ID for the message or 50,000.
+
+The number of options available for the statement makes it seem complicated, but it is actually easy to use. The following shows how to 
+create an ad hoc message with a severity of 10 and a state of 1.
+
+RAISERROR ('An error occurred updating the Nonfatal table',10,1)
+
+--Results--
+
+An error occurred updating the Nonfatal table
+
+The statement does not have to be used in conjunction with any other code, but for our purposes, it will be used with the error handling code presented earlier. The following alters the ps_NonFatal_INSERT procedure to use RAISERROR.
+
+USE tempdb
+
+go
+
+ALTER PROCEDURE ps_NonFatal_INSERT
+
+@Column2 int =NULL
+
+AS
+
+DECLARE @ErrorMsgID int
+
+INSERT NonFatal VALUES (@Column2) SET @ErrorMsgID =@@ERROR
+
+IF @ErrorMsgID <>0
+
+BEGIN
+
+RAISERROR ('An error occured updating the NonFatal table',10,1)
+
+END
+
+When an error-producing call is made to the procedure, the custom message is passed to the client.
+
+### What is DBCC?
+
+DBCC (Database Consistency Checker Commands) is used to check logical and physical consistency of database structure.DBCC statements can fix and detect problems. These statements are grouped in to four categories:-
+
+Maintenance commands like DBCC DBREINDEX, DBCC DBREPAR etc, they are mainly used for maintenance tasks in SQL SERVER.
+
+Miscellaneous commands like DBCC ROWLOCK, DBCC TRACEO etc,	they are mainly used for enabling row-level locking or removing DLL from memory.
+
+Status Commands like DBCC OPENTRAN, DBCC SHOWCONTIG etc ,	they are mainly used for checking status of the database.	
+
+Validation Commands like DBCC CHECKALLOC, DBCCCHECKCATALOG etc , they perform validation operations on database. 
+
+Note :- Check MSDN for list of all DBCC commands, it is very much possible specially during DBA interviews they can ask in depth individual commands.
+
+Below is a sample screen in which DBCC SHOWCONTIG command is run. DBCC SHOWCONTIG is used to display fragmentation information for the data and indexes of the specified table.In the sample screen “Customer” table is checked for fragmentation 
+
+Fragmentation information. If “Scan density” is 100 then everything is contigious.The above image has scan density of 95.36% which is decent percentage. So such type of useful information can be collected by DBCC command and database performance and maintenance can be improved.
+
+### What is the purpose of Replication?
+
+Replication is way of keeping data synchronized in multiple databases. SQL server replication has two important aspects publisher and subscriber.
+
+Publisher
+
+Database server that makes data available for replication is known as Publisher.
+
+Subscriber
+
+Database Servers that get data from the publishers is called as Subscribers.
+
+### What are the different types of replication supported by SQL SERVER?
+
+There are three types of replication supported by SQL SERVER:
+
+Snapshot Replication.
+
+Snapshot Replication takes snapshot of one database and moves it to the other database. After initial load data can be refreshed 
+periodically. The only disadvantage of this type of replication is that all data has to be copied each time the table is refreshed.
+
+Transactional Replication
+
+In transactional replication, data is copied first time as in snapshot replication, but later only the transactions are synchronized rather than replicating the whole database. You can either specify to run continuously or on periodic basis.
+
+Merge Replication.
+
+Merge replication combines data from multiple sources into a single central database. Again as usual, the initial load is like snapshot but later it allows change of data both on subscriber and publisher, later when they come on-line it detects and combines them and updates accordingly.
+
+### What is BCP utility in SQL SERVER?
+
+BCP (Bulk Copy Program) is a command line utility by which you can import and export large amounts of data in and out of SQL SERVER database.
+
+### What is a Cursor?
+
+A database Cursor is a control which enables traversal over the rows or records in the table. This can be viewed as a pointer to one row in a set of rows. Cursor is very much useful for traversing such as retrieval, addition and removal of database records.
+
+### What are local and global variables and their differences?
+
+Local variables are the variables which can be used or exist inside the function. They are not known to the other functions and those variables cannot be referred or used. Variables can be created whenever that function is called.
+
+Global variables are the variables which can be used or exist throughout the program. Same variable declared in global cannot be used in functions. Global variables cannot be created whenever that function is called.
+
+### What is an index?
+An Index is one of the most powerful techniques to work with this enormous information. Database tables are not enough for getting the data efficiently in case of a huge amount of data. In order to get the data quickly we need to index the column in a table.
+
+An index is a database object that is created and maintained by the DBMS. Indexed columns are ordered or sorted so that data searching is extremely fast. An index can be applied on a column or a view. A table can have more than one index.
+
+Types of Index: Microsoft SQL Server has two types of indexes. These are:
+
+Clustered Index: A Clustered Index sorts and stores the data in the table based on keys. A Clustered Index can be defined only once per 
+table in the SQL Server Database, because the data rows can be sorted in only one order. Text, nText and Image data are not allowed as a Clustered index.
+
+SET STATISTICS IO ON
+
+SELECT * FROM Employee WHERE EmpID = 20001
+
+EmpID	EmpName	Cell	Dept
+
+20001	Black Smith	12345678901	1
+
+
+Non-Clustered Index: Non Clustered Indexes or simply indexes are created outside of the table. SQL Server supports 999 Non-Clustered per table and each Non-Clustered can have up to 1023 columns. A Non-Clustered Index does not support the Text, nText and Image data types.
+
+CREATE NONCLUSTERED INDEX NCL_ID ON Employee(DeptID)
+
+SET STATISTICS IO ON
+
+SELECT * FROM Employee WHERE DeptID = 20001
+
+EmpID	EmpName	Cell	Dept
+
+40001	Black Smith	12345678901	20001
+
+
+### Why do I need an index in a database?
+An Index is a database object that can be created on one or more columns (16 max column combinations). When creating the index it will read the column(s) and forms a relevant data structure to minimize the number of data comparisons. The index will improve the performance of data retrieval and add some overhead to the data modification such as create, delete and modify. So it depends on how much data retrieval can be done on table versus how much of DML (Insert, Delete and Update) operations.
+
+Need of Index in Database: An index is basically used for fast data retrieval from the database.
+
+Syntax: CREATE INDEX index_name ON table_name;
+
+or
+
+DROP INDEX index_name;
+
+Type of Index:
+
+In a SQL Server database there are mainly the following two types of indexes:
+
+1.	Clustered index and
+
+2.	Non Clustered index
+
+### What is a query in a database?
+
+SQL is a complete data manipulation language that is used not only for database queries, but also to modify and update data in the database. Compared to the complexity of the SELECT statement, which supports SQL queries, the SQL statements that modify and create database contents are somewhat simple.
+
+However, database updates pose some challenges for a DBMS beyond those presented by database queries. The DBMS must protect the integrity of the stored data during changes, ensuring that only valid data is introduced into the database. The DBMS must also coordinate simultaneous updates by multiple users, ensuring that the users and their changes do not interfere with one another.
+
+INSERT statement adds new rows of data to a table.
+
+Syntax:
+
+Insert into table_Name(column names) values(Values for column).
+
+INSERT INTO employee(ID, SURNAME, FIRSTNAME, EMAIL, COUNTRY, PHONE) VALUES(111, 'vithal', 'wadje', 'vithal.wadje@yahoo.com', 'India', ' +914545455454')
+
+### What are query types in a database?
+
+Types of Commands in SQL ServerThese commands are categorized into:
+
+•	DDL
+
+•	DCL
+
+•	DML
+
+•	TCL
+
+Let's see these categories one-by-one.
+
+DDL - Data Definition Language (DDL) commands are the category responsible for dealing with the structure of objects. I mean that with these commands we can modify our object/entity structure. For example if there's one table and you want to modify the structure of that table, you can use DDL commands.
+
+The following are the commands in this category:
+
+Command
+
+Description
+
+Create
+
+Used to create objects.
+
+Alter
+
+Used to modify created object.
+
+Drop
+
+Used to delete object.
+
+Using these commands you can create any objects like tables, views, databases, triggers, and so on.
+
+For example:
+
+CREATE DATABASE DB2
+
+GO
+
+CREATE TABLE tblDemo 	(Id int primary key, Name char(20))
+
+GO
+
+DROP DATABASE DB2
+
+DML - Data Manipulation Language (DML) commands manipulate data stored in objects like tables, views and so on. With the help these commands you can easily modify, insert and delete your data.
+
+The following are the commands in this category:
+
+Command
+
+Description	
+
+Insert
+
+Insert data into table.	
+
+Delete
+
+Delete data from table.
+
+Update
+
+Update data into table.
+
+Insert Into
+
+Insert bulk data into table.
+
+
+Using these commands you can manipulate any kind of data stored in entities.
+
+For example:  INSERT INTO tblDemo VALUES(1, 'Abhishek')
+
+GO
+
+DELETE FROM tblDemo WHERE Id = 4
+
+GO
+
+UPDATE tblDemo
+
+SET Name = 'Sunny' WHERE Id = 6
+
+GO
+
+DCL - Data Control Language (DCL) commands are for security purposes. These commands are used to provide roles, permissions, access and 
+so on.
+
+The following are the commands in this category:
+
+Command
+
+Description	
+
+Grant
+
+Provide user access to Database or any other object.
+
+Revoke
+
+Take back the access from user.
+			
+For example: we have the following data:
+
+Database: kansiris.org
+
+Table: kansiris1
+
+User: Kansiris
+
+currently we didn't provide any permission to this user.
+
+
+Now we'll create a table in the KansirisDB database:
+
+CREATE table tblArticles(ArticleId int primary key identity,	ArticleName varchar(10),Category varchar(10)	)
+
+If we execute this command, we'll get an error message.
+
+Msg 262, Level 14, State 1, Line 1
+
+CREATE TABLE permission denied in database 'Kansiris'.
+
+This is because this user doesn't have permission to create anything right now. We'll learn how to grant or revoke permission on 
+objects in our next article.
+
+TCL - Transaction Control Language (TCL) commands are for managing transactions in SQL Server. The following are the commands in this category:
+
+Command Description
+
+Commit
+
+Used to save any transaction permanently.
+
+Rollback
+
+This command Is used to restore database to its last committed state.
+
+Save Tran
+
+This command is used to save the transaction so that we can rollback that transaction to the point whenever necessary.
+
+
+For example, we have a table named "tblStudent" with 3 records as shown below:
+
+Now we'll begin our transaction and add another record and commit that transaction.
+
+1.	Begin Tran
+
+2.	Insert INTO tblStudents VALUES('Sumit')
+
+3.	COMMIT
+
+Now we have 4 Records.
+
+Now, we'll add three records, one by one with save point, but we don't commit our transaction.
+
+Begin Tran
+
+Insert INTO tblStudents VALUES('Kajal')
+
+SAVE Tran A;
+
+Insert INTO tblStudents VALUES('Rahul')
+
+SAVE Tran B;
+
+Insert INTO tblStudents VALUES('Ram')
+
+
+SAVE Tran C;
+
+SELECT * from tblStudents
+
+Now we have the following records in the table, from which the last three records are not yet committed.
+
+Now we have 3 savepoints, in other words A, B and C. Since our transaction is not yet committed, we can roll it back to any savepoint. We'll roll it back to point B, in other words at "Rahul".
+
+ROLLBACK TRAN B
+
+COMMIT now when you fire the select query, you'll get records up to ID 6.
+
+
+In this, we have seen the types of commands in SQL Server and done some overview of that. We have also seen how to commit transactions and how to roll back any transaction to any saved point.
+
+### What is a join in SQL Server?
+
+If you want to retrieve data from multiple tables then you need to use joins in SQL Server. Joins are used to get data from two or more tables based on the relationships among some of the columns in the tables.
+
+Syntax:
+The Inner join syntax is as follows:
+
+SELECT < column list >FROM < left joined table > [INNER] JOIN < right joined table >	ON < join condition >
+
+The example is developed in SQL Server 2012 using the SQL Server Management Studio.
+
+Creating Table in SQL Server:
+
+Now to create 3 tables in the Master database named Table1, Table2 and Table3.
+
+Table1-
+
+CREATE TABLE Table1	(	ID INT, Name VARCHAR(20)	)
+
+Table2-
+
+CREATE TABLE Table2	(	ID INT, Name VARCHAR(30)	)
+
+Table3-
+
+CREATE TABLE Table3	(	ID INT, Name VARCHAR(40)	)
+
+###  What are different types of joins in SQL Server?
+Joins are useful for bringing data together from different tables based on their database relations. First we will see how the join operates between tables. Then we will explore the Order of Execution when both a join and a where condition exist. Finally we will move our exploration to the importance of the Join order.
+
+A Join condition defines a way two tables are related in a query by:
+
+•	Specifying the column to be used for the Join from each table. In joining foreign keys in a table and its associated key in the 
+other table.
+
+•	To use the logical operator in comparing values from the columns.
+
+There are three type of joins available based on the way we join columns of two different tables.
+
+1.	Full Join
+
+2.	Inner Join
+
+3.	Left outer Join
+
+4.	Right outer Join
+
+Full Join - A full join is somewhat different from the Cartesian product. A Cartesian product will get all the possible row combinations of the two joining tables. A Full Join takes the matching columns plus all table rows from the left table that does not match the right and all table rows in the right that does not match the left. It applies null for unmatched rows on the other end when doing so. The following example shows the full join between Table_A and Table_C
+
+
+
+
+### What is Self-Join?
+
+Self-join is set to be query used to compare to itself. This is used to compare values in a column with other values in the same column in the same table. ALIAS ES can be used for the same table comparison.
+
+### What is Cross-Join?
+
+Cross join defines as Cartesian product where number of rows in the first table multiplied by number of rows in the second table. If suppose, WHERE clause is used in cross join then the query will work like an INNER JOIN.
+
+### What is user defined functions?
+
+User defined functions are the functions written to use that logic whenever required. It is not necessary to write the same logic several times. Instead, function can be called or executed whenever needed.
+
+### What are all types of user defined functions?
+
+Three types of user defined functions are.
+
+l	Scalar Functions.
+
+l	Inline Table valued functions.
+
+l	Multi statement valued functions.
+
+Scalar returns unit, variant defined the return clause. Other two types return table as a return.
+
+### What is collation?
+
+Collation is defined as set of rules that determine how character data can be sorted and compared. This can be used to compare A and, other language characters and also depends on the width of the characters.
+
+ASCII value can be used to compare these character data.
+
+### What are all different types of collation sensitivity?
+
+Following are different types of collation sensitivity -.
+
+l	Case Sensitivity – A and a and B and b.
+
+l	Accent Sensitivity.
+
+l	Kana Sensitivity – Japanese Kana characters.
+
+l	Width Sensitivity – Single byte character and double byte character.
+
+### Advantages and Disadvantages of Stored Procedure?
+
+Stored procedure can be used as a modular programming – means create once, store and call for several times whenever required. This supports faster execution instead of executing multiple queries. This reduces network traffic and provides better security to the data.
+Disadvantage is that it can be executed only in the Database and utilizes more memory in the database server.
+
+### What is Online Transaction Processing (OLTP)?
+
+Online Transaction Processing or OLTP manages transaction based applications which can be used for data entry and easy retrieval processing of data. This processing makes like easier on simplicity and efficiency. It is faster, more accurate results and expenses with respect to OTLP.
+
+Example – Bank Transactions on a daily basis.
+
+### What is CLAUSE?
+
+SQL clause is defined to limit the result set by providing condition to the query. This usually filters some rows from the whole set of records.
+
+Example – Query that has WHERE condition
+
+Query that has HAVING condition.
+
+### What is recursive stored procedure?
+
+A stored procedure which calls by itself until it reaches some boundary condition. This recursive function or procedure helps programmers to use the same set of code any number of times.
+
+### What is Union, minus and Interact commands?
+
+UNION operator is used to combine the results of two tables, and it eliminates duplicate rows from the tables.
+
+MINUS operator is used to return rows from the first query but not from the second query. Matching records of first and second query and other rows from the first query will be displayed as a result set.
+
+INTERSECT operator is used to return rows returned by both the queries.
+
+### What is an ALIAS command?
+
+ALIAS name can be given to a table or column. This alias name can be referred in WHERE clause to identify the table or column.
+
+Example-.
+1	Select st.StudentID, Ex.Result from student st, Exam as Ex where st.studentID = Ex. StudentID
+ 
+Here, st refers to alias name for student table and Ex refers to alias name for exam table.
+
+### What is the difference between TRUNCATE and DROP statements?
+
+TRUNCATE removes all the rows from the table, and it cannot be rolled back. DROP command removes a table from the database and operation cannot be rolled back.
+
+### What are aggregate and scalar functions?
+
+Aggregate functions are used to evaluate mathematical calculation and return single values. This can be calculated from the columns in a table. Scalar functions return a single value based on the input value.
+
+Example -.
+
+Aggregate – max(), count – Calculated with respect to numeric.
+
+Scalar – UCASE(), NOW() – Calculated with respect to strings.
+
+### What is an inner join in SQL?
+
+Inner or Self Join - This Join returns a row when there is at least one match in both tables.
+
+Let’s see an example:
+
+Select * From Table1	Inner Join Table2 on table1.ID = table2.ID
+
+The following query displays the Employee Name and the corresponding Manager Name within the employee table.
+
+SELECT e1.Employee_Name EmployeeName, e2.Employee_Name ManagerName FROM employee e1(nolock), employee e2(nolock) WHERE e1.EmployeeID = e2.ManagerID
+
+Output:
+
+An inner join (sometimes called a "simple join") is a join of two or more tables that returns only those rows that satisfy the join condition.
+
+### What is an outer join in SQL?
+
+There are three different types of outer joins; let's see 1 by 1.
+
+•	Left Outer Join
+
+•	Right Outer Join
+
+•	Full Outer Join
+
+Left Outer Join - A LEFT OUTER JOIN is one of the JOIN operations that allows you to specify a join clause. It preserves the unmatched rows from the first (left) table, joining them with a NULL row in the shape of the second (right) table.
+
+Select * From Table1	Left Outer Join on table1.ID = table2.ID
+
+Right Outer Join - A RIGHT OUTER JOIN is one of the JOIN operations that allows you to specify a JOIN clause. It preserves the unmatched rows from the Table2 (right) table, joining them with a NULL in the shape of the Table1 (left) table. A LEFT OUTER JOIN B is equivalent to B RIGHT OUTER JOIN A, with the columns in a different order.
+
+Select * From Table1	Right Outer Join on table1.ID = table2.ID
+ 
+### What is full join in SQL?
+
+A Full Outer Join fetches all records of both tables; where the record does not match, it returns Null.
+select e.empId, e.empName, e1.empAdd from emp e full outer join emp_add e1 on e.empI d = e1.empId
+
+Output:
+
+Or
+
+Full Outer Join - FULL OUTER JOIN: This JOIN is a combination of both. All records from both Left_Table and Right_Table are in the result set and matched when they can be on the Join_Condition; when no record is found in the opposite table, NULL values are used for the columns.
+
+Select * From Table1	Full Outer Join on table1.ID = table2.ID 
+
+### What is left join in SQL Server?
+
+Left Join: A LEFT OUTER JOIN is one of the JOIN operations that allow you to specify a join clause.
+It preserves the unmatched rows from the first (left) table, joining them with a NULL row in the shape of the second (right) table.
+
+Select * From Table1	Left Outer Join on table1.ID=table2.ID
+
+A left outer join displays all the rows from the first table and the matched rows from the second table.
+
+Example: The following query retrieves the employee name and the corresponding department he belongs to, whereas all the departments are displayed even if the employee is not assigned to any department.
+
+SELECT e.EmployeeID, e.Employee_Name, d.Department_Name FROM employee e(nolock) LEFT JOIN department d(nolock) ON e.DepartmentID = d.DepartmentID
+
+Output:
+
+### What is a right join in SQL Server?
+
+Right JOIN - A RIGHT OUTER JOIN is one of the JOIN operations that allows you to specify a JOIN clause. It preserves the unmatched rows from the Table2 (right) table, joining them with a NULL in the shape of the Table1 (left) table. A LEFT OUTER JOIN B is equivalent to B RIGHT OUTER JOIN A, with the columns in a different order.
+
+Select * From Table1	Right Outer Join on table1.ID = table2.ID
+
+The right outer join displays all the rows from the second table and matched rows from the first table.
+
+Example:
+
+SELECT e.EmployeeID, e.Employee_Name, d.Department_Name	FROM employee e(nolock) RIGHT JOIN department d(nolock) ON e.DepartmentID = d.DepartmentID
+
+Output:
+
+
+### What is database engine in SQL Server?
+
+The SQL Server Database Engine, SQL Server Agent, and several other SQL Server components run as services. These services typically are started when the operating system starts. This depends on what is specified during setup; some services are not started by default.
+
+A service is a type of application (executable) that runs in the system background. Services usually provide core operating system features, such as Web serving, event logging, or file serving. Services can run without showing a user interface on the computer desktop. The SQL Server Database Engine, SQL Server Agent, and several other SQL Server components run as services. These services typically are started when the operating system starts. This depends on what is specified during setup; some services are not started by default.
+
+This describes the management of the various SQL Server services on your machine. Before you log in to an instance of SQL Server, you need to know how to start, stop, pause, resume, and restart an instance of SQL Server. After you are logged in, you can perform tasks such as administering the server or querying a database.
+
+Let's start now, select start/All Programs/Microsoft SQL Server2005/Configuration Tools/SQL Server Configuration Manager.
+
+
+### What are the Analysis Services in SQL Server?
+
+The purpose of analysis services is to turn data into information and to provide quick and easy access to that information for decision makers. SSAS provides OLAP by letting you design, create and manage multidimensional structures that contain data aggregated from other data sources, such as relational databases and provides many data mining algorithms for mining data from data sources. So for delivering OLAP and data mining it uses client and server technologies.
+
+The main idea of SSAS is to provide fast results from data sources when we apply a query because in order to make a decision we need data of various dimensions.
+
+Components of the Architecture in detail:
+
+1.	Server Architecture: This runs as a Windows service. The Msmdsrv.exe application is a server component. This application consists of security, XMLA listener, query processor and other components that perform the following tasks:
+
+2.	Client Architecture: SSAS has a thin client Component Architecture. All queries and calculations are resolved by the server only. So for each request a server to client connection is required. There are several providers with SSAS to support various programming languages. These providers communicate using SOAP packets. You can better understand this by the following diagram:
+
+
+### What are the integration services in SQL Server?
+
+Integration Services is a platform for building high performance data integration and workflow solutions, including extraction, transformation and loading (ETL) operations for data warehousing.
+
+This includes graphical tools and wizards for building and debugging packages.
+
+Uses of Integration Services:
+
+One use of Integration Services is to merge data from multiple data stores and update the data to data warehouses and/or data marts. Create the Data Transformation process logic and automate the data loading process.
+
+Architecture of Integration Services:
+
+Some important components to using Integration Services:
+
+•	SSIS Designer
+
+•	Runtime engine
+
+•	Tasks and other executables
+
+•	Data Flow engine and Data Flow components
+
+•	API or object model
+
+•	Integration Services Service
+
+•	SQL Server Import and Export Wizard
+
+•	Other tools, wizards and command prompt utilities
+
+### What are the data quality services in SQL Server?
+
+SQL Server Data Quality Services - SQL Server 2012 Data Quality Services (DQS) is the data quality product from Microsoft SQL Server 2012. DQS enables you to perform a variety of critical data quality tasks, including correction, enrichment, standardization and de-duplication of your data.
+
+DQS provides the following features to resolve data quality issues:
+
+•	Data Cleansing
+
+•	Matching
+
+•	Reference Data Services
+
+•	Profiling and Monitoring
+
+•	Knowledge Base
+
+DQS enables you to perform data cleansing using cloud-based reference data services provided by reference data providers. DQS also provides profiling that is integrated into its data-quality tasks, enabling to analyze the integrity of the data.
+
+Data Quality Server - Data Quality Server is implemented as three SQL Server catalogs DQS_MAIN, DQS_PROJECTS, and DQS_STAGING_DATA.
+DQS_MAIN includes DQS Stored Procedures, DQS engine, and published Knowledge Bases.
+
+DQS_PROJECTS includes data that is required for Knowledge Base management and DQS project activities.
+
+DQS_STAGING_DATA provides an intermediate staging database where you can copy source data to perform DQS operations, and then export your processed data.
+ 
+ 
+### What are the reporting services in SQL Server?
+SQL Server Reporting Services is a comprehensive reporting platform that includes processing components. Processing components are the basis for the multilayered architecture of SQL Server Reporting Services. Processing components interact with each other to retrieve data and deliver a report.
+S
+QL Server Reporting Services has the following two basic components:
+
+•	Processors
+
+•	Extensions
+
+Tools and Components of SQL Server Reporting Services architecture: This architecture consists mainly of the following types of components and tools:
+
+•	Report Builder
+
+•	Report Designer
+
+•	Report Manager
+
+•	Report Server
+
+•	Report server database
+
+•	Data sources
+
+### What are the master data services in SQL Server?
+
+The goal of MDS is to address the challenges of both operational and analytical master data management by providing a master data hub to centrally organize, maintain, and manage your master data. This master data hub supports these capabilities with a scalable and extensible infrastructure built on SQL Server and the Windows Communication Foundation (WCF) APIs.
+
+Master Data Services Components: The wizard installs Master Data Services Configuration Manager, installs the files necessary to run the Master Data Services Web service, and registers assemblies. After installation, you use the Master Data Services Configuration Manager to create and configure a Master Data Services database in a SQL Server instance that you specify, create the Master Data Services Web application, and enable the Web service.
+
+Data Stewardship: Master Data Manager is the data stewardship portal in which authorized business users can perform all activities related to master data management. At minimum, a user can use this Web application to review the data in a master data model. Users with higher permissions can make changes to the master data and its structure, define business rules, review changes to master data, and reverse changes.
+
+Model Objects: Most activities in MDS revolve around models and the objects they contain. A model is a container for all objects that define the structure of the master data. A model contains at least one entity, which is analogous to a table in a relational database. An entity contains members, which are like the rows in a table, as shown in Figure 7-1. Members (also known as leaf members) are the master data that you are managing in MDS. Each leaf member of the entity has multiple attributes, which correspond to table columns in the analogy.
+
+
+Master Data Maintenance: Master Data Manager is more than a place to define model objects. It also allows you to create, edit, and update leaf members and consolidated members. When you add a leaf member, you initially provide values for only the Name and Code attributes, as shown in Figure 7-4. You can also use a search button to locate and select the parent consolidated member in each hierarchy.
+ 
+
+### What is replication in SQL Server?
+
+Replication is a process or method to synchronize the data across multiple servers. Replication is done by a replica set. A replication maintains the same data set. Replica sets provide redundancy and high availability with multiple copies of data on different database servers.
+
+Replication removes dependencies from a single server so replication protects a database from the loss of a single server. Replication provides a mechanism to recover from hardware failure and service interruptions.
+
+Replication is also used to increase the read capacity. Replication provides choices for the client to select a different server for read and write operations. Replication maintains copies in different data centers to increase the locality and availability of data for distributed applications.
+
+Example: Snapshot Replication
+
+Step 1: Open the replication node in your database and choose the option Local Publications.
+
+
+
+
+Step 2: Right-click on Local Publications and click on New publication.
+
+Step 3: After clicking on the new publication tab the following window will appear and click on the “Next” button.
+
+
+### How to I select data from an SQL Server table?
+How to select specific rows or all columns, selecting distinct rows, filtering with where clause, sorting rows using orderby and so on.
+We will be using the AdventureWorks2012 database for this demo.
+
+1.	To select all the rows and columns from a table, we use the following query:
+
+SELECT * FROM HumanResources.Employee
+
+Execute the query by pressing F5 or via the execute button.
+
+Output:
+ 
+There is another way to select all the columns from a table. Instead of using * we can specify the column names.
+
+1.	SELECT BusinessEntityID, NationalIDNumber, LoginID, OrganizationNode, Organizatio nLevel, JobTitle, BirthDate, MaritalStatus, Gender, HireDate, SalariedFlag, VacationHour s, SickLeaveHours, CurrentFlag, rowguid, ModifiedDate FROM HumanResources.Employee
+The output will be the same.
+
+If you feel lazy in writing this long query given above then what you can do is go to the Object Explorer window, then expand adventureWorks2012 then select HumanResourcesEmployee table and right-click on it. After that "select script table as" then select "To", then you will see a New query editor window.
+
+
+SQL Server will generate the SELECT query for us.
+
+### What is a check in SQL?
+
+A Check Constraint is a rule that identifies valid values Constraint helps to enforce Domain Integrity. If the condition satisfied then it prevents the value from entering into the database.
+
+for columns of data. A Check in a Check Constraint is not
+
+Syntax:
+
+Create table tableName(Column1 dataType Check(expression), Column2, columnN)
+
+Example:
+
+create table emp(empId int check(empId >10),empName varchar(15)) 
+
+Output:
+
+
+insert into emp values(8,'d') 
+
+Output:
+
+Dropping the Check Constraint:
+
+Firstly, we can determine the name of the constraint using the following command:
+
+exec sp_help emp
+
+Output:
+ 
+
+### What is a default in SQL?
+
+Constraints are rules that decide what kind of data can enter into the database tables. SQL server has six types of constraints and we will explore all these constraints here with suitable examples. The constraints that we are going to explore are listed below:
+
+1.	Primary Key Constraint
+
+2.	Foreign Key Constraint
+
+3.	Not Null Constraint
+
+4.	Unique constraint
+
+5.	Default Constraint
+
+6.	Check Constraint
+
+Default Constraint:
+
+Default constraint allows you set a default value for the column. That means when a row is created for the first time, and there is no entry specified for the column that has a default constraint on it, then the default value is stored in the column.
+
+Note that this not a Not Null constraint and do not confuse the default value constraint with disallowing the Null entries. Default value for the column is set only when the row is created for the first time and column value is ignored on the Insert. Modification to the column with NULL value or even the Insert operation specifying the Null value for the column is allowed.
+
+Let us set the Default value of 1 for the Class. Here are the steps:
+
+•	Bring up the table designer
+
+•	Select the Class Row as you already did.
+
+•	At the bottom of the layout, you will see Column properties.
+
+### How to create a database using SQL?
+
+A database is described as an organized way of collection of DATA. It is the collection of schemes, tables, queries, reports, views and other objects.
+
+Syntax: CREATEDATABASEDatabaseName
+
+Example: CREATEDATABASE Student
+
+
+Or you can create Database through Design/ Wizard form by right clicking on DATABASE option - New Database
+
+
+### What is a constraint in SQL?
+
+Constraints are the rules that decide what kind of data can enter into the database tables. SQL server has six types of constraints and we will explore all these constraints here with suitable examples. The constraints that we are going to explore are listed below:
+
+1.	Primary Key Constraint
+
+2.	Foreign Key Constraint
+
+3.	Not Null Constraint
+
+4.	Unique constraint
+
+5.	Default Constraint
+
+6.	Check Constraint
+
+To explain these constraints we need two tables. Firstly, let us create these tables. Run the scripts shown below to create the tables. Copy and paste the code into the new Query Editor window, then execute it.
+
+CREATE TABLE Student(StudId smallint, StudName varchar(50), Class tinyint);
+
+CREATE TABLE TotalMarks(StudentId smallint, TotalMarks smallint);
+
+Go
+
+Note that there are no constraints at present on these tables. We will add the constraints one by one.
+
+Primary Key Constraint - A table column with this constraint is called the key column for the table. This constraint helps the table to 
+make sure that the value is not repeated and also that there are no null entries. We will mark the StudId column of the Student table 
+as the primary key. Follow these steps:
+
+•	Right click the student table and click on the modify button
+
+•	From the displayed layout select the StudId row by clicking the Small Square like button on the left side of the row.
+
+•	Click on the Set Primary Key toolbar button to set the StudId column as primary key column.
+
+
+Now this column does not allow null values and duplicate values. You can try inserting values to violate these conditions and see what happens. A table can have only one Primary key. Multiple columns can participate on the primary key column. Then the uniqueness is considered among all the participant columns by combining their values.
+
+Not Null Constraint - This constraint is useful to stop storing the null entries in the specified columns. We will mark student name column as not null column. This allows us to always having some entries in the student name column of the student table without having NULL. Follow the steps below:
+
+As you did previously, bring up the table design view by clicking the modify context   menu for the table. 393
+Remove the check mark as shown in the picture below. This action will enable the Not Null constraint for the StudName column.
+
+Default Constraint - Default constraint allows you set a default value for the column. That means when a row is created for the first time, and there is no entry specified for the column that has a default constraint on it, then the default value is stored in the column. Note that this not a Not Null constraint and do not confuse the default value constraint with disallowing the Null entries. 
+
+Default value for the column is set only when the row is created for the first time and column value is ignored on the Insert. Modification to the column with NULL value or even the Insert operation specifying the Null value for the column is allowed.
+Let us set the Default value of 1 for the Class. Here are the steps:
+
+•	Bring up the table designer
+
+•	Select the Class Row as you already did.
+
+•	At the bottom of the layout, you will see a Column properties as shown in the below picture. Set the default as shown below:
+
+
+### What is data Integrity?
+
+Data Integrity defines the accuracy and consistency of data stored in a database. It can also define integrity constraints to enforce business rules on the data when it is entered into the application or database.
+
+### What is Auto Increment?
+
+Auto increment keyword allows the user to create a unique number to be generated when a new record is inserted into the table. AUTO INCREMENT keyword can be used in Oracle and IDENTITY keyword can be used in SQL SERVER.
+Mostly this keyword can be used whenever PRIMARY KEY is used.
+
+###  What is the difference between Cluster and Non-Cluster Index?
+
+Clustered index is used for easy retrieval of data from the database by altering the way that the records are stored. Database sorts out rows by the column which is set to be clustered index.
+
+A nonclustered index does not alter the way it was stored but creates a complete separate object within the table. It point back to the original table rows after searching.
+
+### What is Datawarehouse?
+
+Datawarehouse is a central repository of data from multiple sources of information. Those data are consolidated, transformed and made available for the mining and online processing. Warehouse data have a subset of data called Data Marts.
+
+### How do I define constraints in SQL?
+
+Constraints are rules and restrictions applied on a column or a table such that unwanted data can't be inserted into tables. This ensures the accuracy and reliability of the data in the database. We can create constraints on single or multiple columns of any table. 
+
+Constraints maintain the data integrity and accuracy in the table.
+
+Constraints can be classified into the following two types:
+
+Column Types Constraints - Definitions of these types of constraints is given when the table is created.
+
+Create Table My_Constraint 	(IID int NOT NULL,	Salary int CHECK(Salary > 5000)	)
+
+Table Types Constraints - Definitions of these types of constraints is given after the creation of the table using the Alter Command.
+
+Alter Table My_Cosntraint
+Add constraint Check_Constraint Check(Age>50)
+
+SQL Server contains the following six types of constraints:
+
+•	Not Null Constraint
+
+•	Check Constraint
+
+•	Default Constraint
+
+•	Unique Constraint
+
+•	Primary Constraint
+
+•	Foreign Constraint
+
+Not Null Constraint - A Not Null constraint restrict the insertion of null values into a column. If we are using a Not Null Constraint 
+for a column then we cannot ignore the value of this column during an insertion of data into the table.
+
+Column Level-
+
+Syntax:
+
+CREATE TABLE Table_Name(Column_Name Datatype CONSTRAINT Constraint_Name NOT NULL, );
+
+Example:
+
+Create Table My_Constraint(IID int NOT NULL, Name nvarchar(50) CONSTRAINT Cons_NotNull not null, Age int Not Null,	)
+
+Table Level-
+
+Syntax:
+
+ALTER TABLE Table_Name
+
+ALTER COLUMN Column_Name Datatype NOT NULL
+
+Example:
+
+Alter Table My_Constraint
+
+Alter Column IId int Not Null
+
+Without SQL Command - We can also create a Not Null constraint in Microsoft SQL Server without execution of a SQL query.
+
+First right-click on the table and select and click on the design option. Now check all the columns in the “Allow Nulls” option that 
+should have a Null Value.
+
+Check Constraint - A Check constraint checks for a specific condition before inserting data into a table. If the data passes all the Check constraints then the data will be inserted into the table otherwise the data for insertion will be discarded. The CHECK constraint ensures that all values in a column satisfies certain conditions.
+
+### What is the meaning of Not Null in SQL?
+
+Constraints are rules that decide what kind of data can enter into the database tables. SQL server has six types of constraints and we will explore all these constraints here with suitable examples. The constraints that we are going to explore are listed below:
+
+•	Primary Key Constraint
+
+•	Foreign Key Constraint
+
+•	Not Null Constraint
+
+•	Unique constraint
+
+•	Default Constraint
+
+•	Check Constraint
+
+This constraint is useful to stop storing the null entries in the specified columns. We will mark student name column as not null column. This allows us to always have some entries in the student name column of the student table without having NULL. Here are the steps:
+
+1.	As you did previously, bring up the table design view by clicking the modify context menu for the table.
+
+2.	Remove the check mark as shown in the picture below. This action will enable the Not   Null constraint for the StudName column. 
+
+Example:
+
+### How to alter a table schema in SQL Server?
+
+Altering Tables: It is used to modify an existing table.
+
+CREATE TABLE Stock ( ID SMALLINT 	);	mysql > ALTER TABLE Stock -
+
+>	ADD COLUMN Quantity SMALLINT UNSIGNED NOT NULL, -
+
+>	MODIFY ID SMALLINT UNSIGNED NOT NULL, - > ADD PRIMARY KEY(ID);
+
+mysql > Describe Stock;
+
+mysql > ALTER TABLE Stock;
+
+Example in Sql:
+
+
+
+### How to create index in SQL Server?
+
+Indexes are data structures that are used to improve the searching speed in a table. The user can not see the index directly. An index increases the performance of select statements and where clausees and slows down insert and update statements. So we create indexes only for those columns that are not frequently updated.
+
+Creation of index: Example: create index i_select on emp(empName)
+
+Creation of composite index: It is created on more than one column of the table using.
+
+Example: create index i_select on emp(empId,empName)
+
+Creation of Unique index: Used for Data Integrity. A Unique index does not allow duplicate values to be inserted into the table.
+
+Example: create index i_unique on emp(empId) any
+
+### How to get unique records in SQL?
+
+Unique Constraint: It ensures that each row for a column must have a unique value. It is like a Primary key but it can accept only one null value. In a table one or more column can contain a Unique Constraint.
+
+Column Level:
+
+Syntax:Create Table Table_Name (Column_Name Datatype Constraint Constraint_Name Unique)
+
+Example:Create Table MY_Tab(IId int constraint Unique_Cons Unique ,Name nvarchar(50))
+
+### How to create a date column in SQL Server?
+
+Datetime data type can store dates from January 1, 1753 to December 31, 9999 with a precision up to 0.003 fraction of a second. The smalldate data type can store dates from January 1, 1900 to June 6, 2079 with a precision of a second.
+
+create table tbDate	( col datetime);	
+go	
+insert into tbDate values('8:00 AM');	
+go
+insert into tbDate values('March 24,2008');
+go
+
+There are styles to format the input and output when converting from datetime into characters. We must use the convert function and the following list of styles.
+
+Style ID
+
+Style Type
+
+0 or 100
+
+mon dd yyyy hh:miAM (or PM)
+
+101
+
+mm/dd/yy
+
+102
+
+yy.mm.dd
+
+103
+
+dd/mm/yy
+
+104
+
+dd.mm.yy
+
+105
+
+dd-mm-yy
+
+106
+
+dd mon yy
+
+107
+
+Mon dd, yy
+
+108
+
+hh:mm:ss
+
+9 or 109
+
+mon dd yyyy hh:mi:ss:mmmAM (or PM)
+
+110
+
+
+mm-dd-yy
+
+
+111
+
+yy/mm/dd
+
+112
+
+Yymmdd
+
+13 or 113
+
+dd mon yyyy hh:mm:ss:mmm(24h)
+
+114
+
+hh:mi:ss:mmm(24h)
+
+20 or 120
+
+yyyy-mm-dd hh:mi:ss(24h)
+
+21 or 121
+
+yyyy-mm-dd hh:mi:ss.mmm(24h)
+
+126
+
+yyyy-mm-dd Thh:mm:ss.mmm(no spaces)
+
+
+130
+
+
+dd mon yyyy hh:mi:ss:mmmAM
+
+131
+
+dd/mm/yy hh:mi:ss:mmmAM
+
+### What is ACID fundamental? What are transactions in SQL SERVER?
+
+A transaction is a sequence of operations performed as a single logical unit of work. A logical unit of work must exhibit four properties, called the ACID (Atomicity, Consistency, Isolation, and Durability) properties, to qualify as a transaction:
+Atomicity
+
+• A transaction must be an atomic unit of work; either all of its data modifications are performed or none of them is performed.
+Consistency
+
+• When completed, a transaction must leave all data in a consistent state. In a relational database, all rules must be applied to the 
+transaction's modifications to maintain all data integrity.
+
+Isolation
+
+Modifications made by concurrent transactions must be isolated from the modifications made by any other concurrent transactions. A transaction either see data in the state it was before another concurrent transaction modified it, or it sees the data after the second transaction has completed, but it does not see an intermediate state. This is referred to as serializability because it results in the ability to reload the starting data and replay a series of transactions to end up with the data in the same state it was in after the original transactions were performed.
+
+Durability
+
+• After a transaction has completed, its effects are permanently in place in the system. The modifications persist even in the event of a system failure.
+
+### What is a candidate key?
+
+A table may have more than one combination of columns that could uniquely identify the rows in a table; each combination is a candidate key. During database design you can pick up one of the candidate keys to be the primary key. For example, in the supplier table supplierid and suppliername can be candidate key but you will only pick up supplierid as the primary key.
+
+### How do GROUP and ORDER BY Differ?
+
+ORDER BY alters the order in which items are returned.
+
+GROUP BY will aggregate records by the specified columns which allows you to perform aggregation functions on non-grouped columns (such as SUM, COUNT, AVG, etc).
+
+The ORDER BY clause’s purpose is to sort the query result by specific columns.
+
+The GROUP BY clause’s purpose is summarize unique combinations of columns values.
+
+Before we get into their differences consider the general setup of the SELECT statement:
+
+SELECT columnlist From table GROUP BY columnA, columnB ORDER BY columnlist
+
+Notice that the ORDER BY clause appears at the end.  You can use this as a clue to understand that the ORDER BY statement is used to 
+sort the final result of the query.  In fact, it can be used to sort results from a GROUP BY clause.  Confused?  I was at first!
+Ok, let’s break it down.
+
+ORDER BY
+
+The ORDER BY statement is used to sort values.  You probably already knew that!  So
+
+SELECT   SalesOrderID,  ProductID,      OrderQty* UnitPrice As ExtendedPrice FROM     Sales.SalesOrderDetail ORDER BY SalesOrderID
+will sort the value, according to SalesOrderID.
+
+Every row in the table is included in the result.  The values are sorted in ascending order according to the SalesOrderID.
+
+GROUP BY
+
+Contrast this to the GROUP BY clause, which is used to group like column values into a single row.
+
+This is useful as it allows you to summarize information.  For instance you can use aggregate functions such as SUM and AVERAGE to calculate values.
+
+In this example
+
+SELECT   SalesOrderID, SUM(OrderQty* UnitPrice) As TotalPrice FROM     Sales.SalesOrderDetail
+GROUP BY SalesOrderID
+
+We are grouping by SalesOrderID and summing each order’s product prices to return the total.  This is the magic of the GROUP BY clause:  it allows you to perform summary calculations on multiple rows.
+
+With the GROUP BY clause not every row is include in the result. Instead, only unique combinations of SalesOrderID along with the sum are included.
+
+Now the ORDER BY and GROUP BY can be used together.  You may ask what is the point, if the results are already grouped by SalesOrderID, but what about ordering by the total price?  You can do this as
+
+SELECT   SalesOrderID, SUM(OrderQty* UnitPrice) As TotalPrice FROM     Sales.SalesOrderDetail
+
+GROUP BY SalesOrderID ORDER BY TotalPrice
+
+To summarize, the key difference between order by and group by is:
+
+l	ORDER BY is used to sort a result by a list of columns or expressions.
+
+l	GROUP BY is used to create unique combinations of a list of columns that can be used to form summaries.  A byproduct of this operation is that the grouping tend to be sorted; however, this isn’t a guarantee.
+
+### Compare SQL & PL/SQL
+
+Criteria	SQL	PL/SQL
+
+### What it is	Single query or command execution	Full programming language
+What it comprises	Data source for reports, web pages	Application language to build, format and display report, web pages
+Characteristic	Declarative in nature	Procedural in nature
+Used for	Manipulating data	Creating applications
+
+### What is BCP? When is it used?
+
+It is a tool used to duplicate enormous quantity of information from tables and views. It does not facsimile the structures same as foundation to target.
+BULK INSERT command helps to bring in a data folder into a record, table or view in a user-specific arrangement.
+
+### When is the UPDATE_STATISTICS command used?
+
+This command is used, ones the processing of large data is done.
+When we delete a large number of files, alteration or reproduction takes place in the tables, to be concerned of these changes we need to restructure the indexes This is done UPDATE_STATISTICS.
+
+### Explain the steps needed to Create the scheduled job?
+
+Steps to create a Scheduled Job :
+
+1.	Connect to the database of SQL server in SQL Server Management Studio. On the SQL Server Agent, we will find a Jobs folder.
+
+2.	Right click on jobs and choose Add New.
+
+3.	A New Job window will come into view. Give an associated name for the same.
+
+4.	Click next on the “Steps” in the left list of options. An SQL job can have multiple steps either in the form of SQL declaration 
+or a stored practice call.
+
+5.	Click on the “Schedules” in the left list of options. An SQL job can comprise of one or supplementary schedules. It is basically the instance at which SQL job will jog itself. We can spell out returning schedules also.
+
+### When are we going to use truncate and delete?
+
+1.	TRUNCATE is a DDL command, whereas DELETE is a DML command.
+
+2.	We can’t execute a trigger in case of TRUNCATE whilst with DELETE, we can accomplish a trigger.
+
+3.	TRUNCATE is quicker than DELETE, for the reason that when we use DELETE to delete the data, at that time it store the whole 
+statistics in the rollback gap on or after where we can get the data back after removal. In case of TRUNCATE, it will not store data in rollback gap and will unswervingly rub it out. TRUNCATE do not recover the deleted data.
+
+4.	We can use any condition in WHERE clause using DELETE but it is not possible with TRUNCATE.5.If a table is referenced by any foreign key constraints, then TRUNCATE won’t work.
+
+### Explain correlated query work?
+
+It’s most important to be attentive of the arrange of operations in an interrelated subquery.
+
+First, a row is processed in the outer doubt.
+
+Then, for that exacting row, the subquery is executed – as a result for each row processed by the outer query, the subquery will also be processed. In correlated subquery, each time a line is worked for Emp1, the subquery will also make a decision on the exacting row’s value for Emp1.Salary and run. And the outer query will move on to the next row, and the subquery will execute for that row’s value of Emp1.Salary.
+
+It will persist in anticipation of the “WHERE (1) = (… )” state is pleased.
+
+### When is the Explicit Cursor Used ?
+
+If the developer needs to perform the row by row operations for the result set containing more than one row, then he unambiguously declares a pointer with a name. They are managed by OPEN, FETCH and CLOSE.%FOUND, %NOFOUND, %ROWCOUNT and %ISOPEN characteristics are used in all types of pointers.
+
+### Find What is Wrong in this Query?
+
+SELECT subject_code, AVG (marks) FROM students WHERE AVG(marks) > 75 GROUP BY subject_code;
+
+The WHERE clause cannot be used to restrict groups. Instead, the HAVING clause should be used.
+
+SELECT subject_code, AVG (marks) FROM students HAVING AVG(marks) > 75 GROUP BY subject_code;
+
+### Write the Syntax for STUFF function in an SQL server?
+
+STUFF (String1, Position, Length, String2)
+
+String1 - String to be overwritten
+
+Position - Starting location for overwriting
+
+Length - Length of substitute string
+
+String2- String to overwrite.
+
+10. Name some commands that can be used to manipulate text in T-SQL code. For example, a command that obtains only a portion of the text or replace a text string, etc.
+
+l	CHARINDEX( findTextData, textData, [startingPosition] ) – Returns the starting position of the specified expression in a character string. The starting position is optional.
+
+l	LEFT( character_expression , integer_expression ) – Returns the left part of a character string with the specified number of characters.
+
+l	LEN( textData ) – Returns integer value of the length of the string, excluding trailing blanks.
+
+l	LOWER ( character_expression ) – Returns a character expression after converting uppercase character data to lowercase.
+
+l	LTRIM( textData) – Removes leading blanks. PATINDEX( findTextData, textData ) – Returns integer value of the starting position of text found in the string.
+
+l	REPLACE( textData, findTextData, replaceWithTextData ) – Replaces occurrences of text found in the string with a new value.
+
+l	REPLICATE( character_expression , integer_expression ) – Repeats a character expression for a specified number of times.
+
+l	REVERSE( character_expression ) – Returns the reverse of a character expression.
+
+l	RTRIM( textData) – Removes trailing blanks. SPACE( numberOfSpaces ) – Repeats space value specified number of times.
+
+l	STUFF( textData, start , length , insertTextData ) – Deletes a specified length of characters and inserts another set of characters at a specified starting point.
+
+l	SUBSTRING( textData, startPosition, length ) – Returns portion of the string.
+
+l	UPPER( character_expression ) – Returns a character expression with lowercase character data converted to uppercase.
+
+### What are the three ways that Dynamic SQL can be executed?
+
+l	Writing a query with parameters.
+
+l	Using EXEC.
+
+l	Using sp_executesql.
+
+### In what version of SQL Server were synonyms released? How do synonyms work and explain its use cases? Synonyms were released with SQL Server 2005.
+
+l	Synonyms enable the reference of another object (View, Table, Stored Procedure or Function) potentially on a different server, database or schema in your environment. In simple words, the original object that is referenced in the whole code is using a completely different underlying object, but no coding changes are necessary. Think of this as an alias as a means to simplify migrations and application testing without the need to make any dependent coding changes.
+
+l	Synonyms can offer a great deal of value when converting underlying database objects without breaking front end or middle tier code. This could be useful during a re-architecture or upgrade project.
+
+### If you are a SQL Developer, how can you delete duplicate records in a table with no primary key?
+
+Use the SET ROWCOUNT command. For instance,
+
+if you have 2 duplicate rows, you would SET ROWCOUNT 1, execute DELETE command and then SET ROWCOUNT 0.
+
+### Is it possible to import data directly from T-SQL commands without using SQL Server Integration Services? If so, what are the commands?
+
+Yes, six commands are available to import data directly in the T-SQL language. These commands include :
+
+l	BCP : The bulk copy (bcp) command of Microsoft SQL Server provides you with the ability to insert large numbers of records directly from the command line. In addition to being a great tool for command-line aficionados, bcp is a powerful tool for those seeking to insert data into a SQL Server database from within a batch file or other programmatic method.
+
+l	Bulk Insert : The BULK INSERT statement was introduced in SQL Server 7 and allows you to interact with bcp (bulk copy program) via a script.
+
+l	OpenRowSet : The OPENROWSET function can be referenced in the FROM clause of a query as if it were a table name. The OPENROWSET function can also be referenced as the target table of an INSERT, UPDATE, or DELETE statement, subject to the capabilities of the OLE DB provider. Although the query might return multiple result sets, OPENROWSET returns only the first one.
+
+l	OPENDATASOURCE : Provides ad hoc connection information as part of a four-part object name without using a linked server name.
+
+l	OPENQUERY : Executes the specified pass-through query on the specified linked server. This server is an OLE DB data source. OPENQUERY can be referenced in the FROM clause of a query as if it were a table name.
+
+l	Linked Servers : Configure a linked server to enable the SQL Server Database Engine to execute commands against OLE DB data sources outside of the instance of SQL Server. Typically linked servers are configured to enable the Database Engine to execute a Transact-SQL statement that includes tables in another instance of SQL Server, or another database product such as Oracle.
+
+### What is the native system stored procedure to execute a command against all databases?
+
+l	The sp_MSforeachdb system stored procedure accepts the @Command parameter which can be exetecuted against all databases. The ‘?’ is used as a placeholder for the database name to execute the same command.
+
+l	The alternative is to use a cursor to process specific commands against each database.
+
+### How can a SQL Developer prevent T-SQL code from running on a production SQL Server?
+
+Use IF logic with the @@SERVERNAME function compared against a string with a RETURN command before any other logic.
+
+### How do you maintain database integrity where deletions from one table will automatically cause deletions in another table?
+
+You can create a trigger that will automatically delete elements in the second table when elements from the first table are removed.
+
+### What port does SQL server run on?
+
+1433 is the standard port for SQL server.
+
+### What is the SQL CASE statement used for? Explain with an example?
+
+It allows you to embed an if-else like clause in the SELECT clause.
+
+SELECT Employee_Name, CASE Location WHEN 'alex' THEN Bonus * 2 WHEN 'robin' THEN Bonus *, 5 ELSE Bonus END "New Bonus" FROM  Intellipaat_employee;
+
+### What are the risks of storing a hibernate-managed object in cache? How do you overcome the problems?
+
+The primary problem here is that the object will outlive the session it came from. Lazily loaded properties won’t get loaded if needed later. To overcome the problem, perform cache on the object’s id and class and then retrieve the object in the current session context.
+
+### When is the use of UPDATE_STATISTICS command ?
+
+Updating statistics ensures that queries compile with up-to-date statistics. However, updating statistics causes queries to recompile. We recommend not updating statistics too often because there is a performance tradeoff between improving query plans and the time it takes to recompile queries. The specific tradeoffs depend on your application. UPDATE STATISTICS can use tempdb to sort the sample of rows for building statistics.
+
+Syntax: UPDATE STATISTICS table_or_indexed_view_name 
+
+[    { { index_or_statistics__name }   | ( { index_or_statistics_name } [ ,...n ] )    }   ] 
+
+[    WITH        [     FULLSCAN   | SAMPLE number { PERCENT | ROWS }  | RESAMPLE 
+
+[ ON PARTITIONS ( {  |  } [, …n] ) ]    |  [ ,...n ]   ] 
+
+[ [ , ] [ ALL | COLUMNS | INDEX ]   [ [ , ] NORECOMPUTE ]     [ [ , ] INCREMENTAL = { ON | OFF } ]    ] ;
+
+::=
+
+[ STATS_STREAM = stats_stream ]
+
+[ ROWCOUNT = numeric_constant ]
+
+[ PAGECOUNT = numeric_contant ]
+
+### What is SQL Profiler?
+
+Microsoft SQL Server Profiler is a graphical user interface to SQL Trace for monitoring an instance of the Database Engine or Analysis Services. You can capture and save data about each event to a file or table to analyze later.
+
+Use SQL Profiler to monitor only the events in which you are interested.
+
+If traces are becoming too large, you can filter them based on the information you want, so that only a subset of the event data is collected. Monitoring too many events adds overhead to the server and the monitoring process and can cause the trace file or trace table to grow very large, especially when the monitoring process takes place over a long period of time.
+
+### What command using Query Analyzer will give you the version of SQL server and operating system?
+
+SELECT SERVERPROPERTY (‘productversion’), SERVERPROPERTY (‘productlevel’), SERVERPROPERTY (‘edition’).
+
+### What does it mean to have QUOTED_IDENTIFIER ON? What are the implications of having it OFF?
+
+When SET QUOTED_IDENTIFIER is ON, identifiers can be delimited by double quotation marks, and literals must be delimited by single quotation marks. When SET QUOTED_IDENTIFIER is OFF, identifiers cannot be quoted and must follow all Transact-SQL rules for identifiers.
+
+### What is the STUFF function and how does it differ from the REPLACE function in SQL?
+
+Stuff function :  This function is used to replace string from the given start position, passed as 2nd argument with string passed as last argument. In Stuff function, 3rd argument defines the number of characters which are going to be replaced.
+
+Syntax :  STUFF ( character_expression , start , length , replaceWith_expression )
+
+For example :  Select Stuff ('Intellipaat', 3, 3, 'abc')
+
+This query will return the string "Iabcllipaat". In this example, Stuff function replaces the string "Intellipaat" onwards the 3rd position('nte') with 'abc'.
+
+Replace Function : Replace function is used to replace all occurrence of a specified with the string passed as last argument.
+
+Syntax :-  REPLACE ( string_expression , string_pattern , string_replacement )
+
+For example : Select Replace ('Abcabcabc', 'bc', 'xy')
+
+This query will return the string Axyaxyaxy. In this example, Replace function replaces the occurrence of each 'bc' string with 'xy'.
+
+### How to get @@ERROR and @@ROWCOUNT at the same time?
+
+If @@Rowcount is checked after Error checking statement then it will have 0 as the value of @@Recordcount as it would have been reset. And if @@Recordcount is checked before the error-checking statement then @@Error would get reset. To get @@error and @@rowcount at the same time do both in same statement and store them in local variable.
+
+SELECT @RC = @@ROWCOUNT, @ER = @@ERROR
+
+### What is de-normalization in SQL database administration? Give examples
+
+De-normalization is used to optimize the readability and performance of the database by adding redundant data. It covers the inefficiencies in the relational database software.
+
+De-normalization logical data design tend to improve the query responses by creating rules in the database which are called as constraints.
+
+Examples include the following :
+
+l	Materialized views for implementation purpose such as :
+
+l	Storing the count of “many” objects in one-to-many relationship.
+
+l	Linking attribute of one relation with other relations.
+
+l	To improve the performance and scalability of web applications.
+
+### Can you explain about buffer cash and log Cache in SQL Server?
+
+l	Buffer Cache : Buffer cache is a memory pool in which data pages are read. The ideal performance of the buffer cache is indicated as: 95% indicates that pages that were found in the memory are 95% of time. Another 5% is need physical disk access.
+
+If the value falls below 90%, it is the indication of more physical memory requirement on the server.
+
+l	Log Caches : Log cache is a memory pool used to read and write the log pages. A set of cache pages are available in each log cache. The synchronization is reduced between log and data buffers by managing log cache separately from the buffer cache.
+
+### Describe how to use Linked Server.
+
+MS SQL Server supports the connection to different OLE DB on an ad hoc basis. This persistent connection is referred as Linked Server.
+
+Following are the steps to use Linked Server for any OLE DB. You can refer this to use an MS-Excel workbook.
+
+1.	Open SQL Server Management Studio in SQL Server.
+
+2.	Expand Server Objects in Object Explorer.
+
+3.	Right-click on Linked Servers. Click on New Linked Server.
+
+4.	Select General page in the left pane and
+
+o	Type any name for the linked server in the first text box.
+
+o	Select the Other Data Source option.
+
+o	Click on Microsoft Jet 4.0 OLE DB Provider from the Provider list.
+
+o	Type the Excel as the name of the OLE DB data source.
+
+o	Type the full path and file name of the Excel file in Data Source box.
+
+o	Type the Excel version no. (7.0, 8.0 etc) in the Provider String. Use Excel 8.0 for Excel 2000, Excel 2002 or Excel 97.
+
+o	To create a linked server click on OK.
+
+### Explain how to send email from SQL database.
+
+SQL Server has a feature for sending mails. Stored procedures can also be used for sending mail on demand. With SQL Server 2005, MAPI client is not needed for sending mails.
+
+The following is the process for sending emails from database.
+
+l	Make sure that the SQL Server Mail account is configured correctly and enable Database Mail.
+
+l	Write a script to send an e-mail. The following is the script.
+
+l	USE [YourDB]
+
+l	EXEC msdb.dbo.sp_send_dbmail
+
+l	@recipients = 'xyz@intellipaat.com; abc@intellipaat.com;pqr@intellipaat.com’ 
+
+l	@body = ' A warm wish for your future endeavor',
+
+l	@subject = 'This mail was sent using Database Mail' ;
+
+GO
+
+### How to make remote connection in database?
+
+The following is the process to make a remote connection in database :
+
+Use SQL Server Surface Area Configuration Tool for enabling the remote connection in database.
+
+Click on Surface Area Configuration for Services and Connections.
+
+Click on SQLEXPRESS/Database Engine/RemoteConnections.
+
+Select the radio button: Local and Remote Connections and select ‘Using TCP/IP only’ under Local and Remote Connections.
+
+Click on OK button / Apply button
+
+### What is the purpose of OPENXML clause SQL server stored procedure?
+
+OPENXML parses the XML data in SQL Server in an efficient manner. It’s primary ability is to insert XML data to the RDB. It is also possible to query the data by using OpenXML. The path of the XML element needs to be specified by using ‘xpath’.
+
+The following is a procedure for retrieving xml data:
+
+DECLARE @index int
+
+DECLARE @xmlString varchar(8000)
+
+SET @xmlString =' abc 9343463943/PhoneNo> xyz 9342673212 '
+
+EXEC sp_xml_preparedocument @index OUTPUT, @xmlString
+
+SELECT * FROM OPENXML (@index, 'Persons/Person') WITH (id varchar(10), Name varchar(100) 'Name' , PhoneNo varchar(50) 'PhoneNo')
+
+EXEC sp_xml_removedocument @index
+
+The above code snippet results the following:
+
+15201 abc 9343463943 
+
+15202 xyz 9342673212
+
+### How to store pdf file in SQL Server?
+
+Create a column as type ‘blob’ in a table. Read the content of the file and save in ‘blob’ type column in a table.
+
+Or 
+
+Store them in a folder and establish the pointer to link them in the database.
+
+### Explain the use of keyword WITH ENCRYPTION. Create a Store Procedure with Encryption.
+
+It is a way to convert the original text of the stored procedure into encrypted form. The stored procedure gets obfuscated and the output of this is not visible to
+
+CREATE PROCEDURE Abc WITH ENCRYPTION AS
+
+<< SELECT statement>>
+
+GO
+
+WITH ENCRYPTION indicates that SQL Server will convert the original text of CREATE PROCEDURE statement to an encrypted format. Users that do not have no access to system tables or database files cannot retrieve the encrypted text. However, the text will be available to privileged users.
+
+Example:
+
+CREATE PROCEDURE salary_sum WITH ENCRYTION
+
+AS
+
+SELECT sum(salary) FROM employee WHERE emp_dept LIKE Develop
+
+### What is lock escalation?
+
+Lock escalation is used to convert row locks and page locks into table locks thereby “escalating” the smaller or finer locks. This increases the system performance as each lock is nothing but a memory structure. Too many locks would mean more consumption of memory. 
+Hence, escalation is used.
+
+Lock escalation from SQL Server 7.0 onwards is dynamically managed by SQL Server. It is the process of converting a lot of low level locks into higher level locks.
+
+### What is Failover clustering overview?
+
+Failover clustering is mainly used for data availability. Typically, in a failover cluster, there are two machines.
+
+l	One machine provides the basic services and the second is available to run the service when the primary system fails.
+
+l	The primary system is monitored periodically to check if it works. This monitoring may be performed by the failover computer or an independent system also called as cluster controller. In an event of failure of primary computer, the failover system takes control.
+
+### What is Builtin/Administrator?
+
+The Builtin/Administrator account is basically used during some setup to join some machine in the domain. It should be disabled immediately thereafter. For any disaster recovery, the account will be automatically enabled. It should not be used for normal operations.
+
+### What XML support does the SQL server extend?
+
+SQL Server (server-side) supports 3 major elements :
+
+Creation of XML fragments: This is done from the relational data using FOR XML to the select query.
+
+Ability to shred xml data to be stored in the database.
+
+Finally, storing the xml data.
+
+Client-side XML support in SQL Server is in the form of SQLXML. It can be described in terms of :
+
+l	XML Views : providing bidirectional mapping between XML schemas and relational tables.
+
+l	Creation of XML Templates : allows creation of dynamic sections in XML.
+
+SQL server can return XML document using FOR XML clause. XML documents can be added to SQL Server database and you can use the OPENXML 
+clause to display the data from the document as a relational result set. SQL Server 2000 supports XPath queries.Get to know more about SQL Techniques that can help you grow in your career.
+
+### Difference between Primary Key and Foreign Key
+
+Primary key uniquely identify a record in the table.
+Foreign key is a field in the table that is primary key in another table.
+Primary Key can't accept null values.
+Foreign key can accept multiple null value.
+By default, Primary key is clustered index and data in the database table is physically organized in the sequence of clustered index.
+Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.
+We can have only one Primary key in a table.
+We can have more than one foreign key in a table.
+
+Primary Key:
+
+l	There an only be one primary key in a table
+l	In some DBMS it cannot be NULL - e.g. MySQL adds NOT NULL
+l	Primary Key is a unique key identifier of the record
+l	Primary key cannot have a NULL value.
+l	Each table can have only one primary key.
+l	By default, Primary key is clustered index and data in the database table is physically organized in the sequence of clustered index.
+l	Primary key can be related with another table's as a Foreign Key.
+l	We can generated ID automatically with the help of Auto Increment field. Primary key supports Auto Increment value.
+
+Unique Key:
+l	Can be more than one unique key in one table
+l	Unique key can have null values
+l	It can be a candidate key
+l	Unique key can be null and may not be unique
+l	Unique Constraint may have a NULL value.
+l	Each table can have more than one Unique Constraint.
+l	By default, Unique key is a unique non-clustered index.
+l	Unique Constraint can not be related with another table's as a Foreign Key.
+l	Unique Constraint doesn't supports Auto Increment value.
+
+A PRIMARY Key and UNIQUE Key constraints both are similar and it provide unique enforce uniqueness of the column on which they are defined.
+
+Foreign Key
+l	Foreign key is a field in the table that is primary key in another table.
+l	Foreign key can accept multiple null value.
+l	Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.
+l	We can have more than one foreign key in a table.
+l	There are actual advantages to having a foreign key be supported with a clustered index, but you get only one per table. What's the advantage? If you are selecting the parent plus all child records, you want the child records next to each other. This is easy to accomplish using a clustered index.
+
+l	Having a null foreign key is usually a bad idea. In the example below, the record in [dbo].[child] is what would be referred to as an "orphan record". Think long and hard before doing this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# SQL Queries
+
+###  SQL Query to find second highest salary of Employee
+
+There are many ways to find second highest salary of Employee in SQL, you can either use SQL Join or Subquery to solve this problem. Here is SQL query using Subquery:
+
+Method 1: 
+
+1.	select * from employees emp1 where 1 = (select count(DISTINCT(emp2.salary)) from employees emp2 where emp2.salary > emp1.salary)  
+
+Method 2:
+
+select top 2 salary from employees emp order by sal desc
+
+Method 3: 
+
+select MAX(Salary) from Employee WHERE Salary NOT IN (select MAX(Salary) from Employee ); 
+
+### SQL Query to find Max Salary from each department.
+
+You can find the maximum salary for each department by grouping all records by DeptId and then using MAX() function to calculate maximum salary in each group or each department.
+
+SELECT DeptID, MAX(Salary) FROM Employee  GROUP BY DeptID. 
+
+These questions become more interesting if Interviewer will ask you to print department name instead of department id, in that case, you need to join Employee table with Department using foreign key DeptID, make sure you do LEFT or RIGHT OUTER JOIN to include departments without any employee as well.  Here is the query
+
+SELECT DeptName, MAX(Salary) FROM Employee e RIGHT JOIN Department d ON e.DeptId = d.DeptID GROUP BY DeptName;
+
+In this query, we have used RIGHT OUTER JOIN because we need the name of the department from Department table which is on the right 
+side of JOIN clause, even if there is no reference of dept_id on Employee table. 
+
+### Write SQL Query to display the current date.
+
+SQL has built-in function called GetDate() which returns the current timestamp. This will work in Microsoft SQL Server, other vendors like Oracle and MySQL also has equivalent functions.
+SELECT GetDate(); 
+
+
+### Write an SQL Query to check whether date passed to Query is the date of given format or not.
+ 
+ SQL has IsDate() function which is used to check passed value is a date or not of specified format, it returns 1(true) or 0(false) accordingly. Remember ISDATE()is an MSSQL function and it may not work on Oracle, MySQL or any other database but there would be something similar.
+
+SELECT  ISDATE('1/08/13') AS "MM/DD/YY"; 
+
+It will return 0 because passed date is not in correct format.
+
+### Write an SQL Query to print the name of the distinct employee whose DOB is between 01/01/1960 to 31/12/1975.
+
+This SQL query is tricky, but you can use BETWEEN clause to get all records whose date fall between two dates.
+
+SELECT DISTINCT EmpName FROM Employees WHERE DOB  BETWEEN ‘01/01/1960’ AND ‘31/12/1975’;
+
+### Write an SQL Query find number of employees according to gender  whose DOB is between 01/01/1960 to 31/12/1975.
+
+SELECT COUNT(*), sex from Employees  WHERE  DOB BETWEEN '01/01/1960' AND '31/12/1975'  GROUP BY sex;
+
+### Write an SQL Query to find an employee whose Salary is equal or greater than 10000.
+
+SELECT EmpName FROM  Employees WHERE  Salary>=10000;
+
+### Write an SQL Query to find name of employee whose name Start with ‘M’
+
+SELECT * FROM Employees WHERE EmpName like 'M%';
+
+### find all Employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.
+
+SELECT * from Employees  WHERE  UPPER(EmpName) like '%JOE%';
+
+### Write an SQL Query to find  the year from date.
+ 
+ Here is how you can find Year from a Date in SQL Server 2008 
+
+SELECT YEAR(GETDATE()) as "Year";
+
+### How can you create an empty table from an existing table?
+
+Example will be -
+
+1	Select * into studentcopy from student where 1=2
+
+Here, we are copying student table to another table with the same structure with no rows copied.
+
+### How to fetch common records from two tables?
+
+Common records result set can be achieved by -.
+
+1	Select studentID from student. <strong>INTERSECT </strong> Select StudentID from Exam
+
+### How to fetch alternate records from a table?
+
+Records can be fetched for both Odd and Even row numbers -.
+
+To display even numbers-.
+
+1	Select studentId from (Select rowno, studentId from student) where mod(rowno,2)=0
+
+To display odd numbers-.
+
+1	Select studentId from (Select rowno, studentId from student) where mod(rowno,2)=1
+from (Select rowno, studentId from student) where mod(rowno,2)=1.[/sql]
+
+### How to select unique records from a table?
+
+Select unique records from a table by using DISTINCT keyword. 
+
+1	Select DISTINCT StudentID, StudentName from Student.
+
+### What is the command used to fetch first 5 characters of the string?
+
+There are many ways to fetch first 5 characters of the string -.
+
+1	Select SUBSTRING(StudentName,1,5) as studentname from student
+
+1	Select RIGHT(Studentname,5) as studentname from student
+
+### Which operator is used in query for pattern matching?
+
+LIKE operator is used for pattern matching, and it can be used as -.
+
+1.	% – Matches zero or more characters.
+
+2.	_(Underscore) – Matching exactly one character.
+
+Example -.
+
+1	Select * from Student where studentname like ‘a%’
+
+1	Select * from Student where studentname like ‘ami_’
+
+### Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them?
+
+You can use the following query to select distinct records:
+
+SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)
+
+to Delete:
+
+DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
+
+### There is a table which contains two column Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above average students.
+
+This query can be written using subquery as shown below:
+
+SELECT student, marks from table where marks > SELECT AVG(marks) from table)
+
+### How do you find all employees which are also manager? .
+
+You have given a standard employee table with an additional column mgr_id, which contains employee id of the manager.
+
+You need to know about self-join to solve this problem. In Self Join, you can join two instances of the same table to find out additional details as shown below
+
+SELECT e.name, m.name FROM Employee e, Employee m WHERE e.mgr_id = m.emp_id;
+
+this will show employee name and manager name in two column e.g.
+
+name  manager_name
+
+John   David
+
+One follow-up is to modify this query to include employees which don't have a manager. To solve that, instead of using the inner join, just use left outer join, this will also include employees without managers.
+
+### You have a composite index of three columns, and you only provide the value of two columns in WHERE clause of a select query? Will Index be used for this operation? 
+
+For example if Index is on EmpId, EmpFirstName, and EmpSecondNameand you write query like
+
+SELECT * FROM Employee WHERE EmpId=2 and EmpFirstName='Radhe'
+
+If the given two columns are secondary index column then the index will not invoke, but if the given 2 columns contain the primary index(first column while creating index) then the index will invoke. In this case, Index will be used because EmpId and EmpFirstNameare primary columns.
+
+### What is the default join in SQL? Give an example query?
+
+The default join is INNER JOIN.
+
+Example
+
+SELECT column_name(s)  FROM table1  INNER JOIN table2  ON table1.column_name=table2.column_name;  
+
+### Describe all the joins with examples in SQL?
     
-So, the results as true.
+    • SQL LEFT JOIN
 
-But, here we get false:
-
-    • var author = new Author { Name = "Gaurav Kumar Arora" };
-    • var isTrue = speaker is Author;
-    • Console.WriteLine("speaker is of Author type:{0}", isTrue);
+The LEFT JOIN keyword returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right side when there is no match.
     
-Because our speaker is not an object of Author type.
+    1. SQL LEFT JOIN Syntax  
 
-"as" operator-
+SELECT column_name(s)  FROM table1 LEFT JOIN table2  ON table1.column_name=table2.column_name;  
+    
+    • SQL RIGHT JOIN
 
-The "as" operator behaves similar to the "is" operator. The only difference is it returns the object if both are compatible to that 
-type else it returns null.
+The right join returns all the rows in the right table i.e. table 2 with the matching ones on the left table (table1).
 
-Let's understand the preceding with a small snippet as in the following:
-	public static string GetAuthorName(dynamic obj)
-	{	Author authorObj = obj as Author;
-	return (authorObj != null) ? authorObj.Name : string.Empty;  }
+SELECT column_name(s)  FROM table1  RIGHT JOIN table2 ON table1.column_name=table2.column_name;  
+    
+    • SQL FULL OUTER
 
-We have a method that accepts dynamic objects and returns the object name property if the object is of the Author type.
+The full join returns all rows from the left table (table1) and from the right table (table2).
 
-Here, we declared two objects:
-	var speaker = new Speaker { Name="Gaurav Kumar Arora"};
-	var author = new Author { Name = "Gaurav Kumar Arora" };
+SELECT column_name(s)  FROM table1  FULL OUTER JOIN table2  ON table1.column_name=table2.column_name;  
 
-The following returns the "Name" property:
-	var authorName = GetAuthorName(author);
-	Console.WriteLine("Author name is:{0}", authorName);
-
-It returns an empty string:
-	authorName = GetAuthorName(speaker);
-	Console.WriteLine("Author name is:{0}", authorName);
-
-### Question : How to use Nullable<> Types in .Net?
-
-A nullable Type is a data type is that contain the defined data type or the value of null. You should note here that here variable datatype has been given and then only it can be used.
-
-This nullable type concept is not compatible with "var".
-
-I will explain this with syntax in next section.
-
-Declaration:
-
-Any DataType can be declared nullable type with the help of operator "?".
-
-Example of the syntax is as Follows:
-
-int? i = null;
-
-As discussed in previous section "var" is not compatible with this Nullable Type. So we will have Compile Time error if we are 
-declaring something like: 
-
-var? i = null;
-
-Though following syntax is completely fine:
-
-var i = 4;
-
-### Question : Different Ways of Method can be overloaded.
-
-Method overloading is a way to achieve compile time Polymorphism where we can use a method with the same name but different signature, Method overloading is done at compile time and we have multiple way to do that but in all way method name should be same.
-
-◦ Number of parameter can be different.
-
-◦ Types of parameter can be different.
-
-◦ Order of parameters can be different.
-
-Example:
-
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Text;
-	namespace Hello_Word {
-	class overloding {
-	public static void Main() {
-	Console.WriteLine(volume(10));
-	Console.WriteLine(volume(2.5F, 8));
-	Console.WriteLine(volume(100L, 75, 15));
-	Console.ReadLine();
-	}
-	static int volume(int x) {	return (x * x * x); 	}
-	static double volume(float r, int h) {	return (3.14 * r * r * h); 	}
-	static long volume(long l, int b, int h) {	return (l * b * h);	
-	}
-	}
-	}
-Note:
-If we have a method that have two parameter object type and have a same name method with two integer parameter so when we call that method with int value so it’ll call that method have integer parameter instead of object type parameters method.
-
-### Question : What is an Object Pool in .Net?
-
-Object Pooling is something that tries to keep a pool of objects in memory to be re-used later and hence it will reduce the load of object creation to a great extent. This article will try to explain this in detail. The example is for an Employee object, but you can make it general by using Object base class.
-
- What does it mean?
-
-Object Pool is nothing but a container of objects that are ready for use. Whenever there is a request for a new object, the pool manager will take the request and it will be served by allocating an object from the pool.
-
-How it works?
-
-We are going to use Factory pattern for this purpose. We will have a factory method, which will take care about the creation of objects. Whenever there is a request for a new object, the factory method will look into the object pool (we use Queue object). If there is any object available within the allowed limit, it will return the object (value object), otherwise a new object will be created and give you back.
-
-### Question : What are generics in c#.net?
-
-Generics allow you to delay the specification of the data type of programming elements in a class or a method, until it is actually used in the program. In other words, generics allow you to write a class or method that can work with any data type.
-You write the specifications for the class or the method, with substitute parameters for data types. When the compiler encounters a constructor for the class or a function call for the method, it generates code to handle the specific data type.
-
-
-
-
-
-
-
-
-Generic classes and methods combine reusability, type safety and efficiency in a way that their non-generic counterparts cannot. 
-
-Generics are most frequently used with collections and the methods that operate on them. Version 2.0 of the .NET Framework class library provides a new namespace, 
-
-System.Collections.Generic, which contains several new generic-based collection classes. It is recommended that all applications that target the .NET Framework 2.0 and later use the new generic collection classes instead of the older non-generic counterparts such as ArrayList.
-
-Features of Generics:
-
-Generics is a technique that enriches your programs in the following ways:
-
-• It helps you to maximize code reuse, type safety and performance.
-
-• You can create generic collection classes. The .NET Framework class library contains several new generic collection classes in the 
-
-System.Collections.Generic namespace. You may use these generic collection classes instead of the collection classes in the System.Collections namespace.
-
-• You can create your own generic interfaces, classes, methods, events and delegates.
-
-• You may create generic classes constrained to enable access to methods on specific data types.
-
-• You may get information on the types used in a generic data type at run-time using reflection.
-
-### Question : Describe the accessibility modifiers in c#.Net
-
-Access modifiers are keywords used to specify the declared accessibility of a member or a type.
-
-Why to use access modifiers?
-
-Access modifiers are an integral part of object-oriented programming. They support the concept of encapsulation, which promotes the idea of hiding functionality. Access modifiers allow you to define who does or doesn't have access to certain features. In C# there are 5 different types of Access Modifiers:
-
-Modifier
-
-Description
-
-Public
-
-There	are no restrictions on accessing public members	
-
-Private
-		
-Access 	is limited to within the class definition. This is the default access modifier type if none is formally specified
-
-Protected
-
-Access 	is limited to within the class definition and any class that inherits from the class
-
-Internal
-		
-Access	is limited exclusively to classes defined within the current project assembly
-
-Protected internal
-
-Access	is limited to current assembly
-
-### Question : What is Virtual Method in C#?
-
-A virtual method is a method that can be redefined in derived classes. A virtual method has an implementation in a base class as well as derived the class. It is used when a method's basic functionality is the same but sometimes more functionality is needed in the derived class. A virtual method is created in the base class that can be overridden in the derived class. We create a virtual method in the base class using the virtual keyword and that method is overridden in the derived class using the override keyword.
-
-When a method is declared as a virtual method in a base class then that method can be defined in a base class and it is optional for the derived class to override that method. The overriding method also provides more than one form for a method. Hence it is also an example for polymorphism.
-
-When a method is declared as a virtual method in a base class and that method has the same definition in a derived class then there is no need to override it in the derived class. But when a virtual method has a different definition in the base class and the derived class then there is a need to override it in the derived class.
-
-When a virtual method is invoked, the run-time type of the object is checked for an overriding member. The overriding member in the most derived class is called, which might be the original member, if no derived class has overridden the member.
-
-Virtual Method:
-
-1.	By default, methods are non-virtual. We can't override a non-virtual method.
-
-2.	We can't use the virtual modifier with the static, abstract, private or override modifiers.
-
-
-### Question : What is the Difference between Array and ArrayList in C#.Net?
-
-Array
-
-ArrayList	
-
-Array uses the vector array to store the elements
-
-ArrayList uses the linked list to store the elements
-
-Size of the array must be defined until redeem used(vb) 
-
-No need to specify the storage size
-
-Array is specific data type storage
-
-ArrayList can be stored everything as object	
-
-No need to do the typecasting
-
-
-Every time type casting has to do
-
-It will not lead to runtime exception
-
-It leads to the runtime error exception
-
-Element cannot be inserted or deleted in between
-
-Elements  can be inserted and deleted	
-
-There  is no build in members to do ascending or descending 
-
-Arraylist has many methods to do operation like sort insert, remove, binarysearch, etc
-
-
-
-
-### Question : What you understand by Value types and Reference types in C#.Net?
-
-In C# data types can be of two types: Value Types and Reference Types. Value type variables contain their object (or data) directly. If 
-we copy one value type variable to another then we are actually making a copy of the object for the second variable. Both of them will 
-independently operate on their values, Value Type member will locate into Stack and reference member will locate in Heap always.
-Let consider each case briefly:
-
-• Pure Value Type: Here I used a structure as a value type. It has an integer member. I created two instances of this structure. Afterwards I assigned second instance to the first one. Then I changed the state of second instance, but it hasn't effect the first one, as whole items are value type and assignments on those types will copy only values not references i.e. in a Value Type assignment, all instances have its own local copy of members.
-
-• Pure Reference Type: I created a class and added a "DataTable" as a Reference Type member for this class. Then I performed the assignments just like below. But the difference is that on changing the state of second instance, the state of first instance will automatically alter. So in a Reference Type assignment both Value and Reference will be assigned i.e. all instances will point to the single object.
-
-• Value Type with Reference Type: This case and the last case to come are more interesting. I used a structure in this particular scenario also. But this time it includes a Reference Type (A Custom Class Object) Member besides a Value Type (An Integer) Member. When you performing the assignments, it seems like a swallow copy, as Value Type member of first instance won't effected, but the Reference Type member will alter according to the second instance. So in this particular scenario, assignment of Reference Type member produced a reference to a single object and assignment of Value Type member produced a local copy of that member.
-
-• Reference Type With Value Type : Contrary to the above case, in this scenario, both Reference & Value Types will be affected. I.e. a Value Type member in a Reference Type will be shared among its instances.
-
-### Question : What is Serialization?
-
-Serialization means saving the state of your object to secondary memory, such as a file. Suppose you have a business layer where you have many classes to perform your business data. Now suppose you want to test whether your business classes give the correct data out without verifying the result from the UI or from a database. Because it will take some time to process.
-
-Here comes Serialization. You will serialize all your necessary business classes and save them into a text or XML file, on your hard disk. So you can easily test your desired result by comparing your serialized saved data with, your desired output data. You can say it is a little bit of autonomic unit testing performed by the developer.
-
-There are three types of serialization:
-
-• Binary serialization (Save your object data into binary format).
-
-• Soap Serialization (Save your object data into binary format; mainly used in network related communication).
-
-• Xml Serialization (Save your object data into an XML file).
-
-
-### Question : What is the use of using statement in C#?
-
-The .Net Framework provides resource management for managed objects through the garbage collector - You do not have to explicitly allocate and release memory for managed objects. Clean-up operations for any unmanaged resources should perform in the destructor in C#. To allow the programmer to explicitly perform these clean-up activities, objects can provide a Dispose method that can be invoked when the object is no longer needed. The using statement in C# defines a boundary for the object outside of which, the object is automatically destroyed. The using statement is excited when the end of the "using" statement block or the execution exits the "using" statement block indirectly, for example - an exception is thrown. The "using" statement allows you to specify multiple resources in a single statement. The object could also be created outside the "using" statement. The objects specified within the using block must implement the IDisposable interface. The framework invokes the Dispose method of objects specified within the "using" statement when the block is exited.
-
-### Question : What is jagged array in C#.Net?
-
-A jagged array is an array whose elements are arrays. The elements of a jagged array can be of different dimensions and sizes. A jagged array is sometimes called an "array of arrays." A special type of array is introduced in C#. A Jagged Array is an array of an array in which the length of each array index can differ.
-
-Example:
-
-int[][] jagArray = new int[5][];
-
-In the above declaration the rows are fixed in size. But columns are not specified as they can vary.
-
-Declaring and initializing jagged array:
-	int[][] jaggedArray = new int[5][];
-	jaggedArray[0] = new int[3];
-	jaggedArray[1] = new int[5];
-	jaggedArray[2] = new int[2];
-	jaggedArray[3] = new int[8];
-	jaggedArray[4] = new int[10];
-	jaggedArray[0] = new int[] { 3, 5, 7, };
-	jaggedArray[1] = new int[] { 1, 0, 2, 4, 6 };
-	jaggedArray[2] = new int[] { 1, 6 };
-	jaggedArray[3] = new int[] { 1, 0, 2, 4, 6, 45, 67, 78 };
-	jaggedArray[4] = new int[] { 1, 0, 2, 4, 6, 34, 54, 67, 87, 78 };
-
-### Question : What is Multithreading with .NET?
-
-The real usage of a thread is not about a single sequential thread, but rather using multiple threads in a single program. Multiple threads running at the same time and performing various tasks is referred as Multithreading. A thread is considered to be a lightweight process because it runs within the context of a program and takes advantage of resources allocated for that program.
-
-
-
-
-
-
-
-
-A single-threaded process contains only one thread while a multithreaded process contains more than one thread for execution.
-
- 
-
-
-
-
-
-System.Threading Namespace:
-
-Like many other features, in .NET, System.Threading is the namespace that provides various types to help in construction of multithreaded applications.
-
-Type
-
-Description
-
-Thread
-
-It represents a thread that executes within the CLR. Using this we can produce additional threads in an application domain	
-
-Mutex	
-
-It is used for synchronization between application domains
-
-Monitor	
-
-It implements synchronization of objects using locks and wait
-
-Smaphore
-
-It allows limiting the number of threads that can access a resource concurrently		
-
-Interlock
-
-It provides atomic operations for variables that are shared by multiple threads	
-
-Threadpool
-
-It allows you to interact with the CLR maintained thread pool
-
-Thread
-
-This represents the priority levels such as high,low and normal
-
-
-### Question : Explain Anonymous type in C#?
-
-Anonymous types allow us to create new type without defining them. This is way to defining read only properties into a single object without having to define type explicitly. Here Type is generating by the compiler and it is accessible only for the current block of code. The type of properties is also inferred by the compiler.
-
-We can create anonymous types by using “new” keyword together with the object initializer.
-
-Example:
-	var anonymousData = new
-	{	ForeName = "Jignesh",
-	SurName = "Trivedi"	};
-	Console.WriteLine("First Name : " + anonymousData.ForeName);
-
-Anonymous Types with LINQ Example:
-Anonymous types are also used with the "Select" clause of LINQ query expression to return subset of properties.
-
-Example:
-If Any object collection having properties called FirstName , LastName, DOB etc. and you want only FirstName and LastName after the Querying the data then.
-	class MyData {
-	public string FirstName {get;	set;}
-	public string LastName {get;.	set;}
-	public DateTime DOB {get;	set;}
-	public string MiddleName {get; set;	}	}
-	static void Main(string[] args) {
-	// Create Dummy Data to fill Collection.
-	List < MyData > data = new List < MyData > ();
-	data.Add(new MyData {FirstName = "Jignesh", LastName = "Trivedi", MiddleName = "G", DOB = new DateTime(1990, 12, 30)});
-	data.Add(new MyData {FirstName = "Tejas", LastName = "Trivedi", MiddleName = "G", DOB = new DateTime(1995, 11, 6) 64});
-	data.Add(new MyData {FirstName = "Rakesh", LastName = "Trivedi", MiddleName = "G", DOB = new Date Time(1993, 10, 8)	});
-	data.Add(new MyData {FirstName = "Amit", LastName = "Vyas", MiddleName = "P", DOB = newDateTime (1983, 6, 15)});
-	data.Add(new MyData {FirstName = "Yash", LastName = "Pandiya", MiddleName = "K", DOB = newDateTime(1988, 7, 20)});	}
-	var anonymousData = from pl in data
-	select new {	pl.FirstName, pl.LastName	};
-	foreach(var m in anonymousData) {
-	Console.WriteLine("Name : " + m.FirstName + " " + m.LastName);  }	}
-
-### Question : Explain Hashtable in C#?
-
-A Hashtable is a collection that stores (Keys, Values) pairs. Here, the Keys are used to find the storage location and are immutable and cannot have duplicate entries in the Hashtable. The .Net Framework has provided a Hash Table class that contains all the functionality required to implement a hash table without any additional development. The hash table is a general-purpose dictionary collection. Each item within the collection is a DictionaryEntry object with two properties: a key object and a value object. These are known as Key/Value. When items are added to a hash table, a hashcode is generated automatically. This code is hidden from the developer. All access to the table's values is achieved using the key object for identification. 
-As the items in the collection are sorted according to the hidden hash code, the items should be considered to be randomly ordered.
-
-The Hashtable Collection: The Base Class libraries offers a Hashtable Class that is defined in the System.Collections namespace, so you don't have to code your own hash tables. It processes each key of the hash that you add every time and then uses the hash code to look up the element very quickly. The capacity of a hash table is the number of elements the hash table can hold. As elements are added to a hash table, the capacity is automatically increased as required through reallocation. It is an older .Net Framework type.
-
-Declaring  a  Hashtable:  The  Hashtable  class  is  generally  found  in  the  namespace  called System.Collections. So to execute any of the examples, we have to add using System.Collections; to the source code. The declaration for the Hashtable is:
-Hashtable HT = new Hashtable ();
-
-### Question : What is LINQ in C#?
-
-LINQ stands for Language Integrated Query. LINQ is a data querying methodology which provides querying capabilities to .NET languages with syntax similar to a SQL query
-
-LINQ has a great power of querying on any source of data. The data source could be collections of objects, database or XML files. We can easily retrieve data from any object that implements the IEnumerable<T> interface.
-
-Advantages of LINQ:
-
-• LINQ offers an object-based, language-integrated way to query over data no matter where that data came from. So through LINQ we can query database, XML as well as collections.
-
-• Compile time syntax checking.
-
-• It allows you to query collections like arrays, enumerable classes etc. in the native   language of your application, and like VB or C# in much the same way as you would 66 query a database using SQL.
-
-
-
-
-
-
-
-
-
-
-
-### Question : What is File Handling in C#.Net?
-
-The System.IO namespace provides four classes that allow you to manipulate individual files, as well as interact with a machine directory structure. The Directory and File directly extends System.Object and supports the creation, copying, moving and deletion of files using various static methods. They only contain static methods and are never instantiated. The FileInfo and DirecotryInfo types are derived from the abstract class FileSystemInfo type and they are typically, employed for obtaining the full details of a file or directory because their members tend to return strongly typed objects. They implement roughly the same public methods as a Directory and a File but they are stateful and the members of these classes are not static.
-
-### Question : What is Reflection in C#.Net?
-
-Reflection typically is the process of runtime type discovery to inspect metadata, CIL code, late binding and self-generating code. At run time by using reflection, we can access the same "type" information as displayed by the ildasm utility at design time. The reflection is analogous to reverse engineering in which we can break an existing *.exe or *.dll assembly to explore defined significant contents information, including methods, fields, events and properties.
-
-You can dynamically discover the set of interfaces supported by a given type using the System.Reflection namespace. This namespace contains numerous related types as follows:
-
-Types
-
-Description
-
-Assembly
-
-this static class allows you to load,investigate and manipulate an assembly
-
-Assemblyname
-
-allows to exploration of adundant details behind an assembly
-
-Eventinfo
-
-information about a given event
-
-Propertyinfo
-
-hold information of a specified property
-
-Methodinfo
-
-contains information about a specified method
-
-
-Reflection typically is used to dump out the loaded assemblies list, their reference to inspect methods, properties etcetera. 
-Reflection is also used in the external disassembling tools such Reflector, Fxcop and NUnit because .NET tools don't need to parse the source code similar to C++.
-
-Metadata Investigation:
-
-The following program depicts the process of reflection by creating a console based application. This program will display the details of the fields, methods, properties and interfaces for any type within the mscorlib.dll assembly. Before proceeding, it is mandatory to import "System.Reflection".
-
-Here, we are defining a number of static methods in the program class to enumerate fields, methods and interfaces in the specified type. The static method takes a single "System.Type" parameter and returns void.
-	static void FieldInvestigation(Type t) {
-	Console.WriteLine("*********Fields*********");
-	FieldInfo[] fld = t.GetFields();
-	foreach(FieldInfo f in fld) {	Console.WriteLine("-->{0}", f.Name);	}	}
-	static void MethodInvestigation(Type t) {
-	Console.WriteLine("*********Methods*********");
-	MethodInfo[] mth = t.GetMethods();
-	foreach(MethodInfo m in mth) {	Console.WriteLine("-->{0}", m.Name); }	}
-
-### Question : What is Expression Trees In C#?
-
-Expression and Expression<> are basically classes that can represent the CSharp code as Data. Unlike Func<> or Action<> Expressions are non-compiled Data about the code. Most of LINQ Providers has been built using Expressions.
-Walkthrough of a sample expression: Expression can be parsed, analyzed in the program.
-Let’s create a simple Expression:
-// A simple delegated operation which perform string join.
-Func<string, string, string> StringJoin = (str1, str2) => string.Concat(str1, str2);
-Now I want to parse it analyze it or may be doing some more but for that I need to treat this code as Data. Now let’s write an expression for the above lambda expression:
-Expression<Func<string, string, string>> StringJoinExpr = (str1, str2) => string.Concat(str1, str 2);
-The Expression Tree can be visualized as with its major properties:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Let’s analyze our Expression according to above figure, and see what values are populated to understand the break of Expression statement:
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Question : Differences between Object, Var and Dynamic type?
-
-Object
-    • Object was introduced with C# 1.0	
-    • It can store any kind of value, because object is the base class of all type in .NET framework.
-    • Compiler has little information about the type.
-    • Object type can be passed as method argument and method also can return object type.
-    • Need to cast object variable to original type to use it and performing desired operations.
-    • Cause the problem at run time if the stored value is not getting converted to underlying data type.
-    • Useful when we don’t have more information about the data type.
-
-Var
-    • Var was introduced with C# 3.0	
-    • It can store any type of value but It is mandatory to initialize var types at the time of declaration.
-    • It is type safe i.e. Compiler has all information about the stored value, so that it doesn't cause any issue at run-time.
-    • Var type cannot be passed as method argument and method cannot return object type. Var type work in the scope where it defined.
-    • No need to cast because compiler has all information to perform operations.
-    • Doesn't cause problem because compiler has all information about stored value.
-    • Useful when we don’t know actual type i.e. type is anonymous.
-
-Dynamic
-    • Dynamic was introduced with C# 4.0
-    • It can store any type of the variable, similar to old VB language variable.
-    • It is not type safe i.e. Compiler doesn't have any information about the type of variable.
-    • Dynamic type can be passed as method argument and method also can return dynamic type.
-    • Casting is not required but you need to know the properties and methods related to stored type.
-    • Cause problem if the wrong properties or methods are accessed because all the information about stored value is get resolve only at run time.
-    • Useful when we need to code using reflection or dynamic languages or with the COM objects, because you need to write less code.
-
-### Question : What are OOPS Concepts?
-
-Class:  It is a collection of objects.
-
-Object: It is a real time entity.
-
-An object can be considered a "thing" that can perform a set of related activities. The set of activities that the object performs defines the object's behavior. For example, the hand can grip something or aStudent (object) can give the name or address. In pure OOP terms an object is an instance of a class
-
-The above template describe about object Student
-
-Class is composed of three things name, attributes, and operations
-
-public class student
-{  }
-
-student objstudent=new student ();
-
-According to the above sample we can say that Student object, named objstudent, has created out of the student class.
-
-In real world you will often find many individual objects all of the same kind. As an example, there may be thousands of other bicycles 
-in existence, all of the same make and model. Each bicycle has built from the same blueprint. In object-oriented terms, we say that the bicycle is an instance of the class of objects known as bicycles. In the software world, though you may not have realized it, you have already used classes. For example, the Textbox control, you always used, is made out of the Textbox class, which defines its appearance and capabilities. Each time you drag a Textbox control, you are actually creating a new instance of the Textbox class.
-
-Encapsulation:
-Encapsulation is a process of binding the data members and member functions into a single unit.
-Example for encapsulation is class. A class can contain data structures and methods.
-Consider the following class
-public class Aperture
-{public Aperture ()
-{  }
-
-protected double height;
-protected double width;
-protected double thickness;
-public double get volume()
-{Double volume=height * width * thickness;
-if (volume<0)
-return 0;
-return volume;
-}}
-
-In this example we encapsulate some data such as height, width, thickness and method Get Volume. Other methods or objects can interact with this object through methods that have public access modifier
-
-Abstraction:
-
-Abstraction is a process of hiding the implementation details and displaying the essential features.
-Example1: A Laptop consists of many things such as processor, motherboard, RAM, keyboard, LCD screen, wireless antenna, web camera, usb ports, battery, speakers etc. To use it, you don't need to know how internally LCD screens, keyboard, web camera, battery, wireless antenna, speaker’s works.  You just need to know how to operate the laptop by switching it on. Think about if you would have to call to the engineer who knows all internal details of the laptop before operating it. This would have highly expensive as well as not easy to use everywhere by everyone.
-
-So here the Laptop is an object that is designed to hide its complexity.
-
-How to abstract: - By using Access Specifiers
-.Net has five access Specifiers
-Public --       Accessible outside the class through object reference.
-Private --     Accessible inside the class only through member functions.
-Protected -- Just like private but Accessible in derived classes also through member functions.
-Internal --    Visible inside the assembly. Accessible through objects.
-Protected Internal -- Visible inside the assembly through objects and in derived classes outside the assembly through member functions.
-Let’s try to understand by a practical example:-
-public class Class1
-    {   int  i;                                         //No Access specifier means private
-        public  int j;                                        // Public
-        protected int k;                             //Protected data
-        internal int m;                        // Internal means visible inside assembly
-        protected internal int n;            //inside assembly as well as to derived classes outside assembly
-        static int x;                                 // This is also private
-        public static int y;                       //Static means shared across objects
-        [DllImport("MyDll.dll")]
-        public static extern int MyFoo();       //extern means declared in this assembly defined in some other assembly
-        public void myFoo2()
-        {            //Within a class if you create an object of same class then you can access all data members through object reference even private data too
-            Class1 obj = new Class1();
-            obj.i =10;   //Error can’t access private data through object.But here it is accessible.:)
-            obj.j =10;            obj.k=10;            obj.m=10;            obj.n=10;
-       //     obj.s =10;  //Errror Static data can be accessed by class names only
-            Class1.x = 10;
-         //   obj.y = 10; //Errror Static data can be accessed by class names only
-            Class1.y = 10;        }    }
-
-Now lets try to copy the same code inside Main method and try to compile
-[STAThread]
-        static void Main()
-        {    //Access specifiers comes into picture only when you create object of class outside the class
-            Class1 obj = new Class1();
-       //     obj.i =10; //Error can’t access private data through object.
-            obj.j =10;
-      //      obj.k=10;     //Error can’t access protected data through object.
-            obj.m=10;
-            obj.n=10;
-       //     obj.s =10;  //Errror Static data can be accessed by class names only
-            Class1.x = 10;  //Error can’t access private data outside class
-         //   obj.y = 10; //Errror Static data can be accessed by class names only
-            Class1.y = 10;
-        }
-
-What if Main is inside another assembly
-
-[STAThread]
-        static void Main()
-        {
-           //Access specifiers comes into picture only when you create object of class outside the class
-            Class1 obj = new Class1();
-       //     obj.i =10; //Error can’t access private data through object.
-            obj.j =10;
-      //      obj.k=10;     //Error can’t access protected data through object.
-     //     obj.m=10; // Error can’t access internal data outside assembly
-    //      obj.n=10; // Error can’t access internal data outside assembly
-       //     obj.s =10;  //Errror Static data can be accessed by class names only
-            Class1.x = 10;  //Error can’t access private data outside class
-         //   obj.y = 10; //Errror Static data can be accessed by class names only
-            Class1.y = 10;
-        }
-
-In object-oriented software, complexity is managed by using abstraction.
-
-Abstraction is a process that involves identifying the critical behavior of an object and eliminating irrelevant and complex details.
-
-Inheritance:
-
-Inheritance is a process of deriving the new class from already existing class
-C# is a complete object oriented programming language. Inheritance is one of the primary concepts of object-oriented programming. It allows you to reuse existing code. Through effective use of inheritance, you can save lot of time in your programming and also reduce errors, which in turn will increase the quality of work and productivity. A simple example to understand inheritance in C#.
-
-Using System;
-Public class BaseClass
-{    Public BaseClass ()
-    {        Console.WriteLine ("Base Class Constructor executed");    }
-    Public void Write ()
-    {        Console.WriteLine ("Write method in Base Class executed");    }
-}                       
-Public class ChildClass: BaseClass
-{                      Public ChildClass ()
-    {        Console.WriteLine("Child Class Constructor executed");    }
+### What is Union and Union All ? Explain the differences?
    
-    Public static void Main ()
-    {        ChildClass CC = new ChildClass ();
-        CC.Write ();
-    }}
+   • SQL UNION
 
-In the Main () method in ChildClass we create an instance of childclass. Then we call the write () method. If you observe the ChildClass does not have a write() method in it. This write () method has been inherited from the parent BaseClass.
-The output of the above program is 
+The UNION operator is used to combine the result-set of two or more SELECT statements.
 
-Output:
-  Base Class Constructor executed
-  Child Class Constructor executed
-  Write method in Base Class executed
+Notice that each SELECT statement within the UNION must have the same number of columns. The columns must also have similar data types. Also, the columns in each SELECT statement must be in the same order.
 
-This output proves that when we create an instance of a child class, the base class constructor will automatically be called before the child class constructor. So in general Base classes are automatically instantiated before derived classes.
 
-In C# the syntax for specifying BaseClass and ChildClass relationship is shown below. The base class is specified by adding a colon, ":", after the derived class identifier and then specifying the base class name.
+Note: The UNION operator selects only distinct values by default.
 
-Syntax:  class ChildClassName: BaseClass
-              {                   //Body              }
+SELECT column_name(s) FROM table1  UNION  SELECT column_name(s) FROM table2;  
 
-C# supports single class inheritance only. What this means is, your class can inherit from only one base class at a time. In the code snippet below, class C is trying to inherit from Class A and B at the same time. This is not allowed in C#. This will lead to a compile time 
+• SQL UNION ALL
 
-error: Class 'C' cannot have multiple base classes: 'A' and 'B'.
+1. SQL UNION ALL Syntax  
 
-public class A
-{        }
-public class B
-{             }
-public class C : A, B
-{                   }
+SELECT column_name(s) FROM table1   UNION ALL  SELECT column_name(s) FROM table2;  
 
-In C# Multi-Level inheritance is possible. Code snippet below demonstrates mlti-level inheritance. Class B is derived from Class A. Class C is derived from Class B. So class C, will have access to all members present in both Class A and Class B. As a result of multi-level inheritance Class has access to A_Method(),B_Method() and C_Method(). 
-
-Note: Classes can inherit from multiple interfaces at the same time. 
-
-### Question : How can you implement multiple inheritance in C#? 
-
-Using Interfaces.
-Using System;
-Public class A
-{    Public void A_Method ()
-    {        Console.WriteLine ("Class A Method Called");    }}
-Public class B: A
-{    Public void B_Method ()
-    {        Console.WriteLine ("Class A Method Called");    }}
-Public class C: B
-{    Public void C_Method ()
-    {        Console.WriteLine ("Class A Method Called");    }              
-    Public static void Main ()
-    {        C C1 = new C ();
-        C1.A_Method ();        C1.B_Method ();        C1.C_Method ();
-    }}
-When you derive a class from a base class, the derived class will inherit all members of the base class except constructors. In the code snippet below class B will inherit both M1 and M2 from Class A, but you cannot access M2 because of the private access modifier. Class members declared with a private access modifier can be accessed only with in the class. 
-
-
-### Question : Are private class members inherited to the derived class?
-
-Yes, the private members are also inherited in the derived class but we will not be able to access them. Trying to access a private base class member in the derived class will report a compile time error.
-
-Using System;
-Public class A
-{Public void M1 ()
-{    }
-Private void M2 ()
-{   }}
-
-Public class B: A
-{Public static void Main ()
-{B B1 = new B ();
-B1.M1 ();
-//Error, Cannot access private member M2
-//B1.M2 ();
-}}
-
-Method Hiding and Inheritance We will look at an example of how to hide a method in C#. The Parent class has a write () method which is available to the child class. In the child class I have created a new write () method. So, now if I create an instance of child class and call the write () method, the child class write () method will be called. The child class is hiding the base class write () method. 
-
-This is called method hiding. 
-
-If we want to call the parent class write () method, we would have to type cast the child object to Parent type and then call the write () method as shown in the code snippet below.
-
-Using System;
-Public class Parent
-{   Public void Write ()
-    {        Console.WriteLine ("Parent Class write method");    }}
- 
-
-Public class Child: Parent
-{    Public new void Write ()
-    {         Console.WriteLine ("Child Class write method");     }
-       Public static void Main ()
-    {         Child C1 = new Child ();
-        C1.Write ();        //Type caste C1 to be of type Parent and call Write () method
-        ((Parent) C1).Write ();
-    }}
-
-Polymorphism:
-
-When a message can be processed in different ways is called polymorphism. Polymorphism means many forms. Polymorphism is one of the fundamental concepts of OOP.
-
-Polymorphism provides following features: 
-
-•	It allows you to invoke methods of derived class through base class reference during runtime.
-
-•	It has the ability for classes to provide different implementations of methods that are called through the same name. 
-
-Polymorphism is of two types:
-
-1.	Compile time polymorphism/Overloading
-
-2.	Runtime polymorphism/Overriding
-
-Compile Time Polymorphism
-
-Compile time polymorphism is method and operators overloading. It is also called early binding.
-
-In method overloading method performs the different task at the different input parameters.
-
-
-Runtime Time Polymorphism
-
-Runtime time polymorphism is done using inheritance and virtual functions. Method overriding is called runtime polymorphism. It is also 
-called late binding.
-
-When overriding a method, you change the behavior of the method for the derived class.  Overloading a method simply involves having 
-another method with the same prototype.
-
-Caution: Don't confused method overloading with method overriding, they are different, unrelated concepts. But they sound similar.
-
-Method overloading has nothing to do with inheritance or virtual methods.
-
-Following are examples of methods having different overloads:
-
-void area(int side);
-
-void area(int l, int b);
-
-void area(float radius);
-
-Practical example of Method Overloading (Compile Time Polymorphism)
-
-using System;
- namespace method_overloading
-{    class Program
-    {        public class Print
-        {             public void display(string name)
-            {                Console.WriteLine ("Your name is : " + name);            }
-             public void display(int age, float marks)
-            {                Console.WriteLine ("Your age is : " + age);
-                Console.WriteLine ("Your marks are :" + marks);
-            }        }
-        static void Main(string[] args)
-        {             Print obj = new Print ();
-            obj.display ("George");
-            obj.display (34, 76.50f);
-            Console.ReadLine ();
-        }    }} 
-
-Note: In the code if you observe display method is called two times. Display method will work according to the number of parameters and type of parameters.
-
-### Question : When and why to use method overloading
-
-Use method overloading in situation where you want a class to be able to do something, but there is more than one possibility for what information is supplied to the method that carries out the task.
-
-You should consider overloading a method when you for some reason need a couple of methods that take different parameters, but conceptually do the same thing.  Method overloading showing many forms.
-
-using System;
- namespace method_overloading_polymorphism
-{    Class Program
-    {        Public class Shape
-        {            Public void Area (float r)
-            {                float a = (float)3.14 * r;
-                // here we have used function overload with 1 parameter.
-                Console.WriteLine ("Area of a circle: {0}",a);
-            }
-             Public void Area(float l, float b)
-            {                float x = (float)l* b;
-                // here we have used function overload with 2 parameters.
-                Console.WriteLine ("Area of a rectangle: {0}",x);
-             }
-             public void Area(float a, float b, float c)
-            {                float s = (float)(a*b*c)/2;
-                // here we have used function overload with 3 parameters.
-                Console.WriteLine ("Area of a circle: {0}", s);
-            }        }
-        Static void Main (string[] args)
-        {            Shape ob = new Shape ();
-            ob.Area(2.0f);            ob.Area(20.0f,30.0f);
-            ob.Area(2.0f,3.0f,4.0f);
-            Console.ReadLine ();        }    } } 
- 
- Things to keep in mind while method overloading  If you use overload for method, there are couple of restrictions that the compiler imposes.  The rule is that overloads must be different in their signature, which means the name and the number and type of parameters.  There is no limit to how many overload of a method you can have. You simply declare them in a class, just as if they were different methods that happened to have the same name.
-
-Method Overriding:
-
-Whereas Overriding means changing the functionality of a method without changing the signature. We can override a function in base class by creating a similar function in derived class. This is done by using virtual/overrides keywords. Base class method has to be marked with virtual keyword and we can override it in derived class using override keyword. Derived class method will completely overrides base class method i.e. when we refer base class object created by casting derived class object a method in derived class will be called.
-
-Example: 
-// Base class
-public class BaseClass
-{public virtual void Method1()
-{Console.Write("Base Class Method");}}
-// Derived class
-public class DerivedClass : BaseClass
-{public override void Method1()
-{Console.Write("Derived Class Method"); }}
-// Using base and derived class
-public class Sample
-{public void TestMethod()
-{// calling the overriden method
-DerivedClass objDC = new DerivedClass(); 
-objDC.Method1();
- // calling the baesd class method
-BaseClass objBC = (BaseClass)objDC; 
-objDC.Method1();}}
-
-Output:
-
-Derived Class Method
-Derived Class Method
-
-Constructors and Destructors:
-
-Classes have complicated internal structures, including data and functions, object initialization and cleanup for classes is much more complicated than it is for simple data structures. Constructors and destructors are special member functions of classes that are used to construct and destroy class objects. Construction may involve memory allocation and initialization for objects.
-
-Destruction may involve cleanup and deallocation of memory for objects.
-    • Constructors and destructors do not have return types nor can they return values.
-    • References and pointers cannot be used on constructors and destructors because their addresses cannot be taken.
-    • Constructors cannot be declared with the keyword virtual.
-    • Constructors and destructors cannot be declared const, or volatile.
-    • Unions cannot contain class objects that have constructors or destructors.
-
-Constructors and destructors obey the same access rules as member functions. For example, if you declare a constructor with protected access, only derived classes and friends can use it to create class objects.
-
-The compiler automatically calls constructors when defining class objects and calls destructors when class objects go out of scope. A constructor does not allocate memory for the class object it’s this pointer refers to, but may allocate storage for more objects than its class object refers to. If memory allocation is required for objects, constructors can explicitly call the new operator. During cleanup, a destructor may release objects allocated by the corresponding constructor. To release objects, use the delete operator.
-
-Example of Constructor
-
-class C
-{       private int x;    
-       private int y;
-       public C (int i, int j)
-       {                 x = i;                 y = j;       }
-       public void display ()     
-       {               Console.WriteLine(x + "i+" + y);       }}
-
-Example of Destructor
-class D
-{        public D ()
-        {            // constructor        }         
-        ~D ()
-        {           // Destructor        }  }
-
-### Question : Does C# support multiple-inheritance? 
-
-No. But you can use Interfaces.
-
-### Question : Where is a protected class-level variable available? 
- 
- It is available to any sub-class derived from base c
- las
-
-### Question : Are private class-level variables inherited? 
-
-Yes, but they are not accessible. 
-
-### Question : Describe the accessibility modifier “protected internal”. 
-
-It is available to classes that are within the same assembly and derived from the specified base class. 
-
-### Question : Which class is at the top of .NET class hierarchy? 
-
-System.Object. 
-
-### Question : What does the term immutable mean?
-
-The data value may not be changed. 
-
-Note: The variable value may be changed, but the original immutable data value was discarded and a new data value was created in memory. 
-
-### Question : Can you store multiple data types in System.Array?
-
-No. 
-
-### Question : What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
-
-The Clone() method returns a new array (a shallow copy) object containing all the elements in the original array. The CopyTo() method copies the elements into another existing array. Both perform a shallow copy. A shallow copy means the contents (each array element) contains references to the same object as the elements in the original array. A deep copy (which neither of these methods performs) would create a new instance of each element's object, resulting in a different, yet identacle object.
-
-### Question : How can you sort the elements of the array in descending order?
-
-By calling Sort() and then Reverse() methods. 
-
-### Question : What’s the .NET collection class that allows an element to be accessed using a unique key?
-
-HashTable. 
-
-### Question : What class is underneath the SortedList class?
-
-A sorted HashTable. 
-
-### Question : Will the finally block get executed if an exception has not occurred?
-
-Yes. 
-
-### Question : What’s the C# syntax to catch any possible exception?
-
-A catch block that catches the exception of type System.Exception. You can also omit the parameter data type in this case and just write catch {}. 
-
-### Question : Can multiple catch blocks be executed for a single try statement?
-
-No. Once the proper catch block processed, control is transferred to the finally block .
-
-### Question : Explain the three services model commonly know as a three-tier application?
-
-Presentation (UI), Business (logic and underlying code) and Data (from storage or other sources). 
-
-### Question : What is the syntax to inherit from a class in C#? 
-
-Place a colon and then the name of the base class.
-
-Example: class MyNewClass : MyBaseClass.
-
-### Question : Can you prevent your class from being inherited by another class? 
-
-Yes. The keyword “sealed” will prevent the class from being inherited. 
-
-### Question : Can you allow a class to be inherited, but prevent the method from being over-ridden?
-
-Yes. Just leave the class public and make the method sealed. 
-
-### Question : When do you absolutely have to declare a class as abstract?
-
-1. When the class itself is inherited from an abstract class, but not all base abstract methods have been overridden. 
-
-2. When at least one of the methods in the class is abstract. 
-
-
-### Question : Why can’t you specify the accessibility modifier for methods inside the interface?
-
-They all must be public, and are therefore public by default. 
-
-### Question : Can you inherit multiple interfaces?
-
-Yes. .NET does support multiple interfaces. 
-
-### Question :  What happens if you inherit multiple interfaces and they have conflicting method names?
-
-It’s up to you to implement the method inside your own class, so implementation is left entirely up to you. This might cause a problem on a higher-level scale if similarly named methods from different interfaces expect different data, but as far as compiler cares you’re okay. 
-
-### Question : What’s the implicit name of the parameter that gets passed into the set method/property of a class? 
-
-Value. The data type of the value parameter is defined by whatever data type the property is declared .
-
-### Question : Can you declare an override method to be static if the original method is not static? 
-
-No. The signature of the virtual method must remain the same. (Note: Only the keyword virtual is changed to keyword override) 
-
-### Question : What are the different ways a method can be overloaded? 
-
-Different parameter data types, different number of parameters, different order of parameters. 
-
-### Question : If a base class has a number of overloaded constructors, and an inheriting class has a number of overloaded constructors; can you enforce a call from an inherited constructor to a specific base constructor?
-
-Yes, just place a colon, and then keyword base (parameter list to invoke the appropriate constructor) in the overloaded constructor definition inside the inherited class.
-
-### Question :  What’s the implicit name of the parameter that gets passed into the class’ set method?
-
-Value, and it’s datatype depends on whatever variable we’re changing.
-
-### Question : How do you inherit from a class in C#? 
-
-Place a colon and then the name of the base class.
-
-### Question : Does C# support multiple inheritance?
-
-No, use interfaces instead.
-
-### Question :  When you inherit a protected class-level variable, who is it available to?
-
-Classes in the same namespace.
-
-### Question :  Are private class-level variables inherited?
-
-Yes, but they are not accessible, so looking at it you can honestly say that they are not inherited. 
-
-### Question :  Describe the accessibility modifier protected internal.?
-
-It’s available to derived classes and classes within the same assembly(and naturally from the base class it’s declared in).
-
-### Question : C# provides a default constructor for me. I write a constructor that takes a string as a parameter, but want to keep the no parameter one. How many constructors should I write? 
-
-Two. Once you write at least one constructor, C# cancels the freebie constructor, and now you have to write one yourself, even if there’s no implementation in it.
-
-### Question : What’s the top .NET class that everything is derived from? 
-
-System.Object.
-
-### Question : What does the keyword virtual mean in the method definition?
-
-The method can be over-ridden.
-
-### Question : Can you declare the override method static while the original method is non-static?
-
-No, you can’t, the signature of the virtual method must remain the same, only the keyword virtual is changed to keyword override.
-
-### Question : Can you override private virtual methods?
-
-No, moreover, you cannot access private methods in inherited classes, have to be protected in the base class to allow any sort of access.
-
-### Question : When do you absolutely have to declare a class as abstract (as opposed to free-willed educated choice or decision based on UML diagram)?
-
-When at least one of the methods in the class is abstract. When the class itself is inherited from an abstract class, but not all base abstract methods have been over-ridden.
-
-### Question : Why can’t you specify the accessibility modifier for methods inside the interface? 
-
-They all must be public. Therefore, to prevent you from getting the false impression that you have any freedom of choice, you are not allowed to specify any accessibility, it’s public by default.
-
-### Question : And if they have conflicting method names? 
-
-It’s up to you to implement the method inside your own class, so implementation is left entirely up to you. This might cause a problem on a higher-level scale if similarly named methods from different interfaces expect different data, but as far as compiler cares you’re okay.
-
-### Question : If a base class has a bunch of overloaded constructors, and an inherited class has another bunch of overloaded constructors, can you enforce a call from an inherited constructor to an arbitrary base constructor? 
-
-Yes, just place a colon, and then keyword base (parameter list to invoke the appropriate constructor) in the overloaded constructor definition inside the inherited class.
-
-### Question : Is it namespace class or class namespace? 
-
-The .NET class library is organized into namespaces. Each namespace contains a functionally related group of classes so natural namespace comes first.
-
-### Question : What is the difference between ToString() and Convert.ToString()?
-
-ToString() doesnot handle null values butConvert.ToString() will handle null values
-
-### Question : What is the Difference between int.Parse() and Convert.ToInt32()?
-
-int.Parse()  will convert only string to int Convert.ToInt32() is used to convert any 
-datatype to int type
-
-### Question : What is checked block and unchecked block?
-
-checked block is used to enable overflow checking for arthimetic and conversion 
-functions
-
-Ex: byte b=254;
- b++;
- Console.WriteLine(b);
- O/p is: 255
-
-Ex: byte b=254;
- b++;  b++;
- Console.WriteLine(b);
-
-O/p is 0 because the range of byte is 0-255 so if the range is exceeded then the b value will round to 0 but this type of programming is not safe type it is unsafe
-
-if we want to display error message instead of 0 then we have to go for checked block
-
-Ex: Checked
-
-{  byte b=254;
- b++;   b++;
- Console.WriteLine(b);
- }
-
-o/p:Arthimetic overflow Error will occur unchecked block:it is used to disable overflow checking for arthimetic and conversion functions
-
-Ex: unChecked
-
-{ byte b=254;
-
-b++;   b++;
-
-Console.WriteLine(b);
-
-}
-
-output:0
-
-
-
-### Question : Write a program to get the range of Byte Datatype?
-
-Console.WriteLine(byte.MinValue);
-
-Console.WriteLine(byte.MaxValue);
-
-### Question : What is the difference between typeOf() and sizeOf()?
-
-TypeOf() is used to get the Base Datatype name
-
-SizeOf() is used to get the size of the Datatype
-
-### Question : What is widening and Narrowing?
-
-Widening is used to convert smaller datatype to longer datatype
-
-Ex:int to long
-
-Narrowing is used to convert longer datatype to smaller Datatype
-
-Ex:long to int
-
-Working with Narrowing is unsafe type of programming
-
-
-### Question : How to view an Assembly?
-
-Start---->programs---->MSVS 2010----->
-
-VisualStudioTools---->VisualStudioCommandPrompt---->type ILDASM.exe
-
-ILDASM:Intermediate Langauge DisAssembler
-
-
-### Question : How to implement Reflection in .Net?
-
-By using System.Reflection Namespace and System.Type class
-
-### Question : What are MultiLingual Applications?
-
-The Applications that are build in supportive of  more than one human Readble languages are known as MultiLingual Applications
-
-### Question : What is the difference between = and ==
- 
- a=b assigning b value to a ; a==b comparing a with b; a.Equals(b) comparing two objects
-
-### Question : What is the use of Codesnippets?
-
-code snippet is one of the best and easiest ways for any developer to increase code 
-productivity simply shortcuts
-
-### Question : What is the difference between Array and Collections?
-
-We need to specify the size of the Array at the time of declaration but while Working with collections it is not required to mention the size of the Collection because the size of the collection will be fixed at runtime
--->The members of the Array must be of same datatype but collections can have elements of Different datatypes
-
-### Question : What is the default Accessmodifier for the members of the class?
-
-Private
-
-### Question : What is the use of constructor?
-
-Constructor is used to initailze the userdefined values fro the variainstead of system defined values to the variables
-
-### Question : When the static constructor will be called?
-
-Static constructor will be called before creating an object for a class.
-The call to the static constructor will be done by CLR.
-
-### Question :  Can we declare Public accessmodifier for static constructor?
-
-No
-
-### Question : if we declare Main() and static constructor in the same class  which one will be called first?
-
-Static constructor
-
-### Question : How to Call the Default constructor of one class with the parameterised constructor of same class?
-
-by using this()
-
-### Question : How to access the constructors of one class to another class?
-
-by using base()
-
-### Question : Does C#.net Supports Multiple inheritance?
-
-NO
-
-### Question : How to acheive Multiple inheritance in C#.NET?
-
-By using Multiple interfaces
-
-### Question : what is OverLoading?
-
-same methodname+Different method signature in same class
-
-### Question : what is Overriding?
-
-same methodheading+different method body in base class and derived class
-
-### Question : what is use of Properties?
-
-Properties are used to access the private datamembers of the class
-
-### Question : what is the Difference between Event and Method?
-
-Event will not have returntype but method will have returntype
-
-### Question : what are Generics?
-
-Generics are General Datatypes Generics will avoid TypeCasting like Boxing and UnBoxing
-
-### Question : Does generics supports Arthimetic Operators ?
-
-N0
-
-### Question : what is Dynamic Dispatch?
-
-Dynamic Dispatch is concept that was introduced in .net 4.0 here the function call can be executed at runtime.
-
-### Question : Which of the following are Build in generic Types?  
-
-Nullable
-
-EventHandlers
- 
-### Question : In .net for Assemblies we are having StrongName lly in COM Components  what is the Strongname?
-
-GUID(Globally Unique identifier)
-
-### Question : Is Versioning applicable to Private assemblies?
-
-No
-
-### Question : Does .net supports Cross Language Interoparability in CAS?
-
-No
-
-### Question: What is the importance of “this”keyword?
-
-Namespace this ex1
-{
-Class this ex1
-{
-Public int a=5;
-Public int b=5;
-Void display(int a, int b)
-{
-This. a=a+5;
-This.b=b+5;
-Console.uniteline(this.a);
-Console.unitiline(this.b);
-}
-Class program
-{
-Void main()
-{
-This ex1   mc=this ex();
-mc.display(10,20);
-Con.readline();
-
-1. when were we have declared instance variable and local variable with the same class, with in the  method control will give the priority for variable to overcome that we have to access the  instance variables with the help of ”this” keyword
-
-2. this keyword is representing the current class instance namespace my program
-{
-Class myclass
-{
-Public int a;
-Public void show()
-{
-Int b;
-Con.wL(b);
-Con.WL(a);
-}
-}
-Class program
-{
-Void main()
-Myclass mc=new myclass();
-mc.show();
-con.Readline();
-
-o/p  ERROR:- because local variable we should initialized with some value before accessing. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# C# programs 
-
-### Question: C# program to print prime numbers
-
-A prime number is not divisible by any other number apart from 1 and itself. So, we use this logic in this program to determine if a number is prime.
-
-using System;
-namespace SamplePrograms
-{    class PrimeNumber
-    {      public static void Main()
-        {       // Declare a boolean variable to determine is if a number is prime
-            bool isNumberComposite = false;
-            int j;
-            // Prompt the user to enter their target number
-            Console.WriteLine("Enter your Target?");
-            // Read the target number and convert to integer
-            int target = Int32.Parse(Console.ReadLine());
-            // 1 is neither prime nor composite. So start at 2
-            for (int i = 2; i <= target; i++)  
-            {       for (j = 2; j < i; j++)
-                {       // A number is not prime if it is divisible by any other number, 
-                    // other than 1 and itself.
-                    if (i % j == 0)
-                    {       isNumberComposite = true;
-                    // We can break out of the inner for loop as we know the number is not prime
-                        break;
-                    }                 }
-                // Print the number if it is not composite
-                if (!isNumberComposite)
-                    Console.Write("{0} ", j);
-                else
-                    isNumberComposite = false; }
-            // This line is to make the program wait for user input, 
-            // instead of immediately closing
-            Console.ReadLine();
-        }     } } 
-
-### Question: C# program to print even numbers
-
-This is a sample C# program to print even numbers. There are 2 ways to to print even numbers.
-1. Start at Zero. Increment the value by 2, print it. Do this until you reach your target number.
-2. Start at Zero. Divide the number by 2. If the remainder is zero, then you know the number is even. So print it and then increment it by 1 and divide the number by 2 again. Repeat this until we reach our target number.
-This program can also be used to print odd numbers by making a minor logic change. Initialize the targetNumber variable to 1 instead of 0. If you are using dividing logic, then print the number if the remainder is not zero. 
-
-Note: This program will crash and throws an exception, if you enter a very big number or a string. To handle exceptions, we can make use of try catch blocks. We will look at this in another program.
-
-using System;
-namespace SamplePrograms
-{     class EvenNumbers
-    {      public static void Main()
-        {       // Prompt the user to enter a target number. Target number is the 
-            // number untill which the user want to have even and odd numbers printed
-            Console.WriteLine("Please enter your target");
-            // Declare a variable to hold the target number
-            int targetNumber = 0;
-            // Retrieve, Convert and store the target number
-            targetNumber = Convert.ToInt32(Console.ReadLine());
-            // Use a FOR or WHILE loop to print the even numbers, until our target number
-            for (int i = 0; i <= targetNumber; i = i + 2)
-            {       Console.WriteLine(i);}
-            // You can also check if a number is even, by dividing it by 2.
-            //for (int i = 0; i <= targetNumber; i++)
-            //{               if ((i % 2) == 0)  {         Console.WriteLine(i);    }}
-            // You can also use a while loop to do the same as shown below.
-            //int start = 0;
-            //while (start <= targetNumber)
-            //{     Console.WriteLine(start);    start = start + 2;  }
-  // This line is to make the program wait for user input, instead of immediately closing
-            Console.ReadLine();
-        }     } }
-	
-### Question: C# program to print fibonacci series
-
-A prime number is not divisible by any other number apart from 1 and itself. So, we use this logic in this program to determine if a number is prime.
-using System;
-namespace SamplePrograms
-{    class FibonacciSeries
-    {      public static void Main()
-        {       // Prompt the user to enter their target number
-            Console.WriteLine("How many numbers do you want in the fibonacci series");
-            // Read the user input from console and convert to integer
-            int Target = int.Parse(Console.ReadLine());
-            // Create integer variables to hold previous and next numbers
-            int PreviousNumber = -1, NextNumber = 1;
-            // This for loop controls the number of fibonacci series elements
-            for (int i = 0; i < Target; i++)
-            {       // Logic to compute fibonacci series numbers
-                int Sum = PreviousNumber + NextNumber; 
-                PreviousNumber = NextNumber;
-                NextNumber = Sum;
-                Console.Write(NextNumber + "  ");
-            }
-            Console.ReadLine();    }   }  }
-A prime number is not divisible by any other number apart from 1 and itself. So, we use this logic in this program to determine if a number is prime.
-
-### Question: Palindrome program in C#
-
-A palindrome number is a number that is same after reverse. For example 121, 34543, 343, 131, 48984 are the palindrome numbers.
-
-Palindrome number algorithm
-o	Get the number from user
-o	Hold the number in temporary variable
-o	Reverse the number
-o	Compare the temporary number with reversed number
-o	If both numbers are same, print palindrome number
-o	Else print not palindrome number
-
-Let's see the palindrome program in C#. In this program, we will get an input from the user and check whether number is palindrome or not.
-	using System;  
-	  public class PalindromeExample  
-	   {       public static void Main(string[] args)  
-	      { 	          int n,r,sum=0,temp;    	          Console.Write("Enter the Number: ");   
-          n = int.Parse(Console.ReadLine());  	          temp=n;      	          while(n>0)      
-          {      	           r=n%10;      	           sum=(sum*10)+r;      	           n=n/10;   	          }      
-          if(temp==sum)   Console.Write("Number is Palindrome.");               else      
-           Console.Write("Number is not Palindrome");     	    }  	  }  
-
-Output:
-
-Enter the Number=121   
-
-Number is Palindrome.
-
-Enter the number=113  
-
-Number is not Palindrome.
-
-### Question: Armstrong Number in C#
-
-Before going to write the C# program to check whether the number is Armstrong or not, let's understand what is Armstrong number.
-Armstrong number is a number that is equal to the sum of cubes of its digits. For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.
-
-Let's try to understand why 371 is an Armstrong number.
-
-1.	371 = (3*3*3)+(7*7*7)+(1*1*1)      
-
-2.	where:      
-
-3.	(3*3*3)=27      
-
-4.	(7*7*7)=343      
-
-5.	(1*1*1)=1      
-
-6.	So:      
-
-7.	27+343+1=371      
-
-Let's see the C# program to check Armstrong Number.
-
-using System;  
-	  public class ArmstrongExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int  n,r,sum=0,temp;      	       Console.Write("Enter the Number= ");      
-	       n= int.Parse(Console.ReadLine());     	       temp=n;      
-       while(n>0)      	       {      	        r=n%10;      	        sum=sum+(r*r*r);      
-	        n=n/10;      	       }      
-	       if(temp==sum)      	        Console.Write("Armstrong Number.");      
-       else      	        Console.Write("Not Armstrong Number.");       }  	  }  
-
-
-Output:
-
-Enter the Number= 371
-Armstrong Number.
-Enter the Number= 342   
-Not Armstrong Number.
-
-### Question: C# Program to reverse number
-
-We can reverse a number in C# using loop and arithmetic operators. In this program, we are getting number as input from the user and reversing that number.
-Let's see a simple C# example to reverse a given number.
-	using System;  
-	  public class ReverseExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int  n, reverse=0, rem;           
-	       Console.Write("Enter a number: ");      
-	       n= int.Parse(Console.ReadLine());     
-	       while(n!=0)      
-	       {     rem=n%10;         reverse=reverse*10+rem;    n/=10;       
-	       }      	      
-	       Console.Write("Reversed Number: "+reverse);       
-	       }  	
-	       }  
-
-Output:
-
-Enter a number: 234  
-Reversed Number: 432
-
-### Question: C# Program to generate Fibonacci Triangle
-
-In this program, we are getting input from the user for the limit for fibonacci triangle, and printing the fibonacci series for the given number of times (limit).
-
-Let's see the C# example to generate fibonacci triangle.
-	using System;  
-	  public class PrintExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int a=0,b=1,i,c,n,j;      	
-	      Console.Write("Enter the limit: ");    
-	       n= int.Parse(Console.ReadLine());     	   
-	       for(i=1; i<=n; i++)      
-	       {  	      
-	       a=0;         
-	       b=1;       
-	       Console.Write(b+"\t");     
-	        for(j=1; j<i; j++)    	       
- {           
- c=a+b;         
- Console.Write(c+"\t");      
- a=b;       
- b=c;    
- }      
-        Console.Write("\n");      	   
-	} 
-	} 
-	}  
-	
-### Question: C# Program to Convert Number in Characters
-
-In C# language, we can easily convert number in characters by the help of loop and switch case. In this program, we are taking input from the user and iterating this number until it is 0. While iteration, we are dividing it by 10 and the remainder is passed in switch case to get the word for the number.
-
-Let's see the C# program to convert number in characters.
-	using System;  
-	  public class ConversionExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int n,sum=0,r;          Console.Write("Enter the Number= ");    
-	       n= int.Parse(Console.ReadLine());     	       while(n>0)      
-	       {            r=n%10;            sum=sum*10+r;       n=n/10;             }      
-       n=sum;      	       while(n>0)        {       r=n%10;        switch(r)      {        case 1: 	         Console.Write("one ");  	         break;      
-	         case 2:               Console.Write("two ");   	         break;      
-	         case 3:              Console.Write("three ");    	         break;      
-	         case 4:              Console.Write("four ");    	         break;      
-	         case 5:              Console.Write("five ");    	         break;      
-	         case 6:               Console.Write("six ");     	         break;      
-	         case 7:    	         Console.Write("seven ");    	         break;    
-	         case 8:               Console.Write("eight ");      	         break;      
-	         case 9:               Console.Write("nine ");    	         break;      
-	         case 0:              Console.Write("zero ");    	         break;      
-	         default:               Console.Write("tttt ");      	         break;      
-	        }//end of switch     
-	        n=n/10;      
-	       }//end of while loop       
-	   }  
-	   }  
-
-Output:
-Enter the Number= 357546
-three five seven five four six
-
-### Question: C# Program to print Number Triangle
-
-Like alphabet triangle, we can write the C# program to print the number triangle. The number triangle can be printed in different ways.
-Let's see the C# example to print number triangle.
-	using System;  
-	  public class PrintExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int  i,j,k,l,n;           
-	       Console.Write("Enter the Range=");    	       n= int.Parse(Console.ReadLine());     
-	       for(i=1; i<=n; i++)      
-	       {          	        for(j=1; j<=n-i; j++)      
-	        {      	         Console.Write(" ");      	        }      
-	        for(k=1;k<=i;k++)      
-	        {      	         Console.Write(k);      	        }      
-	        for(l=i-1;l>=1;l--)      
-	        {      	        Console.Write(l);      	        }      
-	        Console.Write("\n");      
-	       }       	   }  	  }  
-Output:
-Enter the Range=5
-     1
-    121
-   12321
-  1234321
- 123454321  
-Enter the Range=6
-      1
-     121
-    2321
-   1234321 
-  123454321
- 12345654321 
-
-### Question: C# Program to swap two numbers without third variable
-
-We can swap two numbers without using third variable. There are two common ways to swap two numbers without using third variable:
-1.	By + and -
-2.	By * and /
-
-Program 1: Using ∗ and /
-
-Let's see a simple C# example to swap two numbers without using third variable.
-
-using System;  
-	  public class SwapExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int  a=5, b=10;            
-	       Console.WriteLine("Before swap a= "+a+" b= "+b);    
-	       a=a*b; //a=50 (5*10)      
-	       b=a/b; //b=5 (50/10)      
-	       a=a/b; //a=10 (50/5)    
-	       Console.Write("After swap a= "+a+" b= "+b);       
-	     }  	
-	     }   
-Output:
-
-Before swap a= 5 b= 10     
-After swap a= 10 b= 5
-
-### Question: Program 2: Using + and -
-
-Let's see another example to swap two numbers using + and -.
-	using System;  
-	  public class SwapExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int  a=5, b=10;            
-	       Console.WriteLine("Before swap a= "+a+" b= "+b);    
-	       a=a+b; //a=15 (5+10)      
-	       b=a-b; //b=5 (15-10)      
-	       a=a-b; //a=10 (15-5)   
-	       Console.Write("After swap a= "+a+" b= "+b);       
-	      }  	  }  
-
-Output:
-Before swap a= 5 b= 10     
-After swap a= 10 b= 5
-
-### Question: Decimal to Binary Conversion Algorithm
-
-Step 1: Divide the number by 2 through % (modulus operator) and store the remainder in array
-
-Step 2: Divide the number by 2 through / (division operator)
-
-Step 3: Repeat the step 2 until the number is greater than zero
-
-Let's see the C# example to convert decimal to binary.
-	using System;  
-	  public class ConversionExample  
-	   {  	 
-	   public static void Main(string[] args)  
-	      {  	       int  n, i;       
-	       int[] a = new int[10];     
-	       Console.Write("Enter the number to convert: ");    
-	       n= int.Parse(Console.ReadLine());     
-	       for(i=0; n>0; i++)      
-	        {      	         a[i]=n%2;             n= n/2;            }      
-	       Console.Write("Binary of the given number= ");      
-	       for(i=i-1 ;i>=0 ;i--)      
-	       {              Console.Write(a[i]);    
-	       }
-	       }
-	       }  
-	       
-Output:
-
-Enter the number to convert:10
-Binary of the given number= 1010 
-
-### Question: C# Program to Convert Number in Characters
-
-In C# language, we can easily convert number in characters by the help of loop and switch case. In this program, we are taking input from the user and iterating this number until it is 0. While iteration, we are dividing it by 10 and the remainder is passed in switch case to get the word for the number.
-
-Let's see the C# program to convert number in characters.
-
-using System;  
-	  public class ConversionExample  
-	   {  	     public static void Main(string[] args)  
-	      {  	       int n,sum=0,r;     
-	       Console.Write("Enter the Number= ");    
-       n= int.Parse(Console.ReadLine());     
-	       while(n>0)      
-	       {             r=n%10;            sum=sum*10+r;          n=n/10;             }      
-	       n=sum;      
-	       while(n>0)      
-	       {           r=n%10;      
-	        switch(r)      
-	        {              case 1:           Console.Write("one ");           break;      
-	         case 2:              Console.Write("two ");      	         break;      
-	         case 3:              Console.Write("three ");    	         break;      
-	         case 4:               Console.Write("four ");    	         break;      
-	         case 5:               Console.Write("five ");    	         break;      
-	         case 6:               Console.Write("six ");     	         break;      
-	         case 7:    	         Console.Write("seven ");    	         break;    
-	         case 8:              Console.Write("eight ");      	         break;      
-	         case 9:               Console.Write("nine ");    	         break;      
-	         case 0:              Console.Write("zero ");    	         break;      
-	         default:               Console.Write("tttt ");      	         break;      
-	        }//end of switch      
-	        n=n/10;      
-	       }//end of while loop       
-	   }  	  }  
-
-Output:
-
-Enter the Number= 357546
-three five seven five four six
-
-### Question: C# program to print multiplication table
-
-This program can be used to print any multiplication table until any number
-
-using System;
-namespace SamplePrograms
-{    class NumberTable
-    {      public static void Main()
-        {       // Prompt the user to enter number for multiplication table
-            Console.WriteLine("For which number do you want to print multiplication table");
-            // Read the number from console and convert to integer
-            int Number = Convert.ToInt32(Console.ReadLine());
-            // Prompt the user for multiplication table target
-            Console.WriteLine("What is your target? 10, 20, 30 etc...");
-            // Read the target from console and convert to integer
-            int Target = Convert.ToInt32(Console.ReadLine());
-            // Loop to print multiplication table until we reach the target
-            for (int i = 1; i <= Target; i++)
-            {       // Compute multiplication result
-                int Result = Number * i;
-                // Format and Print the multiplication table
-                Console.WriteLine(Number.ToString() + " X " + i.ToString() + 
-                                  " = " + Result.ToString());
-                // The above line can also be rewritten as shown below.
-                // Console.WriteLine("{0} X {1} = {2}", Number, i, Result);
-            }      
-	    }
-	    }
-	    }
-
-### Question: C# program to print alphabets
-
-This c# program prints both upper and lower case alphabets using 2 different approaches.
-
-using System;
-namespace SamplePrograms
-{    class Alphabets
-    {        public static void Main()
-        {            // Loop from a thru z (lower case alphabets)
-            for (char alphabet = 'a'; alphabet <= 'z'; alphabet++)
-            {       Console.Write(alphabet + " ");            }
-            //Another way to print lower case alphabets
-            //for (int i = 0; i < 26; i++)
-            //{    Console.Write(Convert.ToChar(i + (int)'a') + " ");   }
-            Console.WriteLine();
-            // Loop from A thru Z (upper case alphabets)
-            for (char alphabet = 'A'; alphabet <= 'Z'; alphabet++)
-            {               Console.Write(alphabet + " ");            }
-            //Another way to print uppercase case alphabets
-            //for (int i = 0; i < 26; i++)
-            //{             Console.Write(Convert.ToChar(i + (int)'A') + " ");     }
-            Console.ReadLine();      
-	    }
-	    }
-	    }
-	    
-### Question: Power function in C#
-
-Write a Power() function. The function should take 2 parameters - Base and Exponent. The function should return back the result of "Base raised to the power of exponent". Let me give an example.
-When the Power() method is called using parameters 3 and 4 as shown below. The value of 3 to the power of 4 should be returned back, i.e 81.
-So in short Power(3,4) should return 81. So in this example 3 is the base and 4 is the exponent.
-
-using System;
-namespace SamplePrograms
-{    class PowerFunction
-    {      public static void Main()
-        {       // Prompt the user to enter base
-            Console.WriteLine("Enter your base");
-            int Base = Convert.ToInt32(Console.ReadLine());
-            // Prompt the user to enter exponent
-            Console.WriteLine("Enter your exponent");
-            int Exponent = Convert.ToInt32(Console.ReadLine());
-            // Call the power method passing it Base and Exponent
-            int Result = Power(Base, Exponent);
-            // In System.Math class there is Pow() static method which is
-            // very similar to the static Power() method we implemented
-            // double Result = System.Math.Pow(Base, Exponent);
-            // Print the result
-            Console.WriteLine("Result = {0}", Result);
-        }
-        public static int Power(int Base, int Exponent)
-        {            // Declare a variable to hold the result
-            int Result = 1;
-            // Multiply the Base number with itself, for 
-            // exponent number of times
-            for (int i = 1; i <= Exponent; i++)
-            {       Result = Result * Base;         }
-            //return the Result
-            return Result;
-        }   
-	}
-	}
-	
-### Question: C# program to count emails by domain
-
-I have a string of emails seperated by semi colon as shown below. 
-string UserInputEmails = "aa@xyz.com;cc@abc.com;bb@abc.com;dd@abc.com";
-Write a c# program, that lists the total number of emails by domain. The program should give the following output.
-Domain = xyz.com & Count = 1
-Domain = abc.com & Count = 3
-
-using System;
-using System.Linq;
-namespace SamplePrograms
-{    class CountEmailsByDomain
-    {        public static void Main()
-        {       // User List of emails seperated by semi colon. You can have as many
-            // number of emails you want in this string.
-            string UserInputEmails = "aa@xyz.com;cc@abc.com;bb@abc.com;dd@abc.com";
-            // Split the string into a string array.
-            string[] UserEmails = UserInputEmails.Split(';');
-            // Select only the domain part of the emails into a string array, using substring() function
-            string[] EmailsDomain = UserEmails.Select(x => x.Substring(x.LastIndexOf("@") + 1)).ToArray();
-            // Group the emails by email domain, and select the Domain and respective count
-            var Result = EmailsDomain.GroupBy(x => x).Select(y => new { Domain = y.Key, Count = y.Count() });
-            // Finally print the domain name and the emails count
-            foreach (var obj in Result)
-            {       Console.WriteLine("Domain = {0} & Count = {1}",obj.Domain, obj.Count); 
-	    }
-	    }
-	    }
-	    }
-	    
-Build a simple calculator using c# programming language. The calculator should have the following features.
-1. Adding 2 Numbers
-2. Subtracting 2 Numbers
-3. Multiplying 2 Numbers
-4. Dividing 2 Numbers
-
-Also, the program should run as long as the user wants it to be running.
-
-using System;
-namespace SamplePrograms
-{    class SimpleCalculator
-    {      public static void Main()
-        {       string UserSelection = string.Empty;
-            do
-            {       PrintMenu();
-                int UserChoice = Convert.ToInt32(Console.ReadLine());
-                while (UserChoice < 1 || UserChoice > 4)
-                {              Console.WriteLine("Invalid Option. Try again");
-                    PrintMenu();                     Console.WriteLine();
-                    UserChoice = Convert.ToInt32(Console.ReadLine());
-                }
-                Calculate(UserChoice);
-                Console.WriteLine("Do you want to continue");
-                UserSelection = Console.ReadLine();
-                while (UserSelection.ToUpper() != "NO" &&
-                  UserSelection.ToUpper() != "YES")
-                {              Console.WriteLine();
-                    Console.WriteLine("Invalid Input - Please type YES or NO");
-                    Console.WriteLine("Do you want to continue");
-                    UserSelection = Console.ReadLine();
-                }             }
-            while (UserSelection.ToUpper() != "NO");
-            Console.WriteLine();
-            Console.WriteLine("The program will now terminate");
-        }
-        public static void PrintMenu()
-        {            Console.WriteLine();
-            Console.WriteLine("Select your option");
-            Console.WriteLine("------------------");
-            Console.WriteLine("1. Addition");
-            Console.WriteLine("2. Subtraction");
-            Console.WriteLine("3. Multiplication");
-            Console.WriteLine("4. Division");
-            Console.WriteLine();
-        }
-        public static void Calculate(int SelectedOption)
-        {            int Result = 0;
-            Console.WriteLine("Enter your first number");
-            int FirstNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter your second number");
-            int SecondNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine();
-            switch (SelectedOption)
-            {       case 1:
-                    Result = FirstNumber + SecondNumber;
-                    Console.WriteLine("{0} + {1} = {2}", FirstNumber, SecondNumber, Result);
-                    break;
-                case 2:
-                    Result = FirstNumber - SecondNumber;
-                    Console.WriteLine("{0} - {1} = {2}", FirstNumber, SecondNumber, Result);
-                    break;
-                case 3:
-                    Result = FirstNumber * SecondNumber;
-                    Console.WriteLine("{0} * {1} = {2}", FirstNumber, SecondNumber, Result);
-                    break;
-                case 4:
-                    Result = FirstNumber / SecondNumber;
-                    Console.WriteLine("{0} / {1} = {2}", FirstNumber, SecondNumber, Result);
-                    break;
-            }      
-	    } 
-	    } 
-	    }
-
-### Question: Reverse characters in a string
-
-Write a C# program to print the characters in a string in the reverse order.
-using System;
-using System.Collections.Generic;
-using System.Linq;
-namespace SamplePrograms
-{     class ReverseCharacters
-    {      public static void Main()
-        {       // Prompt the user to enter the string
-            Console.WriteLine("Please enter your string");
-            // Read the user string from console
-            string UserString = Console.ReadLine();
-            // The simple way to reverse a string is to use
-            // the built-in .net framework Reverse() function
-            List<char> StringCharacters = UserString.Reverse().ToList();
-            // Finally print each character from the collection
-            foreach (char c in StringCharacters)
-            {       Console.Write(c);         }
-            Console.WriteLine();
-            Console.ReadLine();
-        }  
-	}
-	}
-
-### Question: C# program to sort names in ascending and descending order
-
-I have a string of user names seperated by semi colon. I want a c# program that can sort these names in both ascending and descending order.
-
-string strUserNames = "Rob;Mike;Able;Sara;Peter;John;Tom;Ben";
-using System;
-namespace SamplePrograms
-{    class SortNamesInAscendingAndDescendingOrder
-    {      public static void Main()
-        {       // Prompt the user to enter the list of user names
-            Console.WriteLine("Please enter list of names seperated by semi colon");         
-            // Read the user name list from the console
-            string strUserNames = Console.ReadLine();
-            // Sampe list of user names that can be used as an input
-            // strUserNames = "Rob;Mike;Able;Sara;Peter;John;Tom;Ben";
-            // Split the string into a string array based on semi colon
-            string[] arrUsersNames = strUserNames.Split(';');
-            // Print the names before sorting using foreach loop
-            Console.WriteLine("Names before sorting");
-            foreach (string UserName in arrUsersNames)
-            {                Console.WriteLine(UserName);               }
-            // Sort the elements in the array in ascending order
-            Array.Sort(arrUsersNames);
-            // Print the elements of the array after sorting
-            Console.WriteLine("Names after sorting in ascending order");
-            foreach (string UserName in arrUsersNames)
-            {                 Console.WriteLine(UserName);             }
-            // Reverse the elements in the sorted array to get
-            // the elements in descending order
-            Array.Reverse(arrUsersNames);
-            // Finally print the elements
-            Console.WriteLine("Names after sorting in descending order");
-            foreach (string UserName in arrUsersNames)
-            {                 Console.WriteLine(UserName);             }
-            Console.ReadLine();
-        } 
-	}
-	}
-	
-### Question: C# program to remove duplicates
-
-Write a c# program to print unique names, by removing the duplicate entries. For example, in the Input String below, Rob and Able names are repeated twice. The c# program that you write should remove the duplicates and return the string as shown in Output String. The output string contains each name only once, eliminating duplicates.
-Input String    = "Rob;Mike;Able;Sara;Rob;Peter;Able;"
-Output String = "Rob;Mike;Able;Sara;Peter;"
-using System;
-using System.Linq;
-using System.Text;
-namespace SamplePrograms
-{    class PrintUniqueNames
-    {      public static void Main()
-        {       // Prompt the user to enter the list of user names
-            Console.WriteLine("Please enter list of names seperated by semi colon");
-            // Read the user name list from the console
-            string strUserNames = Console.ReadLine();
-            // Sampe list of user names that can be used as an input
-            // strUserNames = "Rob;Mike;Able;Sara;Rob;Peter;Able";
-            // Split the string into a string array based on semi colon
-            string[] arrUsersNames = strUserNames.Split(';');
-            // Use the Distinct() LINQ function to remove duplicates
-            string[] arrUniqueNames = arrUsersNames.Distinct().ToArray();
-            // Using StringBuilder to concatenate strings is more efficient
-            // than using immutable string objects for better performance
-            StringBuilder sbUniqueUsernames = new StringBuilder();
-            // Build the string from unique names appending semi colon
-            foreach (string strName in arrUniqueNames)
-            {       sbUniqueUsernames.Append(strName + ";");  }
-            // Remove the extra semi colon in the end
-           sbUniqueUsernames.Remove(sbUniqueUsernames.ToString().LastIndexOf(';'), 1);
-            // Finally print the unique names
-            Console.WriteLine();
-            Console.WriteLine("Printing names without duplicates");
-            Console.WriteLine(sbUniqueUsernames.ToString());
-        }     } }
-	
-	
-### Question: Insert space before every upper case letter in a string
-
-Write a c# program that inserts a single space before every upper case letter. For example, if I have string like "ProductUnitPrice", the program should convert it to "Product Unit Price". Usually database column names will not have spaces, but when you display them to the user, it makes sense to have spaces.
-
-using System;
-using System.Text;
-namespace SamplePrograms
-{    class SpaceBeforeUpperCaseLetter
-    {      public static void Main()
-        {       // Prompt the user for input
-            Console.WriteLine("Please enter your string");
-            // Read the input from the console
-            string UserInput = Console.ReadLine();
-            // Convert the input string into character array
-            char[] arrUserInput = UserInput.ToCharArray();
-            // Initialize a string builder object for the output
-            StringBuilder sbOutPut = new StringBuilder();
-            // Loop thru each character in the string array
-            foreach (char character in arrUserInput)
-            {       // If the character is in uppercase
-                if (char.IsUpper(character))
-                {       // Append space
-                    sbOutPut.Append(" ");         }
-                // Append every charcter to reform the output
-                sbOutPut.Append(character);        }
-            // Remove the space at the begining of the string
-            sbOutPut.Remove(0, 1);
-            // Print the output
-            Console.WriteLine(sbOutPut.ToString());
-            Console.ReadLine();
-        }     }    }
-	
-Exception handling at its best
-
-### Question: Write a c# program to add two numbers. 
-
-This may sound very simple, but the catch, is - The program should not break, and always should give meaningful error messages when exception conditions occur. For example, the following error conditions should be handled in your program. Also, the program should run as long as the user wants it to run.
-1. If the user enters "Ten" instead of 10, the program should let the user know only numbers can be added.
-2. If the user, enters a very large number, the program should let the user know about the range allowed.
-using System;
-namespace SamplePrograms
-{     class ExceptionHandlingAtItsBest
-    {        public static void Main()
-        {             string strUserChoice = String.Empty;
-            do
-            {      try
-                {       Console.WriteLine("Please enter first number");
-                    int FN = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Please enter second number");
-                    int SN = Convert.ToInt32(Console.ReadLine());
-                    int Total = FN + SN;
-                    Console.WriteLine("Total = {0}", Total);
-                }
-                catch (FormatException)
-                {         Console.WriteLine("Invalid Input. Only numbers please.");               }
-                catch (OverflowException)
-                {                    Console.WriteLine("Only numbers between {0} and {1} are allowed", 
-                        Int32.MinValue, Int32.MaxValue);                 }
-                catch (Exception)
-                {         Console.WriteLine("Unknown problem, please contact administrator");            }
-                do
-                {           Console.WriteLine("Do you want to continue - Yes or No");
-                    strUserChoice = Console.ReadLine();
-                } 
-      while (strUserChoice.ToUpper() != "YES" && strUserChoice.ToUpper() != "NO");
-            } 
-            while (strUserChoice.ToUpper() != "NO");
-        }     }   }
-	
-### Question: Find smallest and largest number in an integer array
-
-I want a c# program that can find and print, the smallest and largest number in a given integer array.
-using System;
-using System.Linq;
-namespace SamplePrograms
-{    class LargestSmallest
-    {      public static void Main()
-        {       // Declare and initialize the integer array
-            int[] NumbersArray = { 102, 34, 89, 12, 187, 29, 111};
-            // Sort the array, first element in the array will be
-            // smallest and the last element will be largest
-            Array.Sort(NumbersArray);
-            // Print the smallest number in the array
-            Console.WriteLine("Samllest Number = {0}", NumbersArray[0]);
-            // Print the largest number in the array.
-            Console.WriteLine("Largest Number = {0}", NumbersArray[NumbersArray.Length -1]);
-            // Linq makes this much easier, as we have Min() and Max() extension methods
-            // Console.WriteLine("Samllest Number = {0}", NumbersArray.Min());
-            // Console.WriteLine("Largest Number = {0}", NumbersArray.Max());
-        }     } }
-	
-### Question: C# Program to compute factorial of a number
-
-In mathematics, 5 factorial is computed as 5X4X3X2X1, which is equal to 120. 5 factorial is denoted as 5 and an exclamation mark as shown below.
-
-5 Factorial = 5! = 5X4X3X2X1 = 120 
-4 Factorial = 4! = 4X3X2X1 = 24
-3 Factorial = 3! = 3X2X1 = 6
-Factorial of Zero is 1.
-
-C# Program below shows how to compute factorial for a given number. If you like this artcile, please click g+1 button below to share with your friends.
-
-using System;
-namespace SamplePrograms
-{     class Factorial
-    {      public static void Main()
-        {       // Prompt the user to enter their target number to calculate factorial
-  Console.WriteLine("Please enter the number for which you want to compute factorial");
-            try
-            {       // Read the input from console and convert to integer data type
-                int iTargetNumber = Convert.ToInt32(Console.ReadLine());
-                // Factorial of Zero is 1
-                if (iTargetNumber == 0)
-                {       Console.WriteLine("Factorial of Zero = 1");                }
-                // Compute factorial only for non negative numbers
-                else if (iTargetNumber < 0)
-                {           Console.WriteLine("Please enter a positive number greater than 1");                }
-                // If the number is non zero and non negative
-                else
-                {            // Declare a variable to hold the factorial result.
-                    double dFactorialResult = 1;
-                    // Use for loop to calcualte factorial of the target number
-                    for (int i = iTargetNumber; i >= 1; i--)
-                    {                        dFactorialResult = dFactorialResult * i;                    }
-                    // Output the result to the console
-      Console.WriteLine("Factorial of {0} = {1}", iTargetNumber, dFactorialResult);
-                }            }
-            catch (FormatException)
-            {                // We get format exception if user enters a word instead of number
-            Console.WriteLine("Please enter a valid number", Int32.MaxValue);   }
-            catch (OverflowException)
-            {                // We get overflow exception if user enters a very big number, 
-                // which a variable of type Int32 cannot hold
-                Console.WriteLine("Please enter a number between 1 and {0}", Int32.MaxValue);   }
-            catch (Exception)
-            {                // Any other unforeseen error
-                Console.WriteLine("There is a problem! Please try later");
-		} 
-		}
-		}
-		}
-		
-		
-### Question: How to get the total number of decimal places using c#
-
-For example, please refer to the sample input and output below. 
-Input	Output
-1	0
-1.0	0
-1.1	1
-1.12	2
-1.123	3
-1.1100	2
-1.010	2
-1.001100 	4   
-
-
-using System;
-namespace SampleProgram
-{     class MainProgram
-    {      public static void Main(string[] args)
-        {       // Create the decimal array for sample test data
-decimal[] decimalNumbers = { 1, 1.0M, 1.1M, 1.12M, 1.123M, 1.1100M,                                               1.010M, 1.001100M };
-            // Loop thru each decimal number
-            foreach (decimal decimalNumber in decimalNumbers)
-            {            // Print the original number and total decimal places
-                Console.WriteLine("Original Decimal Number = {0}, Total Decimal Places = {1}",
-                    decimalNumber, GetDecimalPartCount(decimalNumber));
-            }         }
-        // Function that return the total decimal places
-        private static int GetDecimalPartCount(decimal decimalNumber)
-        {            // Dividing decimal number with 1 gives the decimal part
-            decimal decimalPlaces = decimalNumber % 1;
-            if (decimalPlaces != 0)
-            {       // Get the index of dot from the decimal part
-                int indexOfDot = decimalPlaces.ToString().IndexOf('.');
-                // Use the 0.######## format string to rip off trailing zeros, and get the count
-                int numberOfDecimals =
-                decimalPlaces.ToString("0.##########").Substring(indexOfDot).Length - 1;
-                return numberOfDecimals;
-          }
-            // Finally convert decimal to int and return
-            return (int)decimalPlaces;
-        }    
-	}  
-	}
-	
-### Question: How to remove trailing zeros in a decimal - C# Program
-
-For example, consider the sample input and expected output below.
-Input	Output
-1.0	1
-1.01	1.01
-1.0010	1.001
-0.00	0
-1.0050   	1.005     
-
-using System;
-namespace SampleProgram
-{    class MainProgram
-    {      public static void Main(string[] args)
-        {       decimal[] decimalNumbers = { 1.0M, 1.01M, 1.0010M, 0.00M, 1.0050M};
-            foreach (decimal decimalNumber in decimalNumbers)
-            { Console.WriteLine("Original Decimal Number = {0}, Without Zeros = {1}",
-                                    decimalNumber, decimalNumber.ToString("0.####"));
-           
-	   } 
-	   } 
-	   }
-	   }
-	   
-If I enter 1.1234567890, we get 1.1235, instead of 1.123456789. This is because, the number of # symbols in the ToString("0.####") is only 4. The maximum decimal places, you want in the output is represented by the # symbol. In general a C# decimal datatype can have 29 total number of digits. This includes both integral and decimal part of a decimal.
-
-### Question: Write a c program to print M pattern
-*                  *
-**                **
-* *              * *
-*  *            *  *
-*   *          *   *
-*    *        *    *
-*     *      *     *
-*      *    *      *
-*       *  *       *
-*        **        *
-*                    *
-
-#include <iostream>
-using namespace std;
- void printM(int height, int width)
-{    for(int row = 0; row < height; row++)
-    {      for(int col = 0; col < width; col++)
-        {       if(col == 0 || col == width - 1 || ((col == row || col == width - row - 1) && row < height / 2) )
-                cout << "*";
-            else
-               cout << " ";
-        }
-        cout << endl;
-    } }
- int main() {    printM(20, 20);    return 0;}
-20.write   the o/p for the below program?
-name space console APPLICATION
-{Class Myclass
-{Int a=10;}
-Class program
-{Static v.main()
-{Myclass mc=new myclass()
-Con.WL(mc.a);
-Con.RL();
-} } }
-		    
-Output is compile time error because bydefault accesmodifier of a instance variable(Non-static)is private.which we can access only with in that class
-
-### Question: Write the o/p for the below program?
-
-Namespace program ex
-{Int a;
-String s;
-Public void display()
-{Consoie.writeline(a);
-Console.WL(s);
-} }
-Class program
-{Void main()
-{Myclass mc=new myclass();
-mc.display();
-cons.readline();
-}}
-o/p 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Interview rating Sheet
-We have provided a self assessment rating sheet in the book for .NET, Networking, Project management, Architecture, SQL Server and lot more. If you are able get 80 % in the assessment we are sure you can crack any Interview. You can find the assessment sheet in CD as an excel file (InterviewRating.xls). So take the self test again and again to improve your confidence.
+Allows duplicate values.
